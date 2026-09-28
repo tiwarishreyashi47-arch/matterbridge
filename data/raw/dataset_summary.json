@@ -1,0 +1,205 @@
+[
+  {
+    "table_name": "matter_types",
+    "record_count": 2,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Reference data for matter types"
+  },
+  {
+    "table_name": "matters",
+    "record_count": 2,
+    "last_updated": "2025-09-09",
+    "population_status": "ACTIVE",
+    "notes": "MAT-001 and MAT-002 populated for prototype workflows"
+  },
+  {
+    "table_name": "workstreams",
+    "record_count": 3,
+    "last_updated": "2025-09-09",
+    "population_status": "ACTIVE",
+    "notes": "WS-001/002 for MAT-001, WS-003 for MAT-002"
+  },
+  {
+    "table_name": "parties",
+    "record_count": 4,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Lender, borrower, guarantor, employee"
+  },
+  {
+    "table_name": "matter_parties",
+    "record_count": 5,
+    "last_updated": "2025-09-01",
+    "population_status": "COMPLETE",
+    "notes": "Party-matter relationships"
+  },
+  {
+    "table_name": "assets",
+    "record_count": 3,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "AST-001/002/003 for MAT-001"
+  },
+  {
+    "table_name": "matter_assets",
+    "record_count": 3,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Asset-matter linkages"
+  },
+  {
+    "table_name": "security_interests",
+    "record_count": 4,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "SEC-001/002/003"
+  },
+  {
+    "table_name": "documents",
+    "record_count": 22,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "DOC-001 through DOC-022"
+  },
+  {
+    "table_name": "document_sections",
+    "record_count": 59,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Sections populated for recovery, security verification, and HR source documents"
+  },
+  {
+    "table_name": "matter_timeline",
+    "record_count": 27,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Chronology from execution to counsel decision"
+  },
+  {
+    "table_name": "legal_issues",
+    "record_count": 15,
+    "last_updated": "2025-09-09",
+    "population_status": "ACTIVE",
+    "notes": "Preliminary issues identified"
+  },
+  {
+    "table_name": "company_policies",
+    "record_count": 9,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Reference policies"
+  },
+  {
+    "table_name": "counsel",
+    "record_count": 4,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Panel counsel list"
+  },
+  {
+    "table_name": "counsel_engagements",
+    "record_count": 2,
+    "last_updated": "2025-09-09",
+    "population_status": "PENDING",
+    "notes": "ENG-001 pending counsel selection"
+  },
+  {
+    "table_name": "counsel_briefs",
+    "record_count": 2,
+    "last_updated": "2025-09-09",
+    "population_status": "DRAFT",
+    "notes": "BRIEF-001 draft"
+  },
+  {
+    "table_name": "counsel_questions",
+    "record_count": 10,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Questions for counsel"
+  },
+  {
+    "table_name": "counsel_outputs",
+    "record_count": 1,
+    "last_updated": "2025-09-09",
+    "population_status": "PENDING",
+    "notes": "Awaiting counsel opinion"
+  },
+  {
+    "table_name": "ai_findings",
+    "record_count": 15,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "AI findings with confidence levels"
+  },
+  {
+    "table_name": "finding_citations",
+    "record_count": 21,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Citations for findings"
+  },
+  {
+    "table_name": "decisions",
+    "record_count": 2,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "DEC-001: escalate to counsel"
+  },
+  {
+    "table_name": "decision_factors",
+    "record_count": 6,
+    "last_updated": "2025-08-22",
+    "population_status": "COMPLETE",
+    "notes": "Factors for DEC-001"
+  },
+  {
+    "table_name": "historical_matters",
+    "record_count": 6,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Recovery, security-defect, and HR historical precedents"
+  },
+  {
+    "table_name": "users",
+    "record_count": 6,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "System users including AI"
+  },
+  {
+    "table_name": "matter_access",
+    "record_count": 6,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Access permissions"
+  },
+  {
+    "table_name": "audit_log",
+    "record_count": 14,
+    "last_updated": "2025-09-09",
+    "population_status": "ACTIVE",
+    "notes": "Audit trail"
+  },
+  {
+    "table_name": "data_dictionary",
+    "record_count": 18,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Schema documentation"
+  },
+  {
+    "table_name": "dataset_summary",
+    "record_count": 29,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "This summary table"
+  },
+  {
+    "table_name": "asset_documents",
+    "record_count": 8,
+    "last_updated": "2025-09-09",
+    "population_status": "COMPLETE",
+    "notes": "Asset-document junction table for Security Verification"
+  }
+]

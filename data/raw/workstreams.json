@@ -1,0 +1,32 @@
+[
+  {
+    "workstream_id": "WS-001",
+    "matter_id": "MAT-001",
+    "parent_workstream_id": null,
+    "workstream_name": "Recovery Assessment",
+    "workstream_description": "Comprehensive recovery assessment including financing documentation, default chronology, repayment history, notices, borrower correspondence, recovery issues, and external counsel strategy",
+    "workstream_status": "ACTIVE",
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  {
+    "workstream_id": "WS-002",
+    "matter_id": "MAT-001",
+    "parent_workstream_id": "WS-001",
+    "workstream_name": "Security Verification",
+    "workstream_description": "Determine what securities support the facility, whether available evidence supports those securities, what verification gaps exist, and which issues require legal judgment",
+    "workstream_status": "IN_PROGRESS",
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  {
+    "workstream_id": "WS-003",
+    "matter_id": "MAT-002",
+    "parent_workstream_id": null,
+    "workstream_name": "Employee Leave & Misconduct Review",
+    "workstream_description": "HR intake, leave request, document verification, employment history review, internal legal assessment, further investigation, external counsel escalation if required, internal decision",
+    "workstream_status": "ACTIVE",
+    "created_date": "2025-09-01",
+    "created_by": "USR-002"
+  }
+]

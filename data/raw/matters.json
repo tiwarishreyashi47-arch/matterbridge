@@ -1,0 +1,28 @@
+[
+  {
+    "matter_id": "MAT-001",
+    "matter_type_id": "MT-001",
+    "matter_title": "Meridian Components — Secured Loan Recovery",
+    "matter_description": "Recovery of secured financing extended to Meridian Components Private Limited",
+    "client_id": "PARTY-001",
+    "counterparty_id": "PARTY-002",
+    "matter_status": "COUNSEL_ENGAGED",
+    "risk_rating": "HIGH",
+    "outstanding_exposure_inr": 124000000,
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  {
+    "matter_id": "MAT-002",
+    "matter_type_id": "MT-002",
+    "matter_title": "Project Atlas — Employee Leave & Misconduct Review",
+    "matter_description": "Employee leave and misconduct review matter",
+    "client_id": "PARTY-001",
+    "counterparty_id": "PARTY-004",
+    "matter_status": "INTERNAL_REVIEW",
+    "risk_rating": "MEDIUM",
+    "outstanding_exposure_inr": 0,
+    "created_date": "2025-09-01",
+    "created_by": "USR-002"
+  }
+]

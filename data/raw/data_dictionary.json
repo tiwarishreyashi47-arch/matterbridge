@@ -1,0 +1,182 @@
+[
+  {
+    "table_name": "matters",
+    "column_name": "matter_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique matter identifier"
+  },
+  {
+    "table_name": "matters",
+    "column_name": "matter_type_id",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "YES",
+    "foreign_key_table": "matter_types",
+    "is_required": "YES",
+    "description": "Reference to matter type"
+  },
+  {
+    "table_name": "matters",
+    "column_name": "matter_title",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Descriptive matter title"
+  },
+  {
+    "table_name": "matters",
+    "column_name": "risk_rating",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Risk rating: LOW, MEDIUM, HIGH"
+  },
+  {
+    "table_name": "workstreams",
+    "column_name": "workstream_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique workstream identifier"
+  },
+  {
+    "table_name": "workstreams",
+    "column_name": "matter_id",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "YES",
+    "foreign_key_table": "matters",
+    "is_required": "YES",
+    "description": "Parent matter"
+  },
+  {
+    "table_name": "workstreams",
+    "column_name": "parent_workstream_id",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "YES",
+    "foreign_key_table": "workstreams",
+    "is_required": "NO",
+    "description": "Parent workstream for nesting"
+  },
+  {
+    "table_name": "documents",
+    "column_name": "document_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique document identifier"
+  },
+  {
+    "table_name": "documents",
+    "column_name": "matter_id",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "YES",
+    "foreign_key_table": "matters",
+    "is_required": "YES",
+    "description": "Parent matter"
+  },
+  {
+    "table_name": "document_sections",
+    "column_name": "section_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique section identifier"
+  },
+  {
+    "table_name": "document_sections",
+    "column_name": "document_id",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "YES",
+    "foreign_key_table": "documents",
+    "is_required": "YES",
+    "description": "Parent document"
+  },
+  {
+    "table_name": "legal_issues",
+    "column_name": "issue_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique issue identifier"
+  },
+  {
+    "table_name": "legal_issues",
+    "column_name": "requires_legal_judgment",
+    "data_type": "BOOLEAN",
+    "is_primary_key": "NO",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Whether issue requires legal judgment"
+  },
+  {
+    "table_name": "ai_findings",
+    "column_name": "finding_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique finding identifier"
+  },
+  {
+    "table_name": "ai_findings",
+    "column_name": "confidence_level",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Confidence: LOW, MEDIUM, HIGH"
+  },
+  {
+    "table_name": "decisions",
+    "column_name": "decision_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique decision identifier"
+  },
+  {
+    "table_name": "users",
+    "column_name": "user_id",
+    "data_type": "TEXT",
+    "is_primary_key": "YES",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "Unique user identifier"
+  },
+  {
+    "table_name": "users",
+    "column_name": "user_role",
+    "data_type": "TEXT",
+    "is_primary_key": "NO",
+    "is_foreign_key": "NO",
+    "foreign_key_table": null,
+    "is_required": "YES",
+    "description": "User role in system"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "citation_id": "CITE-001",
+    "finding_id": "FIND-001",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-004",
+    "source_section": "SEC-DOC-017",
+    "citation_text": "Repayment Schedule vs Actuals section showing 5 EMIs overdue"
+  },
+  {
+    "citation_id": "CITE-002",
+    "finding_id": "FIND-001",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-006",
+    "source_section": "SEC-DOC-022",
+    "citation_text": "Borrower acknowledgment of default"
+  },
+  {
+    "citation_id": "CITE-003",
+    "finding_id": "FIND-002",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-004",
+    "source_section": "SEC-DOC-018",
+    "citation_text": "Outstanding Exposure Calculation section"
+  },
+  {
+    "citation_id": "CITE-004",
+    "finding_id": "FIND-003",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-002",
+    "source_section": "SEC-DOC-007",
+    "citation_text": "Security Package Description section"
+  },
+  {
+    "citation_id": "CITE-005",
+    "finding_id": "FIND-004",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-007",
+    "source_section": "SEC-DOC-028",
+    "citation_text": "Information Gaps section noting valuation missing"
+  },
+  {
+    "citation_id": "CITE-006",
+    "finding_id": "FIND-005",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-007",
+    "source_section": "SEC-DOC-028",
+    "citation_text": "Information Gaps section noting latest financials unavailable"
+  },
+  {
+    "citation_id": "CITE-007",
+    "finding_id": "FIND-006",
+    "source_type": "LEGAL_ISSUE",
+    "source_id": "ISSUE-005",
+    "source_section": null,
+    "citation_text": "Legal issue flagged as REQUIRES_LEGAL_JUDGMENT"
+  },
+  {
+    "citation_id": "CITE-008",
+    "finding_id": "FIND-007",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-011",
+    "source_section": "SEC-DOC-037",
+    "citation_text": "Prior Mortgage Creation"
+  },
+  {
+    "citation_id": "CITE-009",
+    "finding_id": "FIND-008",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-012",
+    "source_section": "SEC-DOC-039",
+    "citation_text": "Release Statement"
+  },
+  {
+    "citation_id": "CITE-010",
+    "finding_id": "FIND-008",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-012",
+    "source_section": "SEC-DOC-040",
+    "citation_text": "Verification Limitation"
+  },
+  {
+    "citation_id": "CITE-011",
+    "finding_id": "FIND-008",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-013",
+    "source_section": "SEC-DOC-041",
+    "citation_text": "Current Search Result"
+  },
+  {
+    "citation_id": "CITE-012",
+    "finding_id": "FIND-009",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-013",
+    "source_section": "SEC-DOC-041",
+    "citation_text": "Current Search Result"
+  },
+  {
+    "citation_id": "CITE-013",
+    "finding_id": "FIND-010",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-013",
+    "source_section": "SEC-DOC-042",
+    "citation_text": "Verification Requirement"
+  },
+  {
+    "citation_id": "CITE-014",
+    "finding_id": "FIND-010",
+    "source_type": "LEGAL_ISSUE",
+    "source_id": "ISSUE-010",
+    "source_section": null,
+    "citation_text": "Security verification affects recovery strategy and requires legal judgment"
+  },
+  {
+    "citation_id": "CITE-015",
+    "finding_id": "FIND-011",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-016",
+    "source_section": "SEC-DOC-048",
+    "citation_text": "Document Verification Concern"
+  },
+  {
+    "citation_id": "CITE-016",
+    "finding_id": "FIND-011",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-017",
+    "source_section": "SEC-DOC-049",
+    "citation_text": "Consultation identifier discrepancy"
+  },
+  {
+    "citation_id": "CITE-017",
+    "finding_id": "FIND-012",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-018",
+    "source_section": "SEC-DOC-050",
+    "citation_text": "Attendance History"
+  },
+  {
+    "citation_id": "CITE-018",
+    "finding_id": "FIND-012",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-018",
+    "source_section": "SEC-DOC-051",
+    "citation_text": "Prior Interventions"
+  },
+  {
+    "citation_id": "CITE-019",
+    "finding_id": "FIND-013",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-020",
+    "source_section": "SEC-DOC-054",
+    "citation_text": "PIP Result"
+  },
+  {
+    "citation_id": "CITE-020",
+    "finding_id": "FIND-014",
+    "source_type": "DOCUMENT",
+    "source_id": "DOC-022",
+    "source_section": "SEC-DOC-059",
+    "citation_text": "Requested Legal Assessment"
+  },
+  {
+    "citation_id": "CITE-021",
+    "finding_id": "FIND-015",
+    "source_type": "LEGAL_ISSUE",
+    "source_id": "ISSUE-015",
+    "source_section": null,
+    "citation_text": "Disciplinary action requires Legal judgment"
+  }
+]

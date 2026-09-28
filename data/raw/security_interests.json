@@ -1,0 +1,42 @@
+[
+  {
+    "security_interest_id": "SEC-001",
+    "security_type": "MORTGAGE",
+    "security_description": "First mortgage by way of registered mortgage deed over commercial property at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059",
+    "registration_number": "CERSAI-2024-0315-789456",
+    "registration_date": "2024-04-05",
+    "registration_authority": "CERSAI",
+    "security_value_inr": 180000000,
+    "created_date": "2024-03-18"
+  },
+  {
+    "security_interest_id": "SEC-002",
+    "security_type": "GUARANTEE",
+    "security_description": "Unconditional and irrevocable guarantee by Rajesh Kumar Sharma for INR 15 crore plus interest and costs",
+    "registration_number": null,
+    "registration_date": null,
+    "registration_authority": null,
+    "security_value_inr": 150000000,
+    "created_date": "2024-03-15"
+  },
+  {
+    "security_interest_id": "SEC-003",
+    "security_type": "CHARGE",
+    "security_description": "First pari passu charge over all present and future book debts and receivables",
+    "registration_number": "CERSAI-2024-0315-789457",
+    "registration_date": "2024-04-05",
+    "registration_authority": "CERSAI",
+    "security_value_inr": 50000000,
+    "created_date": "2024-03-18"
+  },
+  {
+    "security_interest_id": "SEC-004",
+    "security_type": "PRIOR_MORTGAGE",
+    "security_description": "Prior mortgage created over AST-001 commercial property in favour of Zenith Commercial Bank Limited",
+    "registration_number": "ZCB-MTG-2014-7742",
+    "registration_date": "2014-06-18",
+    "registration_authority": "Sub-Registrar of Assurances, Mumbai",
+    "security_value_inr": 90000000,
+    "created_date": "2025-08-20"
+  }
+]

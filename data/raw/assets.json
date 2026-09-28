@@ -1,0 +1,29 @@
+[
+  {
+    "asset_id": "AST-001",
+    "asset_type": "COMMERCIAL_PROPERTY",
+    "asset_name": "Commercial Property - Mumbai",
+    "asset_description": "Commercial property located at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059. Built-up area: 12,500 sq ft. Current use: Manufacturing and warehouse facility.",
+    "asset_status": "VERIFICATION_PENDING",
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  {
+    "asset_id": "AST-002",
+    "asset_type": "CORPORATE_GUARANTEE",
+    "asset_name": "Corporate Guarantee - Rajesh Kumar Sharma",
+    "asset_description": "Unconditional and irrevocable corporate guarantee executed by Rajesh Kumar Sharma in favor of Aster Fintech Limited.",
+    "asset_status": "ACTIVE",
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  {
+    "asset_id": "AST-003",
+    "asset_type": "CHARGE_RECEIVABLES",
+    "asset_name": "Charge over Receivables",
+    "asset_description": "First pari passu charge over all present and future book debts and receivables of Meridian Components Private Limited.",
+    "asset_status": "VERIFICATION_PENDING",
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  }
+]

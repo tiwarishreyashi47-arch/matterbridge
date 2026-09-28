@@ -1,0 +1,23 @@
+[
+  {
+    "matter_asset_id": "MA-001",
+    "matter_id": "MAT-001",
+    "asset_id": "AST-001",
+    "security_interest_id": "SEC-001",
+    "created_date": "2025-08-15"
+  },
+  {
+    "matter_asset_id": "MA-002",
+    "matter_id": "MAT-001",
+    "asset_id": "AST-002",
+    "security_interest_id": "SEC-002",
+    "created_date": "2025-08-15"
+  },
+  {
+    "matter_asset_id": "MA-003",
+    "matter_id": "MAT-001",
+    "asset_id": "AST-003",
+    "security_interest_id": "SEC-003",
+    "created_date": "2025-08-15"
+  }
+]

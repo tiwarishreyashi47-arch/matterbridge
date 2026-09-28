@@ -1,0 +1,1149 @@
+{
+  "matter": {
+    "matter_id": "MAT-002",
+    "matter_type_id": "MT-002",
+    "matter_title": "Project Atlas — Employee Leave & Misconduct Review",
+    "matter_description": "Employee leave and misconduct review matter",
+    "client_id": "PARTY-001",
+    "counterparty_id": "PARTY-004",
+    "matter_status": "INTERNAL_REVIEW",
+    "risk_rating": "MEDIUM",
+    "outstanding_exposure_inr": 0,
+    "created_date": "2025-09-01",
+    "created_by": "USR-002"
+  },
+  "matter_type": {
+    "matter_type_id": "MT-002",
+    "matter_type_name": "hr_employment",
+    "description": "HR and employment-related legal matters",
+    "created_date": "2024-01-01"
+  },
+  "parties": {
+    "client": {
+      "party_id": "PARTY-001",
+      "party_name": "Aster Fintech Limited",
+      "party_type": "LENDER",
+      "registration_number": "U65923DL2018PLC334567",
+      "registered_address": "A-42, Sector 63, Noida, Uttar Pradesh 201301",
+      "contact_email": "legal@asterfintech.in",
+      "contact_phone": "+91-120-4567890",
+      "created_date": "2024-01-01"
+    },
+    "counterparty": {
+      "party_id": "PARTY-004",
+      "party_name": "Priya Menon",
+      "party_type": "EMPLOYEE",
+      "registration_number": "ABCDE1234F",
+      "registered_address": "Flat 302, Green Valley Residency, Koramangala, Bangalore 560034",
+      "contact_email": "priya.menon@email.com",
+      "contact_phone": "+91-9845067890",
+      "created_date": "2025-09-01"
+    }
+  },
+  "workstreams": [
+    {
+      "workstream_id": "WS-003",
+      "matter_id": "MAT-002",
+      "parent_workstream_id": null,
+      "workstream_name": "Employee Leave & Misconduct Review",
+      "workstream_description": "HR intake, leave request, document verification, employment history review, internal legal assessment, further investigation, external counsel escalation if required, internal decision",
+      "workstream_status": "ACTIVE",
+      "created_date": "2025-09-01",
+      "created_by": "USR-002",
+      "documents": [
+        {
+          "document_id": "DOC-015",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Employee Leave Request",
+          "document_type": "LEAVE_REQUEST",
+          "document_date": "2025-08-25",
+          "document_source": "EMPLOYEE",
+          "document_status": "FINAL",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-045",
+              "document_id": "DOC-015",
+              "section_title": "Leave Request",
+              "section_content": "Priya Menon requested medical leave beginning 2025-08-25 following a reported miscarriage and submitted supporting medical documentation for HR review.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-046",
+              "document_id": "DOC-015",
+              "section_title": "Requested Leave Period",
+              "section_content": "The employee requested 14 calendar days of leave and asked HR to confirm applicable medical and statutory leave treatment.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-016",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Medical Certificate Submitted by Employee",
+          "document_type": "MEDICAL_CERTIFICATE",
+          "document_date": "2025-08-24",
+          "document_source": "EMPLOYEE",
+          "document_status": "VERIFICATION_REQUIRED",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-047",
+              "document_id": "DOC-016",
+              "section_title": "Medical Certificate",
+              "section_content": "The certificate states that Priya Menon received medical treatment and was advised rest beginning 2025-08-24.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-048",
+              "document_id": "DOC-016",
+              "section_title": "Document Verification Concern",
+              "section_content": "The facility identifier and doctor registration format shown on the certificate differ from identifiers appearing on other documents supplied with the leave request and require verification.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-017",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Consultation Receipt Submitted by Employee",
+          "document_type": "MEDICAL_RECEIPT",
+          "document_date": "2025-08-23",
+          "document_source": "EMPLOYEE",
+          "document_status": "VERIFICATION_REQUIRED",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-049",
+              "document_id": "DOC-017",
+              "section_title": "Consultation Details",
+              "section_content": "The consultation receipt records a visit dated 2025-08-23 and contains a patient reference number that differs from the reference number appearing on the medical certificate.",
+              "section_order": 1
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-018",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Employee Attendance Summary",
+          "document_type": "ATTENDANCE_RECORD",
+          "document_date": "2025-08-31",
+          "document_source": "HR_SYSTEMS",
+          "document_status": "FINAL",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-050",
+              "document_id": "DOC-018",
+              "section_title": "Attendance History",
+              "section_content": "Over the preceding 12 months the employee recorded 17 unscheduled absence days. On five occasions the required manager notification process was not followed within the expected timeframe.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-051",
+              "document_id": "DOC-018",
+              "section_title": "Prior Interventions",
+              "section_content": "The employee received two manager-level attendance interventions and one formal attendance warning before commencement of the performance improvement plan.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-019",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Performance Improvement Plan",
+          "document_type": "PERFORMANCE_PLAN",
+          "document_date": "2025-06-01",
+          "document_source": "HR",
+          "document_status": "FINAL",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-052",
+              "document_id": "DOC-019",
+              "section_title": "PIP Objectives",
+              "section_content": "The one-month performance improvement plan measured attendance reliability, client response SLA compliance, CRM record maintenance and manager communication.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-053",
+              "document_id": "DOC-019",
+              "section_title": "PIP Passing Threshold",
+              "section_content": "The PIP required an overall score of at least 75 out of 100 with no critical compliance failure.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-020",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "PIP Completion Assessment",
+          "document_type": "PERFORMANCE_ASSESSMENT",
+          "document_date": "2025-06-30",
+          "document_source": "HR",
+          "document_status": "FINAL",
+          "created_date": "2025-09-01",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-054",
+              "document_id": "DOC-020",
+              "section_title": "PIP Result",
+              "section_content": "Priya Menon completed the PIP with an overall score of 77 out of 100 and therefore met the stated passing threshold.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-055",
+              "document_id": "DOC-020",
+              "section_title": "Ongoing Observation",
+              "section_content": "Although the employee passed the PIP, HR noted that attendance reliability and manager communication remained areas requiring monitoring.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-021",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "Employee Clarification on Medical Documents",
+          "document_type": "EMPLOYEE_RESPONSE",
+          "document_date": "2025-09-02",
+          "document_source": "EMPLOYEE",
+          "document_status": "FINAL",
+          "created_date": "2025-09-02",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-056",
+              "document_id": "DOC-021",
+              "section_title": "Employee Explanation",
+              "section_content": "The employee stated that a family member assisted in collecting some medical records and that she was unaware of the inconsistencies identified by HR. She denied intentionally submitting inaccurate documentation.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-057",
+              "document_id": "DOC-021",
+              "section_title": "Replacement Information",
+              "section_content": "The employee supplied an additional clarification document addressing one identifier discrepancy, but HR considered at least one verification question unresolved.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-022",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "document_title": "HR Legal Intake Note",
+          "document_type": "INTERNAL_MEMO",
+          "document_date": "2025-09-03",
+          "document_source": "HR",
+          "document_status": "FINAL",
+          "created_date": "2025-09-03",
+          "created_by": "USR-002",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-058",
+              "document_id": "DOC-022",
+              "section_title": "HR Intake Summary",
+              "section_content": "HR escalated the matter to Internal Legal because the matter combines a medically sensitive leave request, unresolved document-authenticity questions, prior attendance issues and a recently completed PIP.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-059",
+              "document_id": "DOC-022",
+              "section_title": "Requested Legal Assessment",
+              "section_content": "HR requested advice on appropriate investigation steps, treatment of the leave request, separation of historic performance concerns from the current document-verification issue, procedural fairness and whether external employment counsel should be consulted before disciplinary action.",
+              "section_order": 2
+            }
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "timeline_id": "TM-019",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-06-01",
+          "event_type": "PIP_START",
+          "event_title": "Performance Improvement Plan Started",
+          "event_description": "One-month PIP commenced covering attendance, SLA compliance, CRM hygiene and manager communication",
+          "related_document_id": "DOC-019",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-020",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-06-30",
+          "event_type": "PIP_COMPLETE",
+          "event_title": "PIP Completed",
+          "event_description": "Employee achieved 77/100 against required threshold of 75/100",
+          "related_document_id": "DOC-020",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-021",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-08-25",
+          "event_type": "LEAVE_REQUEST",
+          "event_title": "Medical Leave Requested",
+          "event_description": "Employee submitted leave request following reported miscarriage",
+          "related_document_id": "DOC-015",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-022",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-08-25",
+          "event_type": "DOCUMENT_SUBMISSION",
+          "event_title": "Medical Records Submitted",
+          "event_description": "Employee submitted medical certificate and consultation receipt",
+          "related_document_id": "DOC-016",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-023",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-08-28",
+          "event_type": "VERIFICATION_FLAG",
+          "event_title": "Document Discrepancies Identified",
+          "event_description": "HR identified inconsistent identifiers across supporting medical documents",
+          "related_document_id": "DOC-016",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-024",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-08-29",
+          "event_type": "HR_REVIEW",
+          "event_title": "Attendance History Reviewed",
+          "event_description": "HR reviewed prior absences, warning history and completed PIP",
+          "related_document_id": "DOC-018",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-025",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-09-01",
+          "event_type": "CLARIFICATION_REQUEST",
+          "event_title": "Employee Clarification Requested",
+          "event_description": "HR asked employee to explain discrepancies in submitted medical records",
+          "related_document_id": "DOC-016",
+          "created_date": "2025-09-01"
+        },
+        {
+          "timeline_id": "TM-026",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-09-02",
+          "event_type": "EMPLOYEE_RESPONSE",
+          "event_title": "Employee Clarification Received",
+          "event_description": "Employee denied intentional falsification and explained family assistance in obtaining records",
+          "related_document_id": "DOC-021",
+          "created_date": "2025-09-02"
+        },
+        {
+          "timeline_id": "TM-027",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "event_date": "2025-09-03",
+          "event_type": "LEGAL_ESCALATION",
+          "event_title": "HR Escalates Matter to Legal",
+          "event_description": "HR requested Legal assessment before taking disciplinary action",
+          "related_document_id": "DOC-022",
+          "created_date": "2025-09-03"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "ISSUE-011",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "issue_title": "Medical Document Authenticity Requires Verification",
+          "issue_description": "Multiple identifiers across submitted medical documents are inconsistent. The available evidence does not establish whether the inconsistencies resulted from fraud, administrative error or another cause.",
+          "issue_status": "IN_PROGRESS",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "USR-002"
+        },
+        {
+          "issue_id": "ISSUE-012",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "issue_title": "Leave Request Requires Legal Review",
+          "issue_description": "The employee's request relates to a reported miscarriage and may engage statutory or legally protected leave rights. Appropriate treatment should be confirmed by qualified Legal review.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-013",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "issue_title": "Prior Attendance and PIP History",
+          "issue_description": "Documented attendance issues and a recent PIP exist, but the employee formally passed the PIP with a score of 77 against the required threshold of 75.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "MEDIUM",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-09-03",
+          "created_by": "USR-002"
+        },
+        {
+          "issue_id": "ISSUE-014",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "issue_title": "Separation of Historical Performance from Current Investigation",
+          "issue_description": "Prior attendance/performance history should be evaluated separately from the current leave request and document-verification inquiry so that each issue is supported by its own evidence.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-015",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "issue_title": "Disciplinary Action Requires Legal Judgment",
+          "issue_description": "Whether any disciplinary action is appropriate depends on completion of factual verification, employee response, applicable leave protections, company policy and procedural fairness.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "USR-001"
+        }
+      ],
+      "findings": [
+        {
+          "finding_id": "FIND-011",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "finding_type": "DOCUMENT_VERIFICATION",
+          "finding_title": "Medical Documentation Contains Inconsistencies",
+          "finding_summary": "Submitted medical documents contain inconsistent facility, doctor or patient identifiers. These inconsistencies support further verification but do not establish intentional falsification.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-015",
+              "finding_id": "FIND-011",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-016",
+              "source_section": "SEC-DOC-048",
+              "citation_text": "Document Verification Concern"
+            },
+            {
+              "citation_id": "CITE-016",
+              "finding_id": "FIND-011",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-017",
+              "source_section": "SEC-DOC-049",
+              "citation_text": "Consultation identifier discrepancy"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-012",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "finding_type": "FACTUAL",
+          "finding_title": "Prior Attendance Concerns Documented",
+          "finding_summary": "HR records show 17 unscheduled absence days, five notification-process failures and prior attendance interventions during the preceding 12 months.",
+          "confidence_level": "HIGH",
+          "requires_verification": "NO",
+          "created_date": "2025-09-03",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-017",
+              "finding_id": "FIND-012",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-018",
+              "source_section": "SEC-DOC-050",
+              "citation_text": "Attendance History"
+            },
+            {
+              "citation_id": "CITE-018",
+              "finding_id": "FIND-012",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-018",
+              "source_section": "SEC-DOC-051",
+              "citation_text": "Prior Interventions"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-013",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "finding_type": "FACTUAL",
+          "finding_title": "PIP Was Formally Passed",
+          "finding_summary": "The employee achieved 77/100 against the stated passing threshold of 75/100. Historical performance concerns therefore should not be represented as a failed PIP.",
+          "confidence_level": "HIGH",
+          "requires_verification": "NO",
+          "created_date": "2025-09-03",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-019",
+              "finding_id": "FIND-013",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-020",
+              "source_section": "SEC-DOC-054",
+              "citation_text": "PIP Result"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-014",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "finding_type": "LEGAL_ISSUE",
+          "finding_title": "Leave and Misconduct Analysis Should Remain Separate",
+          "finding_summary": "The leave request, prior attendance history and current document-authenticity investigation involve different evidence and legal considerations. Combining them into a single misconduct conclusion would exceed the available evidence.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-020",
+              "finding_id": "FIND-014",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-022",
+              "source_section": "SEC-DOC-059",
+              "citation_text": "Requested Legal Assessment"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-015",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "finding_type": "RECOMMENDATION",
+          "finding_title": "Complete Verification Before Disciplinary Decision",
+          "finding_summary": "Complete document verification and obtain Legal review before linking the current leave request to disciplinary action. Any decision should distinguish verified misconduct evidence from historical performance records and leave-related rights.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-09-03",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-021",
+              "finding_id": "FIND-015",
+              "source_type": "LEGAL_ISSUE",
+              "source_id": "ISSUE-015",
+              "source_section": null,
+              "citation_text": "Disciplinary action requires Legal judgment"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "decision_id": "DEC-002",
+          "matter_id": "MAT-002",
+          "workstream_id": "WS-003",
+          "decision_type": "LEGAL_REVIEW",
+          "decision_title": "Complete Verification and Seek Targeted Employment Counsel Advice",
+          "decision_summary": "Internal Legal determined that document verification should be completed and targeted external employment-law advice obtained before any material disciplinary decision. Historical attendance and PIP records should be assessed separately from the current leave and document-verification inquiry.",
+          "decision_status": "IN_PROGRESS",
+          "decision_date": "2025-09-03",
+          "decided_by": "USR-001",
+          "created_date": "2025-09-03"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "timeline_id": "TM-019",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-06-01",
+      "event_type": "PIP_START",
+      "event_title": "Performance Improvement Plan Started",
+      "event_description": "One-month PIP commenced covering attendance, SLA compliance, CRM hygiene and manager communication",
+      "related_document_id": "DOC-019",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-020",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-06-30",
+      "event_type": "PIP_COMPLETE",
+      "event_title": "PIP Completed",
+      "event_description": "Employee achieved 77/100 against required threshold of 75/100",
+      "related_document_id": "DOC-020",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-021",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-08-25",
+      "event_type": "LEAVE_REQUEST",
+      "event_title": "Medical Leave Requested",
+      "event_description": "Employee submitted leave request following reported miscarriage",
+      "related_document_id": "DOC-015",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-022",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-08-25",
+      "event_type": "DOCUMENT_SUBMISSION",
+      "event_title": "Medical Records Submitted",
+      "event_description": "Employee submitted medical certificate and consultation receipt",
+      "related_document_id": "DOC-016",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-023",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-08-28",
+      "event_type": "VERIFICATION_FLAG",
+      "event_title": "Document Discrepancies Identified",
+      "event_description": "HR identified inconsistent identifiers across supporting medical documents",
+      "related_document_id": "DOC-016",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-024",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-08-29",
+      "event_type": "HR_REVIEW",
+      "event_title": "Attendance History Reviewed",
+      "event_description": "HR reviewed prior absences, warning history and completed PIP",
+      "related_document_id": "DOC-018",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-025",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-09-01",
+      "event_type": "CLARIFICATION_REQUEST",
+      "event_title": "Employee Clarification Requested",
+      "event_description": "HR asked employee to explain discrepancies in submitted medical records",
+      "related_document_id": "DOC-016",
+      "created_date": "2025-09-01"
+    },
+    {
+      "timeline_id": "TM-026",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-09-02",
+      "event_type": "EMPLOYEE_RESPONSE",
+      "event_title": "Employee Clarification Received",
+      "event_description": "Employee denied intentional falsification and explained family assistance in obtaining records",
+      "related_document_id": "DOC-021",
+      "created_date": "2025-09-02"
+    },
+    {
+      "timeline_id": "TM-027",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "event_date": "2025-09-03",
+      "event_type": "LEGAL_ESCALATION",
+      "event_title": "HR Escalates Matter to Legal",
+      "event_description": "HR requested Legal assessment before taking disciplinary action",
+      "related_document_id": "DOC-022",
+      "created_date": "2025-09-03"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "ISSUE-011",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "issue_title": "Medical Document Authenticity Requires Verification",
+      "issue_description": "Multiple identifiers across submitted medical documents are inconsistent. The available evidence does not establish whether the inconsistencies resulted from fraud, administrative error or another cause.",
+      "issue_status": "IN_PROGRESS",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "USR-002"
+    },
+    {
+      "issue_id": "ISSUE-012",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "issue_title": "Leave Request Requires Legal Review",
+      "issue_description": "The employee's request relates to a reported miscarriage and may engage statutory or legally protected leave rights. Appropriate treatment should be confirmed by qualified Legal review.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-013",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "issue_title": "Prior Attendance and PIP History",
+      "issue_description": "Documented attendance issues and a recent PIP exist, but the employee formally passed the PIP with a score of 77 against the required threshold of 75.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "MEDIUM",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-09-03",
+      "created_by": "USR-002"
+    },
+    {
+      "issue_id": "ISSUE-014",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "issue_title": "Separation of Historical Performance from Current Investigation",
+      "issue_description": "Prior attendance/performance history should be evaluated separately from the current leave request and document-verification inquiry so that each issue is supported by its own evidence.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-015",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "issue_title": "Disciplinary Action Requires Legal Judgment",
+      "issue_description": "Whether any disciplinary action is appropriate depends on completion of factual verification, employee response, applicable leave protections, company policy and procedural fairness.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "USR-001"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "FIND-011",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "finding_type": "DOCUMENT_VERIFICATION",
+      "finding_title": "Medical Documentation Contains Inconsistencies",
+      "finding_summary": "Submitted medical documents contain inconsistent facility, doctor or patient identifiers. These inconsistencies support further verification but do not establish intentional falsification.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-015",
+          "finding_id": "FIND-011",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-016",
+          "source_section": "SEC-DOC-048",
+          "citation_text": "Document Verification Concern"
+        },
+        {
+          "citation_id": "CITE-016",
+          "finding_id": "FIND-011",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-017",
+          "source_section": "SEC-DOC-049",
+          "citation_text": "Consultation identifier discrepancy"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-012",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "finding_type": "FACTUAL",
+      "finding_title": "Prior Attendance Concerns Documented",
+      "finding_summary": "HR records show 17 unscheduled absence days, five notification-process failures and prior attendance interventions during the preceding 12 months.",
+      "confidence_level": "HIGH",
+      "requires_verification": "NO",
+      "created_date": "2025-09-03",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-017",
+          "finding_id": "FIND-012",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-018",
+          "source_section": "SEC-DOC-050",
+          "citation_text": "Attendance History"
+        },
+        {
+          "citation_id": "CITE-018",
+          "finding_id": "FIND-012",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-018",
+          "source_section": "SEC-DOC-051",
+          "citation_text": "Prior Interventions"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-013",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "finding_type": "FACTUAL",
+      "finding_title": "PIP Was Formally Passed",
+      "finding_summary": "The employee achieved 77/100 against the stated passing threshold of 75/100. Historical performance concerns therefore should not be represented as a failed PIP.",
+      "confidence_level": "HIGH",
+      "requires_verification": "NO",
+      "created_date": "2025-09-03",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-019",
+          "finding_id": "FIND-013",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-020",
+          "source_section": "SEC-DOC-054",
+          "citation_text": "PIP Result"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-014",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "finding_type": "LEGAL_ISSUE",
+      "finding_title": "Leave and Misconduct Analysis Should Remain Separate",
+      "finding_summary": "The leave request, prior attendance history and current document-authenticity investigation involve different evidence and legal considerations. Combining them into a single misconduct conclusion would exceed the available evidence.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-020",
+          "finding_id": "FIND-014",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-022",
+          "source_section": "SEC-DOC-059",
+          "citation_text": "Requested Legal Assessment"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-015",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "finding_type": "RECOMMENDATION",
+      "finding_title": "Complete Verification Before Disciplinary Decision",
+      "finding_summary": "Complete document verification and obtain Legal review before linking the current leave request to disciplinary action. Any decision should distinguish verified misconduct evidence from historical performance records and leave-related rights.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-09-03",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-021",
+          "finding_id": "FIND-015",
+          "source_type": "LEGAL_ISSUE",
+          "source_id": "ISSUE-015",
+          "source_section": null,
+          "citation_text": "Disciplinary action requires Legal judgment"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "DEC-002",
+      "matter_id": "MAT-002",
+      "workstream_id": "WS-003",
+      "decision_type": "LEGAL_REVIEW",
+      "decision_title": "Complete Verification and Seek Targeted Employment Counsel Advice",
+      "decision_summary": "Internal Legal determined that document verification should be completed and targeted external employment-law advice obtained before any material disciplinary decision. Historical attendance and PIP records should be assessed separately from the current leave and document-verification inquiry.",
+      "decision_status": "IN_PROGRESS",
+      "decision_date": "2025-09-03",
+      "decided_by": "USR-001",
+      "created_date": "2025-09-03"
+    }
+  ],
+  "access": [
+    {
+      "access_id": "ACC-004",
+      "matter_id": "MAT-002",
+      "user_id": "USR-002",
+      "access_level": "OWNER",
+      "granted_date": "2025-09-01",
+      "granted_by": "USR-004",
+      "user": {
+        "user_id": "USR-002",
+        "user_name": "Neha Gupta",
+        "user_email": "neha.gupta@asterfintech.in",
+        "user_role": "HR_MANAGER",
+        "department": "Human Resources",
+        "user_status": "ACTIVE",
+        "created_date": "2024-01-01"
+      }
+    },
+    {
+      "access_id": "ACC-005",
+      "matter_id": "MAT-002",
+      "user_id": "USR-001",
+      "access_level": "EDIT",
+      "granted_date": "2025-09-01",
+      "granted_by": "USR-002",
+      "user": {
+        "user_id": "USR-001",
+        "user_name": "Aditya Malhotra",
+        "user_email": "aditya.malhotra@asterfintech.in",
+        "user_role": "LEGAL_COUNSEL",
+        "department": "Legal",
+        "user_status": "ACTIVE",
+        "created_date": "2024-01-01"
+      }
+    },
+    {
+      "access_id": "ACC-006",
+      "matter_id": "MAT-002",
+      "user_id": "USR-005",
+      "access_level": "LIMITED",
+      "granted_date": "2025-09-05",
+      "granted_by": "USR-001",
+      "user": {
+        "user_id": "USR-005",
+        "user_name": "Rhea Sethi",
+        "user_email": "rhea.sethi@sethiemployment.example",
+        "user_role": "EXTERNAL_COUNSEL",
+        "department": "External Counsel",
+        "user_status": "ACTIVE",
+        "created_date": "2025-09-03"
+      }
+    }
+  ],
+  "counsel_engagements": [
+    {
+      "engagement_id": "ENG-002",
+      "matter_id": "MAT-002",
+      "counsel_id": "COUN-004",
+      "engagement_type": "EMPLOYMENT_COUNSEL",
+      "engagement_status": "PENDING",
+      "engagement_date": "2025-09-05",
+      "engagement_description": "Targeted external employment-law review proposed before material disciplinary decision",
+      "budget_inr": 300000,
+      "created_date": "2025-09-03",
+      "counsel": {
+        "counsel_id": "COUN-004",
+        "counsel_name": "Adv. Rhea Sethi",
+        "counsel_type": "EXTERNAL",
+        "firm_name": "Sethi Employment Advisory",
+        "email": "rhea.sethi@sethiemployment.example",
+        "phone": "+91-80-40001234",
+        "specialization": "Employment Law, Workplace Investigations",
+        "counsel_status": "PANEL"
+      },
+      "briefs": [
+        {
+          "brief_id": "BRIEF-002",
+          "engagement_id": "ENG-002",
+          "brief_title": "Employee Leave and Document Verification Brief",
+          "brief_date": "2025-09-05",
+          "brief_status": "DRAFT",
+          "created_date": "2025-09-03",
+          "created_by": "USR-001",
+          "questions": [
+            {
+              "question_id": "Q-007",
+              "brief_id": "BRIEF-002",
+              "question_text": "What further factual verification should HR complete regarding the submitted medical records before reaching any misconduct conclusion?",
+              "question_category": "INVESTIGATION",
+              "question_priority": "HIGH",
+              "created_date": "2025-09-05"
+            },
+            {
+              "question_id": "Q-008",
+              "brief_id": "BRIEF-002",
+              "question_text": "What legal protections or leave requirements should be considered in relation to the employee's reported miscarriage and requested leave?",
+              "question_category": "LEAVE",
+              "question_priority": "HIGH",
+              "created_date": "2025-09-05"
+            },
+            {
+              "question_id": "Q-009",
+              "brief_id": "BRIEF-002",
+              "question_text": "How should the company distinguish prior attendance and PIP history from the current document-verification issue when assessing disciplinary risk?",
+              "question_category": "DISCIPLINE",
+              "question_priority": "HIGH",
+              "created_date": "2025-09-05"
+            },
+            {
+              "question_id": "Q-010",
+              "brief_id": "BRIEF-002",
+              "question_text": "What process should the company follow before considering any final disciplinary action, including opportunity to respond and additional evidence gathering?",
+              "question_category": "PROCEDURE",
+              "question_priority": "HIGH",
+              "created_date": "2025-09-05"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    }
+  ],
+  "assets": [],
+  "company_policies": [
+    {
+      "policy_id": "POL-001",
+      "policy_name": "Credit Risk Management Policy",
+      "policy_category": "CREDIT",
+      "policy_description": "Framework for credit assessment, risk rating, monitoring, and escalation of credit facilities",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-002",
+      "policy_name": "Legal Matter Escalation Policy",
+      "policy_category": "LEGAL",
+      "policy_description": "Criteria and process for escalation of matters from business/credit to internal legal and external counsel",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-003",
+      "policy_name": "Security Documentation Standards",
+      "policy_category": "CREDIT",
+      "policy_description": "Minimum requirements for security documentation, registration, and perfection for secured lending",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-004",
+      "policy_name": "Recovery and Enforcement Policy",
+      "policy_category": "RECOVERY",
+      "policy_description": "Guidelines for recovery actions, enforcement of security, and engagement of external recovery counsel",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-005",
+      "policy_name": "Medical and Family Leave Policy",
+      "policy_category": "HR",
+      "policy_description": "Framework for employee requests for medical, maternity-related and other protected or company-approved leave; Legal review required where statutory treatment is uncertain",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-006",
+      "policy_name": "Attendance and Absence Management Policy",
+      "policy_category": "HR",
+      "policy_description": "Requirements for attendance, absence notification, manager escalation and documented attendance interventions",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-007",
+      "policy_name": "Employee Document Accuracy Policy",
+      "policy_category": "HR",
+      "policy_description": "Employees are expected to provide accurate and authentic information and documentation; suspected irregularities must be verified before misconduct conclusions are reached",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-008",
+      "policy_name": "Employee Investigation and Disciplinary Policy",
+      "policy_category": "HR",
+      "policy_description": "Framework for factual investigation, employee response, evidence assessment, proportionality and Legal review before material disciplinary action",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-009",
+      "policy_name": "Performance Improvement Policy",
+      "policy_category": "HR",
+      "policy_description": "Standards for structured performance improvement plans, objective measurement and documentation of outcomes",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    }
+  ],
+  "historical_precedents": [
+    {
+      "historical_matter_id": "HM-001",
+      "matter_reference": "MATTER-2023-045",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "FULL_RECOVERY",
+      "recovery_amount_inr": 85000000,
+      "recovery_percentage": 100,
+      "timeline_months": 8,
+      "lessons_learned": "SARFAESI enforcement effective for commercial property with clear title. Timeline: 8 months from notice to sale completion.",
+      "created_date": "2024-01-01"
+    },
+    {
+      "historical_matter_id": "HM-002",
+      "matter_reference": "MATTER-2023-067",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "PARTIAL_RECOVERY",
+      "recovery_amount_inr": 42000000,
+      "recovery_percentage": 65,
+      "timeline_months": 14,
+      "lessons_learned": "Multiple securities helped but property title dispute delayed enforcement. Recommend enhanced title verification pre-disbursement.",
+      "created_date": "2024-01-01"
+    },
+    {
+      "historical_matter_id": "HM-003",
+      "matter_reference": "MATTER-2024-012",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "SETTLEMENT",
+      "recovery_amount_inr": 95000000,
+      "recovery_percentage": 85,
+      "timeline_months": 5,
+      "lessons_learned": "Early engagement and restructuring proposal led to settlement. Faster recovery than enforcement but required concession.",
+      "created_date": "2024-06-01"
+    },
+    {
+      "historical_matter_id": "HM-004",
+      "matter_reference": "MATTER-2024-031",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "PARTIAL_RECOVERY",
+      "recovery_amount_inr": 61000000,
+      "recovery_percentage": 72,
+      "timeline_months": 11,
+      "lessons_learned": "Recovery was delayed because a prior mortgage satisfaction entry was incomplete. External title verification resolved priority before enforcement proceeded.",
+      "created_date": "2025-01-01"
+    },
+    {
+      "historical_matter_id": "HM-005",
+      "matter_reference": "MATTER-2024-HR-018",
+      "matter_type": "hr_employment",
+      "outcome": "INTERNAL_RESOLUTION",
+      "recovery_amount_inr": 0,
+      "recovery_percentage": 0,
+      "timeline_months": 2,
+      "lessons_learned": "Medical-document discrepancies were investigated separately from attendance history. No disciplinary conclusion was reached until source verification and employee clarification were complete.",
+      "created_date": "2025-01-01"
+    },
+    {
+      "historical_matter_id": "HM-006",
+      "matter_reference": "MATTER-2025-HR-007",
+      "matter_type": "hr_employment",
+      "outcome": "FINAL_WARNING",
+      "recovery_amount_inr": 0,
+      "recovery_percentage": 0,
+      "timeline_months": 1,
+      "lessons_learned": "Employee had prior attendance issues but had formally completed a PIP. Subsequent misconduct allegation was assessed independently and resulted in targeted disciplinary action based only on verified facts.",
+      "created_date": "2025-06-01"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "matter_type_id": "MT-001",
+    "matter_type_name": "secured_loan_recovery",
+    "description": "Secured loan recovery and enforcement matters",
+    "created_date": "2024-01-01"
+  },
+  {
+    "matter_type_id": "MT-002",
+    "matter_type_name": "hr_employment",
+    "description": "HR and employment-related legal matters",
+    "created_date": "2024-01-01"
+  }
+]

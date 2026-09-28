@@ -1,0 +1,58 @@
+[
+  {
+    "asset_document_id": "AD-001",
+    "asset_id": "AST-001",
+    "document_id": "DOC-009",
+    "relationship_type": "TITLE_DOCUMENT",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-002",
+    "asset_id": "AST-001",
+    "document_id": "DOC-010",
+    "relationship_type": "TITLE_DOCUMENT",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-003",
+    "asset_id": "AST-001",
+    "document_id": "DOC-011",
+    "relationship_type": "PRIOR_SECURITY",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-004",
+    "asset_id": "AST-001",
+    "document_id": "DOC-012",
+    "relationship_type": "RELEASE_DOCUMENT",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-005",
+    "asset_id": "AST-001",
+    "document_id": "DOC-013",
+    "relationship_type": "SECURITY_SEARCH",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-006",
+    "asset_id": "AST-001",
+    "document_id": "DOC-014",
+    "relationship_type": "VALUATION",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-007",
+    "asset_id": "AST-002",
+    "document_id": "DOC-003",
+    "relationship_type": "GUARANTEE_DOCUMENT",
+    "created_date": "2025-08-20"
+  },
+  {
+    "asset_document_id": "AD-008",
+    "asset_id": "AST-003",
+    "document_id": "DOC-002",
+    "relationship_type": "SECURITY_DOCUMENT",
+    "created_date": "2025-08-20"
+  }
+]

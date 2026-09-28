@@ -1,0 +1,128 @@
+[
+  {
+    "audit_id": "AUD-001",
+    "table_name": "matters",
+    "record_id": "MAT-001",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-15",
+    "change_description": "Matter created"
+  },
+  {
+    "audit_id": "AUD-002",
+    "table_name": "matters",
+    "record_id": "MAT-002",
+    "action": "CREATE",
+    "changed_by": "USR-002",
+    "changed_date": "2025-09-01",
+    "change_description": "Matter created"
+  },
+  {
+    "audit_id": "AUD-003",
+    "table_name": "workstreams",
+    "record_id": "WS-001",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-15",
+    "change_description": "Workstream created"
+  },
+  {
+    "audit_id": "AUD-004",
+    "table_name": "workstreams",
+    "record_id": "WS-002",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-15",
+    "change_description": "Workstream created"
+  },
+  {
+    "audit_id": "AUD-005",
+    "table_name": "workstreams",
+    "record_id": "WS-003",
+    "action": "CREATE",
+    "changed_by": "USR-002",
+    "changed_date": "2025-09-01",
+    "change_description": "Workstream created"
+  },
+  {
+    "audit_id": "AUD-006",
+    "table_name": "documents",
+    "record_id": "DOC-001",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-15",
+    "change_description": "Document created"
+  },
+  {
+    "audit_id": "AUD-007",
+    "table_name": "documents",
+    "record_id": "DOC-008",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-22",
+    "change_description": "Document created"
+  },
+  {
+    "audit_id": "AUD-008",
+    "table_name": "legal_issues",
+    "record_id": "ISSUE-001",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-15",
+    "change_description": "Issue created"
+  },
+  {
+    "audit_id": "AUD-009",
+    "table_name": "decisions",
+    "record_id": "DEC-001",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-22",
+    "change_description": "Decision created"
+  },
+  {
+    "audit_id": "AUD-010",
+    "table_name": "documents",
+    "record_id": "DOC-009",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-08-20",
+    "change_description": "Security Verification source documents added"
+  },
+  {
+    "audit_id": "AUD-011",
+    "table_name": "documents",
+    "record_id": "DOC-015",
+    "action": "CREATE",
+    "changed_by": "USR-002",
+    "changed_date": "2025-09-01",
+    "change_description": "HR leave and misconduct matter documents added"
+  },
+  {
+    "audit_id": "AUD-012",
+    "table_name": "ai_findings",
+    "record_id": "FIND-007",
+    "action": "CREATE",
+    "changed_by": "AI-001",
+    "changed_date": "2025-08-20",
+    "change_description": "Security Verification findings generated"
+  },
+  {
+    "audit_id": "AUD-013",
+    "table_name": "ai_findings",
+    "record_id": "FIND-011",
+    "action": "CREATE",
+    "changed_by": "AI-001",
+    "changed_date": "2025-09-03",
+    "change_description": "HR matter findings generated"
+  },
+  {
+    "audit_id": "AUD-014",
+    "table_name": "decisions",
+    "record_id": "DEC-002",
+    "action": "CREATE",
+    "changed_by": "USR-001",
+    "changed_date": "2025-09-03",
+    "change_description": "HR legal review decision recorded"
+  }
+]

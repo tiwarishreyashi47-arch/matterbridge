@@ -1,0 +1,114 @@
+[
+  {
+    "output_id": "OUT-001",
+    "engagement_id": "ENG-001",
+    "brief_id": "BRIEF-001",
+    "output_type": "LEGAL_OPINION",
+    "output_date": "2025-09-12",
+    "output_status": "RECEIVED",
+    "created_date": "2025-08-22",
+    "opinion_summary": "Counsel considers Aster Fintech to have viable recovery options against Meridian Components based on the facility documentation, payment default, and existing security package. Counsel recommends progressing secured enforcement while preserving other recovery routes, including recovery against the corporate guarantor. Counsel considers the existing commercial-property documentation sufficient to begin enforcement preparation, while noting that the historical Zenith mortgage issue may still warrant additional verification and that no final title opinion is provided.",
+    "opinion_sections": [
+      {
+        "opinion_section_id": "OPSEC-001",
+        "section_type": "OVERALL_ADVICE",
+        "section_title": "Overall Counsel Advice",
+        "section_summary": "Aster has viable recovery options. Secured enforcement should progress as the principal strategy while preserving guarantee, debt-recovery, insolvency-related, and commercially credible settlement routes. Counsel does not provide a final title opinion.",
+        "source_document_ids": ["DOC-001", "DOC-002", "DOC-003", "DOC-004"]
+      },
+      {
+        "opinion_section_id": "OPSEC-002",
+        "section_type": "RECOVERY_PATHWAY",
+        "section_title": "Recovery Pathway",
+        "section_summary": "Progress secured recovery/enforcement as the principal current strategy. Other recovery mechanisms remain available depending on the borrower's position and developments. Settlement may be considered if a commercially credible proposal preserves Aster's recovery rights.",
+        "source_document_ids": ["DOC-004", "DOC-005", "DOC-006"]
+      },
+      {
+        "opinion_section_id": "OPSEC-003",
+        "section_type": "SECURITY_ENFORCEABILITY",
+        "section_title": "Security Enforceability",
+        "section_summary": "The commercial property, Corporate Guarantee, and charge over receivables are capable of supporting a recovery strategy based on the documents reviewed. The property security is sufficiently documented to progress enforcement preparation, subject to applicable legal and procedural requirements.",
+        "source_document_ids": ["DOC-002", "DOC-003"]
+      },
+      {
+        "opinion_section_id": "OPSEC-004",
+        "section_type": "ZENITH_PRIOR_MORTGAGE",
+        "section_title": "Zenith Prior Mortgage / Release Issue",
+        "section_summary": "Counsel reviewed DOC-011, DOC-012, and DOC-013 and considers the available Release and Satisfaction Letter, together with current records, sufficient to progress enforcement preparation. Additional formal historical satisfaction evidence is not treated as a prerequisite, although further verification may remain appropriate during enforcement.",
+        "source_document_ids": ["DOC-011", "DOC-012", "DOC-013"],
+        "source_section_ids": ["SEC-DOC-037", "SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+      },
+      {
+        "opinion_section_id": "OPSEC-005",
+        "section_type": "CORPORATE_GUARANTEE",
+        "section_title": "Corporate Guarantee",
+        "section_summary": "The Corporate Guarantee should be preserved as an additional recovery route and may be invoked in parallel with secured recovery where commercially appropriate. The opinion does not substantively assess the guarantor's current financial position, available assets, or practical recoverability.",
+        "source_document_ids": ["DOC-003"]
+      },
+      {
+        "opinion_section_id": "OPSEC-006",
+        "section_type": "RECEIVABLES_CHARGE",
+        "section_title": "Charge over Receivables",
+        "section_summary": "The receivables charge forms part of the security package, but the opinion provides limited analysis of the current receivables pool, realizable value, competing claims, and practical enforcement steps.",
+        "source_document_ids": ["DOC-002"]
+      },
+      {
+        "opinion_section_id": "OPSEC-007",
+        "section_type": "TIMING_COST_RISK",
+        "section_title": "Timing, Cost, and Recovery Risks",
+        "section_summary": "Timing depends on borrower challenge, procedural requirements, security challenges, asset realization, and parallel proceedings. No reliable fixed completion date or final cost estimate is provided. Risks include enforcement challenge, procedural delay, asset-realization uncertainty, further security investigation, guarantor uncertainty, and parallel proceedings."
+      }
+    ],
+    "review_points": [
+      {
+        "review_point_id": "REVIEW-001",
+        "review_title": "Prior Position Conflict — Zenith Mortgage Release",
+        "review_type": "PRIOR_POSITION_CONFLICT",
+        "severity": "HIGH",
+        "counsel_position": "Counsel considers the Zenith Release and Satisfaction Letter, together with current records, sufficient to progress enforcement preparation without first obtaining additional formal evidence of historical satisfaction.",
+        "matterbridge_review": "The company's existing evidence continues to identify the Zenith release as requiring verification. DOC-012 is not currently treated internally as conclusive evidence that the historical mortgage was formally satisfied. Relevant company evidence and historical precedent indicate that material ambiguity concerning a prior security interest should be resolved or explicitly accepted by Legal before relying on the affected asset as a primary enforcement route. MatterBridge should not conclude that external counsel is wrong; it should surface the difference between counsel's position, current company evidence, and relevant historical precedent.",
+        "recommended_action": "ASK_COUNSEL",
+        "suggested_question": "What specific evidence supports treating the 2019 Release and Satisfaction Letter as sufficient despite the company's current verification gap, and what enforcement risk remains if formal satisfaction evidence cannot be obtained?",
+        "counsel_source_ids": ["OUT-001", "OPSEC-004"],
+        "company_source_ids": ["DOC-012", "DOC-013", "HM-004"],
+        "company_source_section_ids": ["SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+      },
+      {
+        "review_point_id": "REVIEW-002",
+        "review_title": "Missing Issue — Guarantor Recoverability",
+        "review_type": "MISSING_ISSUE",
+        "severity": "MEDIUM",
+        "counsel_position": "The Corporate Guarantee should be preserved as a parallel recovery route.",
+        "matterbridge_review": "The opinion does not substantively assess the guarantor's current financial position, identifiable assets, or practical recoverability. The legal availability of a guarantee does not by itself establish its commercial recovery value.",
+        "recommended_action": "ASK_COUNSEL",
+        "suggested_question": "Please assess the guarantor's current financial position and practical recovery prospects before Aster commits material resources to guarantee enforcement.",
+        "counsel_source_ids": ["OUT-001", "OPSEC-005"],
+        "company_source_ids": ["DOC-003", "ISSUE-004"]
+      },
+      {
+        "review_point_id": "REVIEW-003",
+        "review_title": "Missing Analysis — Receivables Charge",
+        "review_type": "MISSING_ISSUE",
+        "severity": "MEDIUM",
+        "counsel_position": "The charge over receivables forms part of the available security package.",
+        "matterbridge_review": "The opinion does not materially analyze the current receivables pool, realizable value, competing claims, or practical enforcement considerations.",
+        "recommended_action": "REQUEST_FURTHER_ANALYSIS",
+        "suggested_question": "Please assess the current status and practical enforceability of the receivables charge, including the available receivables pool and any known competing claims.",
+        "counsel_source_ids": ["OUT-001", "OPSEC-006"],
+        "company_source_ids": ["DOC-002", "ISSUE-003"]
+      },
+      {
+        "review_point_id": "REVIEW-004",
+        "review_title": "Source Verification — Zenith Release Conclusion",
+        "review_type": "VERIFY_EVIDENCE",
+        "severity": "HIGH",
+        "counsel_assertion": "The existing release documentation and current records provide sufficient basis to progress enforcement.",
+        "matterbridge_review": "This conclusion depends materially on the interpretation of the historical Zenith release evidence. The underlying source should remain directly visible to the internal lawyer reviewing counsel's conclusion.",
+        "recommended_action": "VERIFY_SOURCE",
+        "counsel_source_ids": ["OUT-001", "OPSEC-004"],
+        "company_source_ids": ["DOC-011", "DOC-012", "DOC-013"],
+        "company_source_section_ids": ["SEC-DOC-037", "SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+      }
+    ]
+  }
+]

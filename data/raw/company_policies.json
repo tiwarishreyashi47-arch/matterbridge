@@ -1,0 +1,74 @@
+[
+  {
+    "policy_id": "POL-001",
+    "policy_name": "Credit Risk Management Policy",
+    "policy_category": "CREDIT",
+    "policy_description": "Framework for credit assessment, risk rating, monitoring, and escalation of credit facilities",
+    "effective_date": "2023-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-002",
+    "policy_name": "Legal Matter Escalation Policy",
+    "policy_category": "LEGAL",
+    "policy_description": "Criteria and process for escalation of matters from business/credit to internal legal and external counsel",
+    "effective_date": "2023-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-003",
+    "policy_name": "Security Documentation Standards",
+    "policy_category": "CREDIT",
+    "policy_description": "Minimum requirements for security documentation, registration, and perfection for secured lending",
+    "effective_date": "2023-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-004",
+    "policy_name": "Recovery and Enforcement Policy",
+    "policy_category": "RECOVERY",
+    "policy_description": "Guidelines for recovery actions, enforcement of security, and engagement of external recovery counsel",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-005",
+    "policy_name": "Medical and Family Leave Policy",
+    "policy_category": "HR",
+    "policy_description": "Framework for employee requests for medical, maternity-related and other protected or company-approved leave; Legal review required where statutory treatment is uncertain",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-006",
+    "policy_name": "Attendance and Absence Management Policy",
+    "policy_category": "HR",
+    "policy_description": "Requirements for attendance, absence notification, manager escalation and documented attendance interventions",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-007",
+    "policy_name": "Employee Document Accuracy Policy",
+    "policy_category": "HR",
+    "policy_description": "Employees are expected to provide accurate and authentic information and documentation; suspected irregularities must be verified before misconduct conclusions are reached",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-008",
+    "policy_name": "Employee Investigation and Disciplinary Policy",
+    "policy_category": "HR",
+    "policy_description": "Framework for factual investigation, employee response, evidence assessment, proportionality and Legal review before material disciplinary action",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  },
+  {
+    "policy_id": "POL-009",
+    "policy_name": "Performance Improvement Policy",
+    "policy_category": "HR",
+    "policy_description": "Standards for structured performance improvement plans, objective measurement and documentation of outcomes",
+    "effective_date": "2024-01-01",
+    "policy_status": "ACTIVE"
+  }
+]

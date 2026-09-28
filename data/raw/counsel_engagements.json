@@ -1,0 +1,24 @@
+[
+  {
+    "engagement_id": "ENG-001",
+    "matter_id": "MAT-001",
+    "counsel_id": "COUN-001",
+    "engagement_type": "RECOVERY_COUNSEL",
+    "engagement_status": "ENGAGED",
+    "engagement_date": "2025-08-25",
+    "engagement_description": "External recovery counsel engaged to review recovery strategy, security position and enforcement options",
+    "budget_inr": 800000,
+    "created_date": "2025-08-22"
+  },
+  {
+    "engagement_id": "ENG-002",
+    "matter_id": "MAT-002",
+    "counsel_id": "COUN-004",
+    "engagement_type": "EMPLOYMENT_COUNSEL",
+    "engagement_status": "PENDING",
+    "engagement_date": "2025-09-05",
+    "engagement_description": "Targeted external employment-law review proposed before material disciplinary decision",
+    "budget_inr": 300000,
+    "created_date": "2025-09-03"
+  }
+]

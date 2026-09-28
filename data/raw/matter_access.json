@@ -1,0 +1,50 @@
+[
+  {
+    "access_id": "ACC-001",
+    "matter_id": "MAT-001",
+    "user_id": "USR-001",
+    "access_level": "OWNER",
+    "granted_date": "2025-08-15",
+    "granted_by": "USR-004"
+  },
+  {
+    "access_id": "ACC-002",
+    "matter_id": "MAT-001",
+    "user_id": "USR-003",
+    "access_level": "EDIT",
+    "granted_date": "2025-08-15",
+    "granted_by": "USR-001"
+  },
+  {
+    "access_id": "ACC-003",
+    "matter_id": "MAT-001",
+    "user_id": "USR-004",
+    "access_level": "VIEW",
+    "granted_date": "2025-08-15",
+    "granted_by": "USR-001"
+  },
+  {
+    "access_id": "ACC-004",
+    "matter_id": "MAT-002",
+    "user_id": "USR-002",
+    "access_level": "OWNER",
+    "granted_date": "2025-09-01",
+    "granted_by": "USR-004"
+  },
+  {
+    "access_id": "ACC-005",
+    "matter_id": "MAT-002",
+    "user_id": "USR-001",
+    "access_level": "EDIT",
+    "granted_date": "2025-09-01",
+    "granted_by": "USR-002"
+  },
+  {
+    "access_id": "ACC-006",
+    "matter_id": "MAT-002",
+    "user_id": "USR-005",
+    "access_level": "LIMITED",
+    "granted_date": "2025-09-05",
+    "granted_by": "USR-001"
+  }
+]

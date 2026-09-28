@@ -1,0 +1,42 @@
+[
+  {
+    "party_id": "PARTY-001",
+    "party_name": "Aster Fintech Limited",
+    "party_type": "LENDER",
+    "registration_number": "U65923DL2018PLC334567",
+    "registered_address": "A-42, Sector 63, Noida, Uttar Pradesh 201301",
+    "contact_email": "legal@asterfintech.in",
+    "contact_phone": "+91-120-4567890",
+    "created_date": "2024-01-01"
+  },
+  {
+    "party_id": "PARTY-002",
+    "party_name": "Meridian Components Private Limited",
+    "party_type": "BORROWER",
+    "registration_number": "U29100MH2015PTC267890",
+    "registered_address": "Plot 15-B, MIDC Industrial Area, Andheri East, Mumbai 400093",
+    "contact_email": "info@meridiancomponents.in",
+    "contact_phone": "+91-22-28765432",
+    "created_date": "2024-03-10"
+  },
+  {
+    "party_id": "PARTY-003",
+    "party_name": "Rajesh Kumar Sharma",
+    "party_type": "GUARANTOR",
+    "registration_number": "AADPS1234K",
+    "registered_address": "B-204, Silver Oaks Apartments, Bandra West, Mumbai 400050",
+    "contact_email": "rajesh.sharma@email.com",
+    "contact_phone": "+91-9820012345",
+    "created_date": "2024-03-10"
+  },
+  {
+    "party_id": "PARTY-004",
+    "party_name": "Priya Menon",
+    "party_type": "EMPLOYEE",
+    "registration_number": "ABCDE1234F",
+    "registered_address": "Flat 302, Green Valley Residency, Koramangala, Bangalore 560034",
+    "contact_email": "priya.menon@email.com",
+    "contact_phone": "+91-9845067890",
+    "created_date": "2025-09-01"
+  }
+]

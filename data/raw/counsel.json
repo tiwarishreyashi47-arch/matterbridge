@@ -1,0 +1,42 @@
+[
+  {
+    "counsel_id": "COUN-001",
+    "counsel_name": "Adv. Sunita Rajani",
+    "counsel_type": "EXTERNAL",
+    "firm_name": "Rajani & Associates",
+    "email": "sunita.rajani@rajaniassociates.in",
+    "phone": "+91-22-22881234",
+    "specialization": "Banking, SARFAESI, DRT",
+    "counsel_status": "PREFERRED"
+  },
+  {
+    "counsel_id": "COUN-002",
+    "counsel_name": "Adv. Vikram Mehta",
+    "counsel_type": "EXTERNAL",
+    "firm_name": "Economic Laws Practice",
+    "email": "vikram.mehta@elp.in",
+    "phone": "+91-11-46001234",
+    "specialization": "Banking, IBC, NCLT",
+    "counsel_status": "PREFERRED"
+  },
+  {
+    "counsel_id": "COUN-003",
+    "counsel_name": "Adv. Anjali Kapoor",
+    "counsel_type": "EXTERNAL",
+    "firm_name": "Kapoor & Associates",
+    "email": "anjali.kapoor@kapoorassociates.in",
+    "phone": "+91-22-26781234",
+    "specialization": "Property, Title Verification",
+    "counsel_status": "PANEL"
+  },
+  {
+    "counsel_id": "COUN-004",
+    "counsel_name": "Adv. Rhea Sethi",
+    "counsel_type": "EXTERNAL",
+    "firm_name": "Sethi Employment Advisory",
+    "email": "rhea.sethi@sethiemployment.example",
+    "phone": "+91-80-40001234",
+    "specialization": "Employment Law, Workplace Investigations",
+    "counsel_status": "PANEL"
+  }
+]

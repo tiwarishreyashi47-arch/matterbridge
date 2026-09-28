@@ -1,0 +1,82 @@
+[
+  {
+    "question_id": "Q-001",
+    "brief_id": "BRIEF-001",
+    "question_text": "Based on the facts and documentation provided, what is the optimal recovery pathway: SARFAESI enforcement, DRT application, or IBC initiation? Please provide comparative analysis of timeline, costs, and likelihood of recovery for each option.",
+    "question_category": "STRATEGY",
+    "question_priority": "HIGH",
+    "created_date": "2025-08-22"
+  },
+  {
+    "question_id": "Q-002",
+    "brief_id": "BRIEF-001",
+    "question_text": "Please confirm whether all security documents are properly executed, registered, and enforceable. Identify any gaps or defects in documentation or registration that could impede enforcement.",
+    "question_category": "DOCUMENTATION",
+    "question_priority": "HIGH",
+    "created_date": "2025-08-22"
+  },
+  {
+    "question_id": "Q-003",
+    "brief_id": "BRIEF-001",
+    "question_text": "What are the specific steps, timeline, and estimated costs for SARFAESI enforcement including possession notice, physical possession, and sale of secured assets?",
+    "question_category": "PROCEDURE",
+    "question_priority": "HIGH",
+    "created_date": "2025-08-22"
+  },
+  {
+    "question_id": "Q-004",
+    "brief_id": "BRIEF-001",
+    "question_text": "Should the corporate guarantee be invoked simultaneously with enforcement against the Borrower? What are the advantages and risks of this approach?",
+    "question_category": "GUARANTEE",
+    "question_priority": "MEDIUM",
+    "created_date": "2025-08-22"
+  },
+  {
+    "question_id": "Q-005",
+    "brief_id": "BRIEF-001",
+    "question_text": "What is the risk of the Borrower initiating pre-emptive proceedings under IBC or NCLT? How should we mitigate this risk?",
+    "question_category": "RISK",
+    "question_priority": "MEDIUM",
+    "created_date": "2025-08-22"
+  },
+  {
+    "question_id": "Q-006",
+    "brief_id": "BRIEF-001",
+    "question_text": "Please assess whether the unresolved historical mortgage and incomplete satisfaction evidence relating to the commercial property affects priority, enforceability or sequencing of recovery action against that asset.",
+    "question_category": "SECURITY",
+    "question_priority": "HIGH",
+    "created_date": "2025-08-25"
+  },
+  {
+    "question_id": "Q-007",
+    "brief_id": "BRIEF-002",
+    "question_text": "What further factual verification should HR complete regarding the submitted medical records before reaching any misconduct conclusion?",
+    "question_category": "INVESTIGATION",
+    "question_priority": "HIGH",
+    "created_date": "2025-09-05"
+  },
+  {
+    "question_id": "Q-008",
+    "brief_id": "BRIEF-002",
+    "question_text": "What legal protections or leave requirements should be considered in relation to the employee's reported miscarriage and requested leave?",
+    "question_category": "LEAVE",
+    "question_priority": "HIGH",
+    "created_date": "2025-09-05"
+  },
+  {
+    "question_id": "Q-009",
+    "brief_id": "BRIEF-002",
+    "question_text": "How should the company distinguish prior attendance and PIP history from the current document-verification issue when assessing disciplinary risk?",
+    "question_category": "DISCIPLINE",
+    "question_priority": "HIGH",
+    "created_date": "2025-09-05"
+  },
+  {
+    "question_id": "Q-010",
+    "brief_id": "BRIEF-002",
+    "question_text": "What process should the company follow before considering any final disciplinary action, including opportunity to respond and additional evidence gathering?",
+    "question_category": "PROCEDURE",
+    "question_priority": "HIGH",
+    "created_date": "2025-09-05"
+  }
+]

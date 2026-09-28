@@ -1,0 +1,20 @@
+[
+  {
+    "brief_id": "BRIEF-001",
+    "engagement_id": "ENG-001",
+    "brief_title": "Recovery and Security Strategy Brief",
+    "brief_date": "2025-08-25",
+    "brief_status": "ISSUED",
+    "created_date": "2025-08-22",
+    "created_by": "USR-001"
+  },
+  {
+    "brief_id": "BRIEF-002",
+    "engagement_id": "ENG-002",
+    "brief_title": "Employee Leave and Document Verification Brief",
+    "brief_date": "2025-09-05",
+    "brief_status": "DRAFT",
+    "created_date": "2025-09-03",
+    "created_by": "USR-001"
+  }
+]

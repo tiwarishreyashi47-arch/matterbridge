@@ -1,0 +1,97 @@
+[
+  {
+    "decision_id": "DEC-001",
+    "matter_id": "MAT-001",
+    "workstream_id": "WS-001",
+    "decision_type": "PROCESS",
+    "decision_title": "Conditional Recovery Strategy",
+    "decision_summary": "Internal Legal approved continued recovery preparation against Meridian Components while preserving multiple recovery routes. Material enforcement against the commercial property remains conditional on further treatment of the unresolved Zenith mortgage satisfaction issue or explicit documented acceptance of the residual risk.",
+    "decision_status": "APPROVED_WITH_CONDITIONS",
+    "decision_rationale": "Meridian Components remains in payment default with approximately INR 12.4 crore outstanding. Aster has multiple potential recovery routes and a security package comprising the commercial property, Corporate Guarantee, and charge over receivables. The unresolved Zenith mortgage/release issue creates uncertainty concerning reliance on the commercial property. External counsel considers the existing release evidence sufficient to progress enforcement preparation, but Internal Legal requires either further verification or explicit acceptance of the residual security risk before a material property-enforcement step. This approach allows recovery preparation to continue without treating an unresolved evidentiary issue as conclusively resolved.",
+    "decision_date": "2025-09-16",
+    "decided_by": "USR-001",
+    "created_date": "2025-08-22",
+    "selected_actions": [
+      "Proceed with recovery preparation against Meridian Components while preserving multiple available recovery routes.",
+      "Continue preparation relating to the secured recovery process without treating the Zenith release issue as conclusively resolved.",
+      "Preserve recovery rights under the Corporate Guarantee.",
+      "Obtain further analysis of guarantor recoverability and the receivables charge.",
+      "Remain open to a commercially credible settlement without prejudicing existing recovery rights."
+    ],
+    "decision_factors": {
+      "legal_risk": "MEDIUM-HIGH in relation to reliance on the commercial property until the Zenith issue is resolved or expressly accepted. Other recovery routes require separate assessment.",
+      "recovery_probability": null,
+      "cost": "Not yet sufficiently established. External legal and enforcement costs depend on the routes pursued and whether proceedings become contested.",
+      "timeline": "Not fixed. Timing depends on security verification, procedural requirements, borrower response, enforcement route, and any contested proceedings.",
+      "commercial_considerations": "A commercially credible settlement proposal may be considered. Settlement discussions should not unnecessarily prejudice Aster's recovery rights.",
+      "process_legal_considerations": "Before material enforcement action, confirm applicable procedural prerequisites, complete required security verification, document Internal Legal's treatment of any remaining Zenith risk, and obtain required internal approvals."
+    },
+    "alternatives_considered": [
+      {
+        "alternative": "Proceed against the commercial property based solely on counsel's current opinion.",
+        "decision": "NOT_SELECTED_AT_THIS_STAGE",
+        "reason": "Internal evidence still contains an unresolved verification gap relating to the historical Zenith mortgage."
+      },
+      {
+        "alternative": "Pause the entire recovery matter until the Zenith issue is completely resolved.",
+        "decision": "NOT_SELECTED",
+        "reason": "Uncertainty affecting one security asset does not require Aster to stop assessment or preservation of its other recovery routes."
+      },
+      {
+        "alternative": "Pursue settlement as the sole strategy.",
+        "decision": "NOT_SELECTED",
+        "reason": "Settlement may be considered, but Aster should preserve its enforcement and recovery options."
+      },
+      {
+        "alternative": "Conditional multi-route recovery strategy.",
+        "decision": "SELECTED",
+        "reason": "Recovery preparation can continue while the property-enforcement decision remains conditional on further treatment of the Zenith security issue."
+      }
+    ],
+    "follow_up_actions": [
+      {
+        "action_id": "DEC001-ACT-001",
+        "action": "Request further clarification from external counsel regarding the Zenith release conclusion.",
+        "owner": "Internal Legal / External Counsel",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "DEC001-ACT-002",
+        "action": "Seek additional evidence of Zenith mortgage satisfaction where available.",
+        "owner": "Internal Legal / External Counsel",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "DEC001-ACT-003",
+        "action": "Assess guarantor financial position and practical recoverability.",
+        "owner": "External Counsel / Internal Legal",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "DEC001-ACT-004",
+        "action": "Obtain substantive analysis of the charge over receivables.",
+        "owner": "External Counsel",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "DEC001-ACT-005",
+        "action": "Continue recovery preparation while preserving available recovery rights.",
+        "owner": "Internal Legal / Recovery Team",
+        "status": "IN_PROGRESS"
+      }
+    ],
+    "decision_finality": "PROVISIONAL / APPROVED WITH CONDITIONS"
+  },
+  {
+    "decision_id": "DEC-002",
+    "matter_id": "MAT-002",
+    "workstream_id": "WS-003",
+    "decision_type": "LEGAL_REVIEW",
+    "decision_title": "Complete Verification and Seek Targeted Employment Counsel Advice",
+    "decision_summary": "Internal Legal determined that document verification should be completed and targeted external employment-law advice obtained before any material disciplinary decision. Historical attendance and PIP records should be assessed separately from the current leave and document-verification inquiry.",
+    "decision_status": "IN_PROGRESS",
+    "decision_date": "2025-09-03",
+    "decided_by": "USR-001",
+    "created_date": "2025-09-03"
+  }
+]

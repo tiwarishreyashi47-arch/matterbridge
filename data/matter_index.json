@@ -1,0 +1,46 @@
+[
+  {
+    "matter_id": "MAT-001",
+    "title": "Meridian Components — Secured Loan Recovery",
+    "status": "COUNSEL_ENGAGED",
+    "risk_rating": "HIGH",
+    "matter_type_id": "MT-001",
+    "outstanding_exposure_inr": 124000000,
+    "workstreams": [
+      {
+        "workstream_id": "WS-001",
+        "name": "Recovery Assessment",
+        "status": "ACTIVE",
+        "parent_workstream_id": null
+      },
+      {
+        "workstream_id": "WS-002",
+        "name": "Security Verification",
+        "status": "IN_PROGRESS",
+        "parent_workstream_id": "WS-001"
+      }
+    ],
+    "issue_count": 10,
+    "finding_count": 10,
+    "document_count": 14
+  },
+  {
+    "matter_id": "MAT-002",
+    "title": "Project Atlas — Employee Leave & Misconduct Review",
+    "status": "INTERNAL_REVIEW",
+    "risk_rating": "MEDIUM",
+    "matter_type_id": "MT-002",
+    "outstanding_exposure_inr": 0,
+    "workstreams": [
+      {
+        "workstream_id": "WS-003",
+        "name": "Employee Leave & Misconduct Review",
+        "status": "ACTIVE",
+        "parent_workstream_id": null
+      }
+    ],
+    "issue_count": 5,
+    "finding_count": 5,
+    "document_count": 8
+  }
+]

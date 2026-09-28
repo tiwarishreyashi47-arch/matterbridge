@@ -1,0 +1,2766 @@
+{
+  "matter": {
+    "matter_id": "MAT-001",
+    "matter_type_id": "MT-001",
+    "matter_title": "Meridian Components — Secured Loan Recovery",
+    "matter_description": "Recovery of secured financing extended to Meridian Components Private Limited",
+    "client_id": "PARTY-001",
+    "counterparty_id": "PARTY-002",
+    "matter_status": "COUNSEL_ENGAGED",
+    "risk_rating": "HIGH",
+    "outstanding_exposure_inr": 124000000,
+    "created_date": "2025-08-15",
+    "created_by": "USR-001"
+  },
+  "matter_type": {
+    "matter_type_id": "MT-001",
+    "matter_type_name": "secured_loan_recovery",
+    "description": "Secured loan recovery and enforcement matters",
+    "created_date": "2024-01-01"
+  },
+  "parties": {
+    "client": {
+      "party_id": "PARTY-001",
+      "party_name": "Aster Fintech Limited",
+      "party_type": "LENDER",
+      "registration_number": "U65923DL2018PLC334567",
+      "registered_address": "A-42, Sector 63, Noida, Uttar Pradesh 201301",
+      "contact_email": "legal@asterfintech.in",
+      "contact_phone": "+91-120-4567890",
+      "created_date": "2024-01-01"
+    },
+    "counterparty": {
+      "party_id": "PARTY-002",
+      "party_name": "Meridian Components Private Limited",
+      "party_type": "BORROWER",
+      "registration_number": "U29100MH2015PTC267890",
+      "registered_address": "Plot 15-B, MIDC Industrial Area, Andheri East, Mumbai 400093",
+      "contact_email": "info@meridiancomponents.in",
+      "contact_phone": "+91-22-28765432",
+      "created_date": "2024-03-10"
+    }
+  },
+  "workstreams": [
+    {
+      "workstream_id": "WS-001",
+      "matter_id": "MAT-001",
+      "parent_workstream_id": null,
+      "workstream_name": "Recovery Assessment",
+      "workstream_description": "Comprehensive recovery assessment including financing documentation, default chronology, repayment history, notices, borrower correspondence, recovery issues, and external counsel strategy",
+      "workstream_status": "ACTIVE",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001",
+      "documents": [
+        {
+          "document_id": "DOC-001",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Facility Agreement",
+          "document_type": "FINANCING_AGREEMENT",
+          "document_date": "2024-03-15",
+          "document_source": "LENDER_ORIGINATION",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-001",
+              "document_id": "DOC-001",
+              "section_title": "Facility Amount and Terms",
+              "section_content": "The Lender agrees to extend to the Borrower a secured term loan facility of INR 15,00,00,000 (Indian Rupees Fifteen Crore Only). The facility shall be disbursed in a single tranche upon satisfaction of conditions precedent outlined in Schedule A. The tenure of the facility shall be 60 (sixty) months from the date of first disbursement.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-002",
+              "document_id": "DOC-001",
+              "section_title": "Repayment Obligations",
+              "section_content": "The Borrower shall repay the facility in 60 (sixty) equated monthly installments (EMIs) commencing from 2024-06-01. Each EMI shall comprise principal and interest components. The EMI amount shall be INR 32,50,000 (Indian Rupees Thirty-Two Lakh Fifty Thousand Only) payable on the 1st day of each calendar month. Prepayment is permitted subject to a prepayment penalty of 2% if prepaid within the first 24 months.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-003",
+              "document_id": "DOC-001",
+              "section_title": "Interest Provisions",
+              "section_content": "The facility shall carry interest at the rate of 13.5% (Thirteen Point Five Percent) per annum, calculated on a daily reducing balance basis. Interest shall be compounded monthly. In the event of default, penal interest at an additional rate of 3% (Three Percent) per annum shall apply on the overdue amount from the date of default until payment in full.",
+              "section_order": 3
+            },
+            {
+              "section_id": "SEC-DOC-004",
+              "document_id": "DOC-001",
+              "section_title": "Events of Default",
+              "section_content": "The following shall constitute events of default: (a) failure to pay any installment within 15 (fifteen) days of the due date; (b) breach of any covenant or representation; (c) insolvency or liquidation of the Borrower; (d) attachment or sale of any secured asset; (e) material adverse change in the Borrower's financial condition. Upon occurrence of an event of default, the Lender may declare the entire outstanding amount immediately due and payable.",
+              "section_order": 4
+            },
+            {
+              "section_id": "SEC-DOC-005",
+              "document_id": "DOC-001",
+              "section_title": "Cure Period",
+              "section_content": "Notwithstanding clause 12 (Events of Default), the Borrower shall have a cure period of 30 (thirty) days from the date of receipt of written notice from the Lender specifying the default. During the cure period, the Borrower may remedy the default by payment of overdue amounts plus applicable penal interest. If the default is not cured within the cure period, the Lender's enforcement rights shall become exercisable.",
+              "section_order": 5
+            },
+            {
+              "section_id": "SEC-DOC-006",
+              "document_id": "DOC-001",
+              "section_title": "Enforcement Provisions",
+              "section_content": "Upon the occurrence and continuance of an event of default, the Lender shall be entitled to: (a) enforce any or all security interests created in favor of the Lender; (b) take possession of secured assets; (c) appoint a receiver for the Borrower's business; (d) initiate proceedings under applicable laws including but not limited to SARFAESI Act, 2002, Recovery of Debts and Bankruptcy Act, 1993, or Insolvency and Bankruptcy Code, 2016. All costs of enforcement shall be borne by the Borrower.",
+              "section_order": 6
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-002",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Security Agreement",
+          "document_type": "SECURITY_DOCUMENT",
+          "document_date": "2024-03-15",
+          "document_source": "LENDER_ORIGINATION",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-007",
+              "document_id": "DOC-002",
+              "section_title": "Security Package Description",
+              "section_content": "The Borrower and third parties have created the following security package in favor of the Lender: (a) First mortgage by way of registered mortgage deed over commercial property at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059, bearing municipal no. A-45/2019, built-up area 12,500 sq ft; (b) Unconditional and irrevocable corporate guarantee by Rajesh Kumar Sharma; (c) First pari passu charge over all present and future book debts and receivables of the Borrower.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-008",
+              "document_id": "DOC-002",
+              "section_title": "Security Creation and Perfection",
+              "section_content": "All security interests shall be created and perfected in accordance with applicable laws. The mortgage shall be registered with the Sub-Registrar of Assurances within 4 (four) months of execution. All charges shall be registered with CERSAI within 30 (thirty) days of creation. The Borrower shall execute all documents and do all acts necessary for creation, perfection, and registration of security interests.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-009",
+              "document_id": "DOC-002",
+              "section_title": "CERSAI Registration",
+              "section_content": "The Borrower acknowledges that all security interests created in favor of the Lender shall be registered with the Central Registry of Securitisation Asset Reconstruction and Security Interest of India (CERSAI) in accordance with Section 20 of the SARFAESI Act, 2002. The Borrower authorizes the Lender to file necessary forms and particulars with CERSAI. All registration fees and costs shall be borne by the Borrower.",
+              "section_order": 3
+            },
+            {
+              "section_id": "SEC-DOC-010",
+              "document_id": "DOC-002",
+              "section_title": "Representations Regarding Security",
+              "section_content": "The Borrower represents and warrants that: (a) it has clear, marketable, and encumbrance-free title to the mortgaged property except for prior charges disclosed in writing; (b) the property is free from all litigation, attachment, or encumbrance; (c) all documents relating to the property are genuine and valid; (d) no prior mortgage, charge, or lien exists on the property except as disclosed. Any breach of representations shall constitute an event of default.",
+              "section_order": 4
+            },
+            {
+              "section_id": "SEC-DOC-011",
+              "document_id": "DOC-002",
+              "section_title": "Enforcement of Security",
+              "section_content": "Upon enforcement, the Lender shall be entitled to take all measures permitted by law including: (a) taking possession of secured assets; (b) sale or lease of secured assets by public auction or private treaty; (c) appointment of a manager or receiver; (d) recovery from guarantors; (e) recovery from receivables debtors. The Borrower shall not create any further charge or encumbrance on secured assets without prior written consent of the Lender.",
+              "section_order": 5
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-003",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Corporate Guarantee",
+          "document_type": "GUARANTEE_DEED",
+          "document_date": "2024-03-15",
+          "document_source": "LENDER_ORIGINATION",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-012",
+              "document_id": "DOC-003",
+              "section_title": "Guarantee Obligations",
+              "section_content": "The Guarantor hereby unconditionally and irrevocably guarantees to the Lender the due and punctual payment and discharge of all obligations and liabilities of the Borrower under the Facility Agreement. This guarantee is a continuing guarantee and shall extend to the ultimate balance of sums payable by the Borrower, regardless of any intermediate payment or discharge.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-013",
+              "document_id": "DOC-003",
+              "section_title": "Guarantee Amount and Scope",
+              "section_content": "This guarantee covers principal amount up to INR 15,00,00,000 (Indian Rupees Fifteen Crore Only) together with interest, penal interest, costs, charges, and expenses. The Guarantor's liability shall be that of a principal debtor and shall not be affected by any change in the constitution of the Borrower or the Lender, or by any forbearance or variation made by the Lender.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-014",
+              "document_id": "DOC-003",
+              "section_title": "Invocation of Guarantee",
+              "section_content": "The Lender may invoke this guarantee at any time after the occurrence of an event of default under the Facility Agreement. The Guarantor shall pay the Lender within 7 (seven) days of receipt of written demand. The Guarantor waives all rights to require the Lender to first proceed against the Borrower or any other person or to enforce any other security before claiming against the Guarantor.",
+              "section_order": 3
+            },
+            {
+              "section_id": "SEC-DOC-015",
+              "document_id": "DOC-003",
+              "section_title": "Continuing Liability",
+              "section_content": "This guarantee shall remain in full force and effect until all obligations of the Borrower are fully discharged. The Guarantor shall not revoke this guarantee without prior written consent of the Lender. The death, insolvency, or incapacity of the Guarantor shall not terminate this guarantee, and the Guarantor's legal heirs and estate shall remain liable.",
+              "section_order": 4
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-004",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Repayment / Loan Account Summary",
+          "document_type": "ACCOUNT_STATEMENT",
+          "document_date": "2025-08-31",
+          "document_source": "LENDER_SYSTEMS",
+          "document_status": "FINAL",
+          "created_date": "2025-08-31",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-016",
+              "document_id": "DOC-004",
+              "section_title": "Disbursement History",
+              "section_content": "Disbursement Date: 2024-03-20. Disbursement Amount: INR 15,00,00,000. Disbursement Mode: NEFT to Borrower's account with HDFC Bank, Account No. 50200012345678, IFSC: HDFC0001234. All conditions precedent satisfied as per certificate dated 2024-03-19 issued by advocates M/s. Kapoor & Associates.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-017",
+              "document_id": "DOC-004",
+              "section_title": "Repayment Schedule vs Actuals",
+              "section_content": "Scheduled EMIs: 60 monthly installments of INR 32,50,000 each from 2024-06-01 to 2029-05-01. Repayments Received: Installments 1-10 (2024-06-01 to 2025-03-01): Paid in full and on time. Installments 11-15 (2025-04-01 to 2025-08-01): Not paid. Total EMIs paid: 10. Total EMIs overdue as of 2025-08-31: 5.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-018",
+              "document_id": "DOC-004",
+              "section_title": "Outstanding Exposure Calculation",
+              "section_content": "As of 2025-08-31: Principal Outstanding: INR 12,00,00,000. Accrued Interest: INR 37,30,000. Penal Interest: INR 2,70,000. Total Outstanding Exposure: INR 12,40,00,000 (Indian Rupees Twelve Crore Forty Lakh Only). Five scheduled EMIs remain overdue from 2025-04-01 through 2025-08-01.",
+              "section_order": 3
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-005",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Default Notice",
+          "document_type": "LEGAL_NOTICE",
+          "document_date": "2025-07-10",
+          "document_source": "LENDER_LEGAL",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-019",
+              "document_id": "DOC-005",
+              "section_title": "Notice of Default",
+              "section_content": "To: Meridian Components Private Limited. From: Aster Fintech Limited. Date: 2025-07-10. Subject: Notice of Default under Facility Agreement dated 2024-03-15. We hereby notify you that you are in default under the above-referenced Facility Agreement by reason of failure to pay equated monthly installments due on 2025-04-01, 2025-05-01, 2025-06-01, and 2025-07-01, each in the amount of INR 32,50,000. Total amount overdue as of date: INR 1,30,00,000 plus accrued interest and penal interest.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-020",
+              "document_id": "DOC-005",
+              "section_title": "Cure Period Invocation",
+              "section_content": "Pursuant to Clause 12.5 (Cure Period) of the Facility Agreement, you are hereby granted a cure period of 30 (thirty) days from the date of receipt of this notice to remedy the default by payment of all overdue amounts together with applicable interest and penal interest. Payment must be received in our account no. 12345678901234, IFSC: HDFC0001234, by 2025-08-09.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-021",
+              "document_id": "DOC-005",
+              "section_title": "Consequences of Non-Cure",
+              "section_content": "If the default is not cured within the cure period specified above, Aster Fintech Limited shall be entitled to exercise all rights and remedies available under the Facility Agreement, Security Documents, and applicable law, including but not limited to: (a) declaring the entire outstanding amount immediately due and payable; (b) enforcing security interests; (c) initiating recovery proceedings. All costs and expenses shall be to your account.",
+              "section_order": 3
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-006",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Borrower Response",
+          "document_type": "CORRESPONDENCE",
+          "document_date": "2025-07-28",
+          "document_source": "BORROWER",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-022",
+              "document_id": "DOC-006",
+              "section_title": "Acknowledgment of Default",
+              "section_content": "To: Aster Fintech Limited. From: Meridian Components Private Limited. Date: 2025-07-28. Subject: Response to Default Notice dated 2025-07-10. We acknowledge receipt of your notice dated 2025-07-10 and confirm that we are currently experiencing temporary financial difficulties due to delayed payments from our key customers and disruption in our supply chain. We have not been able to make the scheduled payments for April, May, June, and July 2025.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-023",
+              "document_id": "DOC-006",
+              "section_title": "Explanation of Financial Distress",
+              "section_content": "Our company has been impacted by: (a) delayed receivables from two major customers totaling INR 8.5 crore, now overdue by 90-120 days; (b) temporary shutdown of one production line due to machinery breakdown requiring replacement parts from Germany, expected to be operational by September 2025; (c) increased raw material costs by approximately 18% due to global supply chain disruptions. These factors have resulted in temporary cash flow constraints.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-024",
+              "document_id": "DOC-006",
+              "section_title": "Request for Restructuring",
+              "section_content": "We respectfully request Aster Fintech Limited to consider the following restructuring options: (a) moratorium on principal repayment for 6 months with interest servicing; (b) extension of loan tenure by 12 months; (c) conversion of overdue interest into funded interest term loan. We are committed to honoring our obligations and believe these measures will enable us to return to regular repayment by Q1 2026. We request a meeting to discuss this proposal.",
+              "section_order": 3
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-007",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Internal Credit Risk Memo",
+          "document_type": "INTERNAL_MEMO",
+          "document_date": "2025-08-15",
+          "document_source": "CREDIT_DEPT",
+          "document_status": "FINAL",
+          "created_date": "2025-08-15",
+          "created_by": "USR-003",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-025",
+              "document_id": "DOC-007",
+              "section_title": "Credit Assessment Summary",
+              "section_content": "Borrower: Meridian Components Private Limited. Facility: INR 15 crore secured term loan. Current Exposure: INR 12.4 crore (as of 2025-08-31). Days Past Due: 153 days. Current Risk Rating: HIGH (downgraded from MEDIUM on 2025-07-15). Security Coverage: Estimated at 1.45x based on last valuation (2024-02). Key Concerns: (a) 6 consecutive EMIs overdue; (b) borrower's financial position deteriorating; (c) no concrete restructuring proposal received; (d) security verification incomplete.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-026",
+              "document_id": "DOC-007",
+              "section_title": "Risk Rating Downgrade Rationale",
+              "section_content": "Risk rating downgraded from MEDIUM to HIGH based on: (a) payment default exceeding 90 days; (b) borrower's admission of financial distress in response dated 2025-07-28; (c) lack of immediate liquidity to cure default; (d) concentration risk with delayed receivables from two customers; (e) operational issues affecting production capacity. Recommend immediate escalation to Legal for recovery assessment and external counsel engagement.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-027",
+              "document_id": "DOC-007",
+              "section_title": "Recommended Actions",
+              "section_content": "Recommended actions: (a) escalate to Internal Legal for recovery strategy assessment; (b) engage external recovery counsel with expertise in SARFAESI and DRT matters; (c) initiate comprehensive security verification to confirm enforceability of all securities; (d) obtain updated valuation of mortgaged property; (e) verify CERSAI registration status; (f) assess guarantor's current financial position; (g) consider issuing demand notice to guarantor; (h) evaluate options: SARFAESI enforcement vs. DRT application vs. IBC initiation.",
+              "section_order": 3
+            },
+            {
+              "section_id": "SEC-DOC-028",
+              "document_id": "DOC-007",
+              "section_title": "Information Gaps",
+              "section_content": "Critical information gaps identified: (a) latest borrower financials (last audited: FY2023-24); (b) current collateral valuation (last: 2024-02, pre-disbursement); (c) CERSAI registration certificate copy pending verification; (d) guarantor's current net worth and asset position; (e) status of receivables charge perfection; (f) title deed custody confirmation; (g) prior encumbrances on property; (h) borrower's other borrowing facilities and defaults.",
+              "section_order": 4
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-008",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "document_title": "Internal Legal Intake / Escalation Note",
+          "document_type": "INTERNAL_MEMO",
+          "document_date": "2025-08-22",
+          "document_source": "LEGAL_DEPT",
+          "document_status": "FINAL",
+          "created_date": "2025-08-22",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-029",
+              "document_id": "DOC-008",
+              "section_title": "Matter Summary",
+              "section_content": "Matter: Recovery of secured loan facility of INR 15 crore extended to Meridian Components Private Limited. Current Outstanding: INR 12.4 crore. Borrower in default since 2025-04-01 (153 days past due). Security package includes: (a) mortgage over commercial property in Mumbai; (b) corporate guarantee by Rajesh Kumar Sharma; (c) charge over receivables. Borrower has acknowledged default and requested restructuring. Credit Department recommends legal escalation.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-030",
+              "document_id": "DOC-008",
+              "section_title": "Documents Reviewed",
+              "section_content": "Documents reviewed in preparation for external counsel engagement: (1) Facility Agreement dated 2024-03-15; (2) Security Agreement dated 2024-03-15; (3) Corporate Guarantee dated 2024-03-15; (4) Loan Account Summary as of 2025-08-31; (5) Default Notice dated 2025-07-10; (6) Borrower Response dated 2025-07-28; (7) Internal Credit Risk Memo dated 2025-08-15. All documents appear to be in order and properly executed.",
+              "section_order": 2
+            },
+            {
+              "section_id": "SEC-DOC-031",
+              "document_id": "DOC-008",
+              "section_title": "Preliminary Issues Identified",
+              "section_content": "Preliminary legal issues requiring external counsel advice: (a) compliance with contractual notice requirements and cure period; (b) completeness and enforceability of security package; (c) guarantee position and invocation strategy; (d) appropriate recovery forum and mechanism (SARFAESI vs. DRT vs. IBC); (e) timeline and cost estimates for each recovery pathway; (f) likelihood of successful recovery given borrower's financial position; (g) risk of borrower initiating pre-emptive IBC or NCLT proceedings.",
+              "section_order": 3
+            },
+            {
+              "section_id": "SEC-DOC-032",
+              "document_id": "DOC-008",
+              "section_title": "Recommendation for External Counsel",
+              "section_content": "Recommend engagement of external counsel specializing in secured lending recovery and enforcement. Counsel should be briefed to: (a) review all documentation and confirm enforceability; (b) advise on optimal recovery strategy and forum; (c) prepare and issue legal demand notice; (d) initiate enforcement proceedings if settlement not achieved; (e) provide timeline and cost estimates. Suggested counsel: M/s. Rajani & Associates (Mumbai) or M/s. Economic Laws Practice (Delhi). Budget estimate: INR 5-8 lakhs for initial engagement.",
+              "section_order": 4
+            }
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "timeline_id": "TM-001",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2024-03-15",
+          "event_type": "AGREEMENT_EXECUTION",
+          "event_title": "Facility Agreement Execution",
+          "event_description": "Facility Agreement, Security Agreement, and Corporate Guarantee executed by all parties at Aster Fintech Limited office, Noida",
+          "related_document_id": "DOC-001",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-002",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2024-03-20",
+          "event_type": "DISBURSEMENT",
+          "event_title": "Loan Disbursement",
+          "event_description": "Full facility amount of INR 15 crore disbursed to Borrower's account with HDFC Bank via NEFT",
+          "related_document_id": "DOC-004",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-003",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2024-03-18",
+          "event_type": "SECURITY_CREATION",
+          "event_title": "Property Mortgage Execution",
+          "event_description": "Registered mortgage deed executed over commercial property at Andheri-Kurla Road, Mumbai before Sub-Registrar of Assurances, Mumbai",
+          "related_document_id": "DOC-002",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-004",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2024-04-05",
+          "event_type": "REGISTRATION",
+          "event_title": "CERSAI Registration",
+          "event_description": "Security interests registered with CERSAI (Registration Nos. CERSAI-2024-0315-789456 and CERSAI-2024-0315-789457)",
+          "related_document_id": "DOC-002",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-005",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2024-06-01",
+          "event_type": "REPAYMENT_DUE",
+          "event_title": "First EMI Due",
+          "event_description": "First equated monthly installment of INR 32,50,000 due and paid on time",
+          "related_document_id": "DOC-004",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-006",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-03-01",
+          "event_type": "REPAYMENT_RECEIVED",
+          "event_title": "Last Timely Repayment",
+          "event_description": "Tenth EMI of INR 32,50,000 paid on time. Total repaid to date: INR 3,25,00,000",
+          "related_document_id": "DOC-004",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-007",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-04-01",
+          "event_type": "DEFAULT_FIRST",
+          "event_title": "First Payment Default",
+          "event_description": "Eleventh EMI of INR 32,50,000 not received on due date. First instance of payment delay",
+          "related_document_id": "DOC-004",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-008",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-07-01",
+          "event_type": "DEFAULT_CONTINUING",
+          "event_title": "Continuing Defaults",
+          "event_description": "Four consecutive EMIs are now overdue for April, May, June and July 2025. Total scheduled overdue payments: INR 1,30,00,000 plus applicable interest.",
+          "related_document_id": "DOC-004",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-009",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-07-10",
+          "event_type": "LEGAL_NOTICE",
+          "event_title": "Default Notice Issued",
+          "event_description": "Formal default notice issued to Borrower under Clause 12 of Facility Agreement, invoking 30-day cure period",
+          "related_document_id": "DOC-005",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-010",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-07-28",
+          "event_type": "BORROWER_RESPONSE",
+          "event_title": "Borrower Response Received",
+          "event_description": "Borrower acknowledged default, explained financial distress, and requested loan restructuring",
+          "related_document_id": "DOC-006",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-011",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-08-15",
+          "event_type": "INTERNAL_ESCALATION",
+          "event_title": "Credit Escalation to Legal",
+          "event_description": "Credit Department escalated matter to Internal Legal with HIGH risk rating and recommendation for external counsel",
+          "related_document_id": "DOC-007",
+          "created_date": "2025-08-15"
+        },
+        {
+          "timeline_id": "TM-012",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "event_date": "2025-08-22",
+          "event_type": "DECISION_EXTERNAL_COUNSEL",
+          "event_title": "Decision to Engage External Counsel",
+          "event_description": "Internal Legal approved engagement of external recovery counsel. Matter ready for counsel briefing",
+          "related_document_id": "DOC-008",
+          "created_date": "2025-08-22"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "ISSUE-001",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "issue_title": "Continuing Payment Default",
+          "issue_description": "Borrower has failed to pay 5 consecutive monthly installments from April 2025 through August 2025 totaling INR 1,62,50,000 in scheduled EMIs, together with accrued and penal interest. The first payment default occurred on 2025-04-01 and remains uncured as of 2025-08-31.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-002",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "issue_title": "Compliance with Contractual Notice Requirements",
+          "issue_description": "Whether default notice dated 2025-07-10 was properly served in accordance with Clause 18.3 of Facility Agreement (notice requirements). Notice sent via registered post and email. Borrower acknowledged receipt in response dated 2025-07-28. Cure period of 30 days expired on 2025-08-09 without payment.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "MEDIUM",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-003",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "issue_title": "Completeness of Security Package",
+          "issue_description": "Security package comprises three securities: (a) mortgage over commercial property; (b) corporate guarantee; (c) charge over receivables. All securities appear to be documented. However, verification of CERSAI registration certificates, title deed custody, and prior encumbrances remains incomplete pending WS-002 Security Verification workstream.",
+          "issue_status": "IN_PROGRESS",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-004",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "issue_title": "Guarantee Position Requiring Review",
+          "issue_description": "Corporate guarantee executed by Rajesh Kumar Sharma for INR 15 crore plus interest. Guarantee is unconditional and irrevocable. However, guarantor's current financial position, net worth, and asset availability have not been assessed. Recommend verification before guarantee invocation.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "MEDIUM",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-005",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "issue_title": "Appropriate Recovery/Enforcement Strategy",
+          "issue_description": "Multiple recovery pathways potentially available: (a) SARFAESI Act enforcement (possession and sale of secured assets); (b) DRT application for recovery certificate; (c) IBC initiation if borrower insolvent; (d) civil suit. Optimal pathway depends on: security enforceability, borrower solvency, asset valuation, timeline, costs, and likelihood of recovery. REQUIRES_LEGAL_JUDGMENT by qualified counsel.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-08-22",
+          "created_by": "USR-001"
+        }
+      ],
+      "findings": [
+        {
+          "finding_id": "FIND-001",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "FACTUAL",
+          "finding_title": "Payment Default Confirmed",
+          "finding_summary": "Borrower has failed to pay 5 consecutive monthly installments from April 2025 through August 2025 totaling INR 1,62,50,000 in scheduled EMIs, together with accrued and penal interest. The first payment default occurred on 2025-04-01 and remains uncured as of 2025-08-31.",
+          "confidence_level": "HIGH",
+          "requires_verification": "NO",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-001",
+              "finding_id": "FIND-001",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-004",
+              "source_section": "SEC-DOC-017",
+              "citation_text": "Repayment Schedule vs Actuals section showing 5 EMIs overdue"
+            },
+            {
+              "citation_id": "CITE-002",
+              "finding_id": "FIND-001",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-006",
+              "source_section": "SEC-DOC-022",
+              "citation_text": "Borrower acknowledgment of default"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-002",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "EXPOSURE",
+          "finding_title": "Outstanding Exposure Calculation",
+          "finding_summary": "Total outstanding exposure as of 2025-08-31 is INR 12,40,00,000 comprising principal outstanding of INR 12,00,00,000, accrued interest of INR 37,30,000, and penal interest of INR 2,70,000.",
+          "confidence_level": "HIGH",
+          "requires_verification": "NO",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-003",
+              "finding_id": "FIND-002",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-004",
+              "source_section": "SEC-DOC-018",
+              "citation_text": "Outstanding Exposure Calculation section"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-003",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "DOCUMENTATION",
+          "finding_title": "Security Package Appears Complete",
+          "finding_summary": "Three securities documented: (a) property mortgage; (b) corporate guarantee; (c) receivables charge. All appear properly documented pending verification of registration certificates and title deeds.",
+          "confidence_level": "MEDIUM",
+          "requires_verification": "YES",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-004",
+              "finding_id": "FIND-003",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-002",
+              "source_section": "SEC-DOC-007",
+              "citation_text": "Security Package Description section"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-004",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "INFORMATION_GAP",
+          "finding_title": "Current Collateral Valuation Missing",
+          "finding_summary": "Last property valuation dated 2024-02 (pre-disbursement). Current market value unknown. Property values in Andheri-Kurla Road area may have appreciated 15-20% since 2024, but this requires confirmation.",
+          "confidence_level": "MEDIUM",
+          "requires_verification": "YES",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-005",
+              "finding_id": "FIND-004",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-007",
+              "source_section": "SEC-DOC-028",
+              "citation_text": "Information Gaps section noting valuation missing"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-005",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "INFORMATION_GAP",
+          "finding_title": "Latest Borrower Financials Unavailable",
+          "finding_summary": "Last audited financials available: FY2023-24. FY2024-25 financials not yet available. Borrower's current financial position and solvency status cannot be definitively assessed without updated financials.",
+          "confidence_level": "MEDIUM",
+          "requires_verification": "YES",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-006",
+              "finding_id": "FIND-005",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-007",
+              "source_section": "SEC-DOC-028",
+              "citation_text": "Information Gaps section noting latest financials unavailable"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-006",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "finding_type": "LEGAL_ISSUE",
+          "finding_title": "Recovery Strategy Requires Legal Judgment",
+          "finding_summary": "Optimal recovery pathway (SARFAESI vs. DRT vs. IBC) requires legal judgment based on: security enforceability, borrower solvency, asset valuation, timeline, costs, and recovery likelihood. Cannot be determined without external counsel advice.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-08-31",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-007",
+              "finding_id": "FIND-006",
+              "source_type": "LEGAL_ISSUE",
+              "source_id": "ISSUE-005",
+              "source_section": null,
+              "citation_text": "Legal issue flagged as REQUIRES_LEGAL_JUDGMENT"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "decision_id": "DEC-001",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-001",
+          "decision_type": "PROCESS",
+          "decision_title": "Conditional Recovery Strategy",
+          "decision_summary": "Internal Legal approved continued recovery preparation against Meridian Components while preserving multiple recovery routes. Material enforcement against the commercial property remains conditional on further treatment of the unresolved Zenith mortgage satisfaction issue or explicit documented acceptance of the residual risk.",
+          "decision_status": "APPROVED_WITH_CONDITIONS",
+          "decision_rationale": "Meridian Components remains in payment default with approximately INR 12.4 crore outstanding. Aster has multiple potential recovery routes and a security package comprising the commercial property, Corporate Guarantee, and charge over receivables. The unresolved Zenith mortgage/release issue creates uncertainty concerning reliance on the commercial property. External counsel considers the existing release evidence sufficient to progress enforcement preparation, but Internal Legal requires either further verification or explicit acceptance of the residual security risk before a material property-enforcement step. This approach allows recovery preparation to continue without treating an unresolved evidentiary issue as conclusively resolved.",
+          "decision_date": "2025-09-16",
+          "decided_by": "USR-001",
+          "created_date": "2025-08-22",
+          "selected_actions": [
+            "Proceed with recovery preparation against Meridian Components while preserving multiple available recovery routes.",
+            "Continue preparation relating to the secured recovery process without treating the Zenith release issue as conclusively resolved.",
+            "Preserve recovery rights under the Corporate Guarantee.",
+            "Obtain further analysis of guarantor recoverability and the receivables charge.",
+            "Remain open to a commercially credible settlement without prejudicing existing recovery rights."
+          ],
+          "decision_factors": {
+            "legal_risk": "MEDIUM-HIGH in relation to reliance on the commercial property until the Zenith issue is resolved or expressly accepted. Other recovery routes require separate assessment.",
+            "recovery_probability": null,
+            "cost": "Not yet sufficiently established. External legal and enforcement costs depend on the routes pursued and whether proceedings become contested.",
+            "timeline": "Not fixed. Timing depends on security verification, procedural requirements, borrower response, enforcement route, and any contested proceedings.",
+            "commercial_considerations": "A commercially credible settlement proposal may be considered. Settlement discussions should not unnecessarily prejudice Aster's recovery rights.",
+            "process_legal_considerations": "Before material enforcement action, confirm applicable procedural prerequisites, complete required security verification, document Internal Legal's treatment of any remaining Zenith risk, and obtain required internal approvals."
+          },
+          "alternatives_considered": [
+            {
+              "alternative": "Proceed against the commercial property based solely on counsel's current opinion.",
+              "decision": "NOT_SELECTED_AT_THIS_STAGE",
+              "reason": "Internal evidence still contains an unresolved verification gap relating to the historical Zenith mortgage."
+            },
+            {
+              "alternative": "Pause the entire recovery matter until the Zenith issue is completely resolved.",
+              "decision": "NOT_SELECTED",
+              "reason": "Uncertainty affecting one security asset does not require Aster to stop assessment or preservation of its other recovery routes."
+            },
+            {
+              "alternative": "Pursue settlement as the sole strategy.",
+              "decision": "NOT_SELECTED",
+              "reason": "Settlement may be considered, but Aster should preserve its enforcement and recovery options."
+            },
+            {
+              "alternative": "Conditional multi-route recovery strategy.",
+              "decision": "SELECTED",
+              "reason": "Recovery preparation can continue while the property-enforcement decision remains conditional on further treatment of the Zenith security issue."
+            }
+          ],
+          "follow_up_actions": [
+            {
+              "action_id": "DEC001-ACT-001",
+              "action": "Request further clarification from external counsel regarding the Zenith release conclusion.",
+              "owner": "Internal Legal / External Counsel",
+              "status": "OPEN"
+            },
+            {
+              "action_id": "DEC001-ACT-002",
+              "action": "Seek additional evidence of Zenith mortgage satisfaction where available.",
+              "owner": "Internal Legal / External Counsel",
+              "status": "OPEN"
+            },
+            {
+              "action_id": "DEC001-ACT-003",
+              "action": "Assess guarantor financial position and practical recoverability.",
+              "owner": "External Counsel / Internal Legal",
+              "status": "OPEN"
+            },
+            {
+              "action_id": "DEC001-ACT-004",
+              "action": "Obtain substantive analysis of the charge over receivables.",
+              "owner": "External Counsel",
+              "status": "OPEN"
+            },
+            {
+              "action_id": "DEC001-ACT-005",
+              "action": "Continue recovery preparation while preserving available recovery rights.",
+              "owner": "Internal Legal / Recovery Team",
+              "status": "IN_PROGRESS"
+            }
+          ],
+          "decision_finality": "PROVISIONAL / APPROVED WITH CONDITIONS"
+        }
+      ]
+    },
+    {
+      "workstream_id": "WS-002",
+      "matter_id": "MAT-001",
+      "parent_workstream_id": "WS-001",
+      "workstream_name": "Security Verification",
+      "workstream_description": "Determine what securities support the facility, whether available evidence supports those securities, what verification gaps exist, and which issues require legal judgment",
+      "workstream_status": "IN_PROGRESS",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001",
+      "documents": [
+        {
+          "document_id": "DOC-009",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Sale Deed - Commercial Property",
+          "document_type": "TITLE_DEED",
+          "document_date": "1998-09-14",
+          "document_source": "TITLE_RECORDS",
+          "document_status": "FINAL",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-033",
+              "document_id": "DOC-009",
+              "section_title": "Property Transfer",
+              "section_content": "Under Sale Deed dated 1998-09-14, Shakti Industrial Estates Private Limited transferred the commercial property identified as Plot No. 45, Andheri-Kurla Road, Mumbai to Western Engineering Works Private Limited for stated consideration.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-034",
+              "document_id": "DOC-009",
+              "section_title": "Property Description",
+              "section_content": "The property comprises approximately 12,500 square feet of built-up industrial and commercial premises together with associated land and appurtenant rights.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-010",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Conveyance Deed - Commercial Property",
+          "document_type": "CONVEYANCE_DEED",
+          "document_date": "2007-03-22",
+          "document_source": "TITLE_RECORDS",
+          "document_status": "FINAL",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-035",
+              "document_id": "DOC-010",
+              "section_title": "2007 Conveyance",
+              "section_content": "Western Engineering Works Private Limited conveyed the property to Meridian Components Private Limited pursuant to a restructuring transaction documented by Conveyance Deed dated 2007-03-22.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-036",
+              "document_id": "DOC-010",
+              "section_title": "Ownership Representation",
+              "section_content": "The conveyance records Meridian Components Private Limited as transferee and states that the property is transferred together with all rights, easements and interests held by the transferor.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-011",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Prior Mortgage Deed - Zenith Commercial Bank",
+          "document_type": "MORTGAGE_DEED",
+          "document_date": "2014-06-18",
+          "document_source": "TITLE_RECORDS",
+          "document_status": "FINAL",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-037",
+              "document_id": "DOC-011",
+              "section_title": "Prior Mortgage Creation",
+              "section_content": "Meridian Components Private Limited created a mortgage over the commercial property in favour of Zenith Commercial Bank Limited on 2014-06-18 to secure working capital facilities up to INR 9 crore.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-038",
+              "document_id": "DOC-011",
+              "section_title": "Release Requirement",
+              "section_content": "The mortgage deed provides that the security shall continue until all secured obligations to Zenith Commercial Bank Limited are discharged and appropriate release documentation is issued.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-012",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Release and Satisfaction Letter",
+          "document_type": "RELEASE_DOCUMENT",
+          "document_date": "2019-11-08",
+          "document_source": "BORROWER_RECORDS",
+          "document_status": "VERIFICATION_REQUIRED",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-039",
+              "document_id": "DOC-012",
+              "section_title": "Release Statement",
+              "section_content": "The letter states that credit facilities extended by Zenith Commercial Bank Limited to Meridian Components Private Limited were repaid and that the bank has no objection to release of security over the property.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-040",
+              "document_id": "DOC-012",
+              "section_title": "Verification Limitation",
+              "section_content": "The available release letter does not contain a corresponding registration endorsement or certified satisfaction record confirming removal of the 2014 mortgage from all relevant security and property records.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-013",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Current Security and Encumbrance Search",
+          "document_type": "SECURITY_SEARCH",
+          "document_date": "2025-08-19",
+          "document_source": "LEGAL_SEARCH",
+          "document_status": "FINAL",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-041",
+              "document_id": "DOC-013",
+              "section_title": "Current Search Result",
+              "section_content": "The current search identifies Aster Fintech Limited's mortgage registered in 2024. Historical records also reference the 2014 Zenith Commercial Bank mortgage. The materials reviewed do not contain conclusive evidence confirming formal satisfaction of that earlier mortgage.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-042",
+              "document_id": "DOC-013",
+              "section_title": "Verification Requirement",
+              "section_content": "External property counsel should confirm whether additional registry records, charge-satisfaction filings or lender confirmations are required to establish discharge of the earlier security interest.",
+              "section_order": 2
+            }
+          ]
+        },
+        {
+          "document_id": "DOC-014",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "document_title": "Property Valuation Report",
+          "document_type": "VALUATION_REPORT",
+          "document_date": "2024-02-12",
+          "document_source": "VALUER",
+          "document_status": "FINAL",
+          "created_date": "2025-08-20",
+          "created_by": "USR-003",
+          "sections": [
+            {
+              "section_id": "SEC-DOC-043",
+              "document_id": "DOC-014",
+              "section_title": "Valuation Conclusion",
+              "section_content": "The February 2024 valuation assessed the property at approximately INR 18 crore based on prevailing comparable transactions and existing property use.",
+              "section_order": 1
+            },
+            {
+              "section_id": "SEC-DOC-044",
+              "document_id": "DOC-014",
+              "section_title": "Valuation Limitation",
+              "section_content": "The report predates the current recovery assessment and should not be treated as evidence of current realizable value. An updated valuation is recommended before enforcement strategy is finalized.",
+              "section_order": 2
+            }
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "timeline_id": "TM-013",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "1998-09-14",
+          "event_type": "TITLE_EVENT",
+          "event_title": "Original Sale Deed",
+          "event_description": "Property transferred to Western Engineering Works Private Limited",
+          "related_document_id": "DOC-009",
+          "created_date": "2025-08-20"
+        },
+        {
+          "timeline_id": "TM-014",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "2007-03-22",
+          "event_type": "TITLE_EVENT",
+          "event_title": "Conveyance to Meridian",
+          "event_description": "Property conveyed to Meridian Components Private Limited",
+          "related_document_id": "DOC-010",
+          "created_date": "2025-08-20"
+        },
+        {
+          "timeline_id": "TM-015",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "2014-06-18",
+          "event_type": "PRIOR_SECURITY",
+          "event_title": "Prior Mortgage Created",
+          "event_description": "Mortgage created in favour of Zenith Commercial Bank Limited",
+          "related_document_id": "DOC-011",
+          "created_date": "2025-08-20"
+        },
+        {
+          "timeline_id": "TM-016",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "2019-11-08",
+          "event_type": "RELEASE_RECORD",
+          "event_title": "Purported Release",
+          "event_description": "Zenith Commercial Bank issued release and satisfaction letter; formal satisfaction evidence remains to be verified",
+          "related_document_id": "DOC-012",
+          "created_date": "2025-08-20"
+        },
+        {
+          "timeline_id": "TM-017",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "2024-03-18",
+          "event_type": "SECURITY_CREATION",
+          "event_title": "Aster Mortgage Created",
+          "event_description": "Property mortgaged in favour of Aster Fintech Limited",
+          "related_document_id": "DOC-002",
+          "created_date": "2025-08-20"
+        },
+        {
+          "timeline_id": "TM-018",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "event_date": "2025-08-19",
+          "event_type": "SECURITY_SEARCH",
+          "event_title": "Security Search Completed",
+          "event_description": "Search confirms Aster security but identifies unresolved historical mortgage record",
+          "related_document_id": "DOC-013",
+          "created_date": "2025-08-20"
+        }
+      ],
+      "issues": [
+        {
+          "issue_id": "ISSUE-006",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "issue_title": "Security Verification Workstream Incomplete",
+          "issue_description": "WS-002 Security Verification workstream remains in progress. Critical verification items pending: (a) title deed examination and ownership history; (b) prior mortgage/charge search; (c) CERSAI registration confirmation; (d) current property valuation; (e) receivables charge perfection status. Recovery strategy cannot be finalized until security verification complete.",
+          "issue_status": "IN_PROGRESS",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-15",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-007",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "issue_title": "Prior Mortgage Requires Verification",
+          "issue_description": "Historical title and security records show a mortgage created in 2014 in favour of Zenith Commercial Bank Limited. Available records indicate repayment but formal satisfaction evidence has not yet been conclusively verified.",
+          "issue_status": "IN_PROGRESS",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-008",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "issue_title": "Release Documentation Incomplete",
+          "issue_description": "A 2019 release letter exists, but available evidence does not include a corresponding certified satisfaction or registration record conclusively demonstrating discharge of the prior mortgage.",
+          "issue_status": "IN_PROGRESS",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001"
+        },
+        {
+          "issue_id": "ISSUE-009",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "issue_title": "Current Property Valuation Outdated",
+          "issue_description": "The latest available property valuation is dated February 2024 and may not reflect current realizable value for recovery planning.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "MEDIUM",
+          "requires_legal_judgment": "NO",
+          "created_date": "2025-08-20",
+          "created_by": "USR-003"
+        },
+        {
+          "issue_id": "ISSUE-010",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "issue_title": "Impact of Security Verification on Recovery Strategy",
+          "issue_description": "Unresolved historical mortgage and release evidence may affect the timing, process or strategy for enforcement against the property. External counsel judgment is required before relying on the property as an immediately enforceable recovery asset.",
+          "issue_status": "ACTIVE",
+          "issue_priority": "HIGH",
+          "requires_legal_judgment": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "USR-001"
+        }
+      ],
+      "findings": [
+        {
+          "finding_id": "FIND-007",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "finding_type": "SECURITY_VERIFICATION",
+          "finding_title": "Prior Mortgage Identified",
+          "finding_summary": "Title and security records identify a mortgage created in 2014 in favour of Zenith Commercial Bank Limited over AST-001.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-008",
+              "finding_id": "FIND-007",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-011",
+              "source_section": "SEC-DOC-037",
+              "citation_text": "Prior Mortgage Creation"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-008",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "finding_type": "INFORMATION_GAP",
+          "finding_title": "Formal Mortgage Satisfaction Not Confirmed",
+          "finding_summary": "A 2019 release letter indicates repayment and release intent, but the available dataset does not contain conclusive registration evidence establishing formal satisfaction of the 2014 mortgage.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-009",
+              "finding_id": "FIND-008",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-012",
+              "source_section": "SEC-DOC-039",
+              "citation_text": "Release Statement"
+            },
+            {
+              "citation_id": "CITE-010",
+              "finding_id": "FIND-008",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-012",
+              "source_section": "SEC-DOC-040",
+              "citation_text": "Verification Limitation"
+            },
+            {
+              "citation_id": "CITE-011",
+              "finding_id": "FIND-008",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-013",
+              "source_section": "SEC-DOC-041",
+              "citation_text": "Current Search Result"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-009",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "finding_type": "DOCUMENTATION",
+          "finding_title": "Aster Mortgage Recorded",
+          "finding_summary": "Current security records identify Aster Fintech Limited's 2024 mortgage over AST-001. This supports existence of the lender's claimed security, subject to counsel verification of priority and enforceability.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-012",
+              "finding_id": "FIND-009",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-013",
+              "source_section": "SEC-DOC-041",
+              "citation_text": "Current Search Result"
+            }
+          ]
+        },
+        {
+          "finding_id": "FIND-010",
+          "matter_id": "MAT-001",
+          "workstream_id": "WS-002",
+          "finding_type": "LEGAL_ISSUE",
+          "finding_title": "Security Issue May Affect Recovery Strategy",
+          "finding_summary": "The unresolved historical mortgage record could affect recovery strategy or sequencing. MatterBridge cannot determine legal priority or enforceability from the available documents and external counsel review is required.",
+          "confidence_level": "HIGH",
+          "requires_verification": "YES",
+          "created_date": "2025-08-20",
+          "created_by": "AI-001",
+          "citations": [
+            {
+              "citation_id": "CITE-013",
+              "finding_id": "FIND-010",
+              "source_type": "DOCUMENT",
+              "source_id": "DOC-013",
+              "source_section": "SEC-DOC-042",
+              "citation_text": "Verification Requirement"
+            },
+            {
+              "citation_id": "CITE-014",
+              "finding_id": "FIND-010",
+              "source_type": "LEGAL_ISSUE",
+              "source_id": "ISSUE-010",
+              "source_section": null,
+              "citation_text": "Security verification affects recovery strategy and requires legal judgment"
+            }
+          ]
+        }
+      ],
+      "decisions": []
+    }
+  ],
+  "timeline": [
+    {
+      "timeline_id": "TM-013",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "1998-09-14",
+      "event_type": "TITLE_EVENT",
+      "event_title": "Original Sale Deed",
+      "event_description": "Property transferred to Western Engineering Works Private Limited",
+      "related_document_id": "DOC-009",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-014",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "2007-03-22",
+      "event_type": "TITLE_EVENT",
+      "event_title": "Conveyance to Meridian",
+      "event_description": "Property conveyed to Meridian Components Private Limited",
+      "related_document_id": "DOC-010",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-015",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "2014-06-18",
+      "event_type": "PRIOR_SECURITY",
+      "event_title": "Prior Mortgage Created",
+      "event_description": "Mortgage created in favour of Zenith Commercial Bank Limited",
+      "related_document_id": "DOC-011",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-016",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "2019-11-08",
+      "event_type": "RELEASE_RECORD",
+      "event_title": "Purported Release",
+      "event_description": "Zenith Commercial Bank issued release and satisfaction letter; formal satisfaction evidence remains to be verified",
+      "related_document_id": "DOC-012",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-001",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2024-03-15",
+      "event_type": "AGREEMENT_EXECUTION",
+      "event_title": "Facility Agreement Execution",
+      "event_description": "Facility Agreement, Security Agreement, and Corporate Guarantee executed by all parties at Aster Fintech Limited office, Noida",
+      "related_document_id": "DOC-001",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-003",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2024-03-18",
+      "event_type": "SECURITY_CREATION",
+      "event_title": "Property Mortgage Execution",
+      "event_description": "Registered mortgage deed executed over commercial property at Andheri-Kurla Road, Mumbai before Sub-Registrar of Assurances, Mumbai",
+      "related_document_id": "DOC-002",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-017",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "2024-03-18",
+      "event_type": "SECURITY_CREATION",
+      "event_title": "Aster Mortgage Created",
+      "event_description": "Property mortgaged in favour of Aster Fintech Limited",
+      "related_document_id": "DOC-002",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-002",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2024-03-20",
+      "event_type": "DISBURSEMENT",
+      "event_title": "Loan Disbursement",
+      "event_description": "Full facility amount of INR 15 crore disbursed to Borrower's account with HDFC Bank via NEFT",
+      "related_document_id": "DOC-004",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-004",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2024-04-05",
+      "event_type": "REGISTRATION",
+      "event_title": "CERSAI Registration",
+      "event_description": "Security interests registered with CERSAI (Registration Nos. CERSAI-2024-0315-789456 and CERSAI-2024-0315-789457)",
+      "related_document_id": "DOC-002",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-005",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2024-06-01",
+      "event_type": "REPAYMENT_DUE",
+      "event_title": "First EMI Due",
+      "event_description": "First equated monthly installment of INR 32,50,000 due and paid on time",
+      "related_document_id": "DOC-004",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-006",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-03-01",
+      "event_type": "REPAYMENT_RECEIVED",
+      "event_title": "Last Timely Repayment",
+      "event_description": "Tenth EMI of INR 32,50,000 paid on time. Total repaid to date: INR 3,25,00,000",
+      "related_document_id": "DOC-004",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-007",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-04-01",
+      "event_type": "DEFAULT_FIRST",
+      "event_title": "First Payment Default",
+      "event_description": "Eleventh EMI of INR 32,50,000 not received on due date. First instance of payment delay",
+      "related_document_id": "DOC-004",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-008",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-07-01",
+      "event_type": "DEFAULT_CONTINUING",
+      "event_title": "Continuing Defaults",
+      "event_description": "Four consecutive EMIs are now overdue for April, May, June and July 2025. Total scheduled overdue payments: INR 1,30,00,000 plus applicable interest.",
+      "related_document_id": "DOC-004",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-009",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-07-10",
+      "event_type": "LEGAL_NOTICE",
+      "event_title": "Default Notice Issued",
+      "event_description": "Formal default notice issued to Borrower under Clause 12 of Facility Agreement, invoking 30-day cure period",
+      "related_document_id": "DOC-005",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-010",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-07-28",
+      "event_type": "BORROWER_RESPONSE",
+      "event_title": "Borrower Response Received",
+      "event_description": "Borrower acknowledged default, explained financial distress, and requested loan restructuring",
+      "related_document_id": "DOC-006",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-011",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-08-15",
+      "event_type": "INTERNAL_ESCALATION",
+      "event_title": "Credit Escalation to Legal",
+      "event_description": "Credit Department escalated matter to Internal Legal with HIGH risk rating and recommendation for external counsel",
+      "related_document_id": "DOC-007",
+      "created_date": "2025-08-15"
+    },
+    {
+      "timeline_id": "TM-018",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "event_date": "2025-08-19",
+      "event_type": "SECURITY_SEARCH",
+      "event_title": "Security Search Completed",
+      "event_description": "Search confirms Aster security but identifies unresolved historical mortgage record",
+      "related_document_id": "DOC-013",
+      "created_date": "2025-08-20"
+    },
+    {
+      "timeline_id": "TM-012",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "event_date": "2025-08-22",
+      "event_type": "DECISION_EXTERNAL_COUNSEL",
+      "event_title": "Decision to Engage External Counsel",
+      "event_description": "Internal Legal approved engagement of external recovery counsel. Matter ready for counsel briefing",
+      "related_document_id": "DOC-008",
+      "created_date": "2025-08-22"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "ISSUE-001",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "issue_title": "Continuing Payment Default",
+      "issue_description": "Borrower has failed to pay 5 consecutive monthly installments from April 2025 through August 2025 totaling INR 1,62,50,000 in scheduled EMIs, together with accrued and penal interest. The first payment default occurred on 2025-04-01 and remains uncured as of 2025-08-31.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-002",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "issue_title": "Compliance with Contractual Notice Requirements",
+      "issue_description": "Whether default notice dated 2025-07-10 was properly served in accordance with Clause 18.3 of Facility Agreement (notice requirements). Notice sent via registered post and email. Borrower acknowledged receipt in response dated 2025-07-28. Cure period of 30 days expired on 2025-08-09 without payment.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "MEDIUM",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-003",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "issue_title": "Completeness of Security Package",
+      "issue_description": "Security package comprises three securities: (a) mortgage over commercial property; (b) corporate guarantee; (c) charge over receivables. All securities appear to be documented. However, verification of CERSAI registration certificates, title deed custody, and prior encumbrances remains incomplete pending WS-002 Security Verification workstream.",
+      "issue_status": "IN_PROGRESS",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-004",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "issue_title": "Guarantee Position Requiring Review",
+      "issue_description": "Corporate guarantee executed by Rajesh Kumar Sharma for INR 15 crore plus interest. Guarantee is unconditional and irrevocable. However, guarantor's current financial position, net worth, and asset availability have not been assessed. Recommend verification before guarantee invocation.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "MEDIUM",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-005",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "issue_title": "Appropriate Recovery/Enforcement Strategy",
+      "issue_description": "Multiple recovery pathways potentially available: (a) SARFAESI Act enforcement (possession and sale of secured assets); (b) DRT application for recovery certificate; (c) IBC initiation if borrower insolvent; (d) civil suit. Optimal pathway depends on: security enforceability, borrower solvency, asset valuation, timeline, costs, and likelihood of recovery. REQUIRES_LEGAL_JUDGMENT by qualified counsel.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-08-22",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-006",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "issue_title": "Security Verification Workstream Incomplete",
+      "issue_description": "WS-002 Security Verification workstream remains in progress. Critical verification items pending: (a) title deed examination and ownership history; (b) prior mortgage/charge search; (c) CERSAI registration confirmation; (d) current property valuation; (e) receivables charge perfection status. Recovery strategy cannot be finalized until security verification complete.",
+      "issue_status": "IN_PROGRESS",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-15",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-007",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "issue_title": "Prior Mortgage Requires Verification",
+      "issue_description": "Historical title and security records show a mortgage created in 2014 in favour of Zenith Commercial Bank Limited. Available records indicate repayment but formal satisfaction evidence has not yet been conclusively verified.",
+      "issue_status": "IN_PROGRESS",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-008",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "issue_title": "Release Documentation Incomplete",
+      "issue_description": "A 2019 release letter exists, but available evidence does not include a corresponding certified satisfaction or registration record conclusively demonstrating discharge of the prior mortgage.",
+      "issue_status": "IN_PROGRESS",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "USR-001"
+    },
+    {
+      "issue_id": "ISSUE-009",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "issue_title": "Current Property Valuation Outdated",
+      "issue_description": "The latest available property valuation is dated February 2024 and may not reflect current realizable value for recovery planning.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "MEDIUM",
+      "requires_legal_judgment": "NO",
+      "created_date": "2025-08-20",
+      "created_by": "USR-003"
+    },
+    {
+      "issue_id": "ISSUE-010",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "issue_title": "Impact of Security Verification on Recovery Strategy",
+      "issue_description": "Unresolved historical mortgage and release evidence may affect the timing, process or strategy for enforcement against the property. External counsel judgment is required before relying on the property as an immediately enforceable recovery asset.",
+      "issue_status": "ACTIVE",
+      "issue_priority": "HIGH",
+      "requires_legal_judgment": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "USR-001"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "FIND-001",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "FACTUAL",
+      "finding_title": "Payment Default Confirmed",
+      "finding_summary": "Borrower has failed to pay 5 consecutive monthly installments from April 2025 through August 2025 totaling INR 1,62,50,000 in scheduled EMIs, together with accrued and penal interest. The first payment default occurred on 2025-04-01 and remains uncured as of 2025-08-31.",
+      "confidence_level": "HIGH",
+      "requires_verification": "NO",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-001",
+          "finding_id": "FIND-001",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-004",
+          "source_section": "SEC-DOC-017",
+          "citation_text": "Repayment Schedule vs Actuals section showing 5 EMIs overdue"
+        },
+        {
+          "citation_id": "CITE-002",
+          "finding_id": "FIND-001",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-006",
+          "source_section": "SEC-DOC-022",
+          "citation_text": "Borrower acknowledgment of default"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-002",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "EXPOSURE",
+      "finding_title": "Outstanding Exposure Calculation",
+      "finding_summary": "Total outstanding exposure as of 2025-08-31 is INR 12,40,00,000 comprising principal outstanding of INR 12,00,00,000, accrued interest of INR 37,30,000, and penal interest of INR 2,70,000.",
+      "confidence_level": "HIGH",
+      "requires_verification": "NO",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-003",
+          "finding_id": "FIND-002",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-004",
+          "source_section": "SEC-DOC-018",
+          "citation_text": "Outstanding Exposure Calculation section"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-003",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "DOCUMENTATION",
+      "finding_title": "Security Package Appears Complete",
+      "finding_summary": "Three securities documented: (a) property mortgage; (b) corporate guarantee; (c) receivables charge. All appear properly documented pending verification of registration certificates and title deeds.",
+      "confidence_level": "MEDIUM",
+      "requires_verification": "YES",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-004",
+          "finding_id": "FIND-003",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-002",
+          "source_section": "SEC-DOC-007",
+          "citation_text": "Security Package Description section"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-004",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "INFORMATION_GAP",
+      "finding_title": "Current Collateral Valuation Missing",
+      "finding_summary": "Last property valuation dated 2024-02 (pre-disbursement). Current market value unknown. Property values in Andheri-Kurla Road area may have appreciated 15-20% since 2024, but this requires confirmation.",
+      "confidence_level": "MEDIUM",
+      "requires_verification": "YES",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-005",
+          "finding_id": "FIND-004",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-007",
+          "source_section": "SEC-DOC-028",
+          "citation_text": "Information Gaps section noting valuation missing"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-005",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "INFORMATION_GAP",
+      "finding_title": "Latest Borrower Financials Unavailable",
+      "finding_summary": "Last audited financials available: FY2023-24. FY2024-25 financials not yet available. Borrower's current financial position and solvency status cannot be definitively assessed without updated financials.",
+      "confidence_level": "MEDIUM",
+      "requires_verification": "YES",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-006",
+          "finding_id": "FIND-005",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-007",
+          "source_section": "SEC-DOC-028",
+          "citation_text": "Information Gaps section noting latest financials unavailable"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-006",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "finding_type": "LEGAL_ISSUE",
+      "finding_title": "Recovery Strategy Requires Legal Judgment",
+      "finding_summary": "Optimal recovery pathway (SARFAESI vs. DRT vs. IBC) requires legal judgment based on: security enforceability, borrower solvency, asset valuation, timeline, costs, and recovery likelihood. Cannot be determined without external counsel advice.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-08-31",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-007",
+          "finding_id": "FIND-006",
+          "source_type": "LEGAL_ISSUE",
+          "source_id": "ISSUE-005",
+          "source_section": null,
+          "citation_text": "Legal issue flagged as REQUIRES_LEGAL_JUDGMENT"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-007",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "finding_type": "SECURITY_VERIFICATION",
+      "finding_title": "Prior Mortgage Identified",
+      "finding_summary": "Title and security records identify a mortgage created in 2014 in favour of Zenith Commercial Bank Limited over AST-001.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-008",
+          "finding_id": "FIND-007",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-011",
+          "source_section": "SEC-DOC-037",
+          "citation_text": "Prior Mortgage Creation"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-008",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "finding_type": "INFORMATION_GAP",
+      "finding_title": "Formal Mortgage Satisfaction Not Confirmed",
+      "finding_summary": "A 2019 release letter indicates repayment and release intent, but the available dataset does not contain conclusive registration evidence establishing formal satisfaction of the 2014 mortgage.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-009",
+          "finding_id": "FIND-008",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-012",
+          "source_section": "SEC-DOC-039",
+          "citation_text": "Release Statement"
+        },
+        {
+          "citation_id": "CITE-010",
+          "finding_id": "FIND-008",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-012",
+          "source_section": "SEC-DOC-040",
+          "citation_text": "Verification Limitation"
+        },
+        {
+          "citation_id": "CITE-011",
+          "finding_id": "FIND-008",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-013",
+          "source_section": "SEC-DOC-041",
+          "citation_text": "Current Search Result"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-009",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "finding_type": "DOCUMENTATION",
+      "finding_title": "Aster Mortgage Recorded",
+      "finding_summary": "Current security records identify Aster Fintech Limited's 2024 mortgage over AST-001. This supports existence of the lender's claimed security, subject to counsel verification of priority and enforceability.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-012",
+          "finding_id": "FIND-009",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-013",
+          "source_section": "SEC-DOC-041",
+          "citation_text": "Current Search Result"
+        }
+      ]
+    },
+    {
+      "finding_id": "FIND-010",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-002",
+      "finding_type": "LEGAL_ISSUE",
+      "finding_title": "Security Issue May Affect Recovery Strategy",
+      "finding_summary": "The unresolved historical mortgage record could affect recovery strategy or sequencing. MatterBridge cannot determine legal priority or enforceability from the available documents and external counsel review is required.",
+      "confidence_level": "HIGH",
+      "requires_verification": "YES",
+      "created_date": "2025-08-20",
+      "created_by": "AI-001",
+      "citations": [
+        {
+          "citation_id": "CITE-013",
+          "finding_id": "FIND-010",
+          "source_type": "DOCUMENT",
+          "source_id": "DOC-013",
+          "source_section": "SEC-DOC-042",
+          "citation_text": "Verification Requirement"
+        },
+        {
+          "citation_id": "CITE-014",
+          "finding_id": "FIND-010",
+          "source_type": "LEGAL_ISSUE",
+          "source_id": "ISSUE-010",
+          "source_section": null,
+          "citation_text": "Security verification affects recovery strategy and requires legal judgment"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "DEC-001",
+      "matter_id": "MAT-001",
+      "workstream_id": "WS-001",
+      "decision_type": "PROCESS",
+      "decision_title": "Conditional Recovery Strategy",
+      "decision_summary": "Internal Legal approved continued recovery preparation against Meridian Components while preserving multiple recovery routes. Material enforcement against the commercial property remains conditional on further treatment of the unresolved Zenith mortgage satisfaction issue or explicit documented acceptance of the residual risk.",
+      "decision_status": "APPROVED_WITH_CONDITIONS",
+      "decision_rationale": "Meridian Components remains in payment default with approximately INR 12.4 crore outstanding. Aster has multiple potential recovery routes and a security package comprising the commercial property, Corporate Guarantee, and charge over receivables. The unresolved Zenith mortgage/release issue creates uncertainty concerning reliance on the commercial property. External counsel considers the existing release evidence sufficient to progress enforcement preparation, but Internal Legal requires either further verification or explicit acceptance of the residual security risk before a material property-enforcement step. This approach allows recovery preparation to continue without treating an unresolved evidentiary issue as conclusively resolved.",
+      "decision_date": "2025-09-16",
+      "decided_by": "USR-001",
+      "created_date": "2025-08-22",
+      "selected_actions": [
+        "Proceed with recovery preparation against Meridian Components while preserving multiple available recovery routes.",
+        "Continue preparation relating to the secured recovery process without treating the Zenith release issue as conclusively resolved.",
+        "Preserve recovery rights under the Corporate Guarantee.",
+        "Obtain further analysis of guarantor recoverability and the receivables charge.",
+        "Remain open to a commercially credible settlement without prejudicing existing recovery rights."
+      ],
+      "decision_factors": {
+        "legal_risk": "MEDIUM-HIGH in relation to reliance on the commercial property until the Zenith issue is resolved or expressly accepted. Other recovery routes require separate assessment.",
+        "recovery_probability": null,
+        "cost": "Not yet sufficiently established. External legal and enforcement costs depend on the routes pursued and whether proceedings become contested.",
+        "timeline": "Not fixed. Timing depends on security verification, procedural requirements, borrower response, enforcement route, and any contested proceedings.",
+        "commercial_considerations": "A commercially credible settlement proposal may be considered. Settlement discussions should not unnecessarily prejudice Aster's recovery rights.",
+        "process_legal_considerations": "Before material enforcement action, confirm applicable procedural prerequisites, complete required security verification, document Internal Legal's treatment of any remaining Zenith risk, and obtain required internal approvals."
+      },
+      "alternatives_considered": [
+        {
+          "alternative": "Proceed against the commercial property based solely on counsel's current opinion.",
+          "decision": "NOT_SELECTED_AT_THIS_STAGE",
+          "reason": "Internal evidence still contains an unresolved verification gap relating to the historical Zenith mortgage."
+        },
+        {
+          "alternative": "Pause the entire recovery matter until the Zenith issue is completely resolved.",
+          "decision": "NOT_SELECTED",
+          "reason": "Uncertainty affecting one security asset does not require Aster to stop assessment or preservation of its other recovery routes."
+        },
+        {
+          "alternative": "Pursue settlement as the sole strategy.",
+          "decision": "NOT_SELECTED",
+          "reason": "Settlement may be considered, but Aster should preserve its enforcement and recovery options."
+        },
+        {
+          "alternative": "Conditional multi-route recovery strategy.",
+          "decision": "SELECTED",
+          "reason": "Recovery preparation can continue while the property-enforcement decision remains conditional on further treatment of the Zenith security issue."
+        }
+      ],
+      "follow_up_actions": [
+        {
+          "action_id": "DEC001-ACT-001",
+          "action": "Request further clarification from external counsel regarding the Zenith release conclusion.",
+          "owner": "Internal Legal / External Counsel",
+          "status": "OPEN"
+        },
+        {
+          "action_id": "DEC001-ACT-002",
+          "action": "Seek additional evidence of Zenith mortgage satisfaction where available.",
+          "owner": "Internal Legal / External Counsel",
+          "status": "OPEN"
+        },
+        {
+          "action_id": "DEC001-ACT-003",
+          "action": "Assess guarantor financial position and practical recoverability.",
+          "owner": "External Counsel / Internal Legal",
+          "status": "OPEN"
+        },
+        {
+          "action_id": "DEC001-ACT-004",
+          "action": "Obtain substantive analysis of the charge over receivables.",
+          "owner": "External Counsel",
+          "status": "OPEN"
+        },
+        {
+          "action_id": "DEC001-ACT-005",
+          "action": "Continue recovery preparation while preserving available recovery rights.",
+          "owner": "Internal Legal / Recovery Team",
+          "status": "IN_PROGRESS"
+        }
+      ],
+      "decision_finality": "PROVISIONAL / APPROVED WITH CONDITIONS"
+    }
+  ],
+  "institutional_memory": {
+    "outcome_status": "OPEN",
+    "knowledge_items": [
+      {
+        "knowledge_item_id": "MEM-001",
+        "knowledge_item_title": "Security Evidence and External Counsel Disagreement",
+        "context": "External counsel considered the existing Zenith release evidence sufficient to progress enforcement preparation, while internal company evidence continued to classify the historical mortgage discharge as requiring verification.",
+        "lesson": "Where external counsel's conclusion differs from the company's existing evidence or treatment of a material security issue, surface both positions and require Internal Legal to explicitly resolve or accept the difference.",
+        "use_when": "External advice materially differs from existing company evidence, prior legal treatment, or relevant historical precedent.",
+        "matter_application": "Internal Legal did not automatically adopt counsel's Zenith conclusion and retained a verification requirement.",
+        "relevant_historical_matter_ids": ["HM-002", "HM-004"],
+        "source_ids": ["OUT-001", "REVIEW-001", "DEC-001", "DOC-011", "DOC-012", "DOC-013"]
+      },
+      {
+        "knowledge_item_id": "MEM-002",
+        "knowledge_item_title": "Uncertainty in One Recovery Route Does Not Necessarily Stop the Entire Matter",
+        "context": "The Zenith issue affects reliance on the commercial property but does not automatically eliminate the Corporate Guarantee, receivables charge, or other recovery options.",
+        "lesson": "A material issue affecting one security asset should be assessed independently from other available contractual or recovery rights.",
+        "use_when": "A particular asset or security instrument requires further verification while other recovery mechanisms remain available.",
+        "matter_application": "Aster continued recovery preparation and preserved multiple routes while keeping property enforcement conditional.",
+        "relevant_historical_matter_ids": ["HM-001", "HM-002", "HM-003", "HM-004"],
+        "source_ids": ["ISSUE-003", "ISSUE-005", "DEC-001"]
+      },
+      {
+        "knowledge_item_id": "MEM-003",
+        "knowledge_item_title": "External Counsel Advice Requires Internal Decision Ownership",
+        "context": "External counsel advice is an input into the company's legal decision, not the final company decision itself.",
+        "lesson": "Internal Legal should record whether counsel advice was accepted, accepted with conditions, rejected, escalated, or subjected to further verification.",
+        "use_when": "External counsel provides advice on a material matter requiring an internal legal or business decision.",
+        "matter_application": "Counsel's Zenith conclusion was not automatically adopted. Internal Legal approved a conditional strategy and retained the verification requirement.",
+        "relevant_historical_matter_ids": ["HM-004"],
+        "source_ids": ["OUT-001", "REVIEW-001", "DEC-001"]
+      }
+    ],
+    "future_outcome_fields": {
+      "recovery_route": null,
+      "zenith_satisfaction_verified": null,
+      "property_enforced": null,
+      "guarantee_invoked": null,
+      "receivables_charge_recovery": null,
+      "settlement": null,
+      "final_recovery_result": null,
+      "material_external_legal_cost": null,
+      "total_duration": null,
+      "procedural_obstacles": null,
+      "strategy_effectiveness": null
+    }
+  },
+  "access": [
+    {
+      "access_id": "ACC-001",
+      "matter_id": "MAT-001",
+      "user_id": "USR-001",
+      "access_level": "OWNER",
+      "granted_date": "2025-08-15",
+      "granted_by": "USR-004",
+      "user": {
+        "user_id": "USR-001",
+        "user_name": "Aditya Malhotra",
+        "user_email": "aditya.malhotra@asterfintech.in",
+        "user_role": "LEGAL_COUNSEL",
+        "department": "Legal",
+        "user_status": "ACTIVE",
+        "created_date": "2024-01-01"
+      }
+    },
+    {
+      "access_id": "ACC-002",
+      "matter_id": "MAT-001",
+      "user_id": "USR-003",
+      "access_level": "EDIT",
+      "granted_date": "2025-08-15",
+      "granted_by": "USR-001",
+      "user": {
+        "user_id": "USR-003",
+        "user_name": "Rahul Verma",
+        "user_email": "rahul.verma@asterfintech.in",
+        "user_role": "CREDIT_MANAGER",
+        "department": "Credit",
+        "user_status": "ACTIVE",
+        "created_date": "2024-01-01"
+      }
+    },
+    {
+      "access_id": "ACC-003",
+      "matter_id": "MAT-001",
+      "user_id": "USR-004",
+      "access_level": "VIEW",
+      "granted_date": "2025-08-15",
+      "granted_by": "USR-001",
+      "user": {
+        "user_id": "USR-004",
+        "user_name": "Kavita Reddy",
+        "user_email": "kavita.reddy@asterfintech.in",
+        "user_role": "LEGAL_HEAD",
+        "department": "Legal",
+        "user_status": "ACTIVE",
+        "created_date": "2024-01-01"
+      }
+    }
+  ],
+  "counsel_engagements": [
+    {
+      "engagement_id": "ENG-001",
+      "matter_id": "MAT-001",
+      "counsel_id": "COUN-001",
+      "engagement_type": "RECOVERY_COUNSEL",
+      "engagement_status": "ENGAGED",
+      "engagement_date": "2025-08-25",
+      "engagement_description": "External recovery counsel engaged to review recovery strategy, security position and enforcement options",
+      "budget_inr": 800000,
+      "created_date": "2025-08-22",
+      "counsel": {
+        "counsel_id": "COUN-001",
+        "counsel_name": "Adv. Sunita Rajani",
+        "counsel_type": "EXTERNAL",
+        "firm_name": "Rajani & Associates",
+        "email": "sunita.rajani@rajaniassociates.in",
+        "phone": "+91-22-22881234",
+        "specialization": "Banking, SARFAESI, DRT",
+        "counsel_status": "PREFERRED"
+      },
+      "briefs": [
+        {
+          "brief_id": "BRIEF-001",
+          "engagement_id": "ENG-001",
+          "brief_title": "Recovery and Security Strategy Brief",
+          "brief_date": "2025-08-25",
+          "brief_status": "ISSUED",
+          "created_date": "2025-08-22",
+          "created_by": "USR-001",
+          "questions": [
+            {
+              "question_id": "Q-001",
+              "brief_id": "BRIEF-001",
+              "question_text": "Based on the facts and documentation provided, what is the optimal recovery pathway: SARFAESI enforcement, DRT application, or IBC initiation? Please provide comparative analysis of timeline, costs, and likelihood of recovery for each option.",
+              "question_category": "STRATEGY",
+              "question_priority": "HIGH",
+              "created_date": "2025-08-22"
+            },
+            {
+              "question_id": "Q-002",
+              "brief_id": "BRIEF-001",
+              "question_text": "Please confirm whether all security documents are properly executed, registered, and enforceable. Identify any gaps or defects in documentation or registration that could impede enforcement.",
+              "question_category": "DOCUMENTATION",
+              "question_priority": "HIGH",
+              "created_date": "2025-08-22"
+            },
+            {
+              "question_id": "Q-003",
+              "brief_id": "BRIEF-001",
+              "question_text": "What are the specific steps, timeline, and estimated costs for SARFAESI enforcement including possession notice, physical possession, and sale of secured assets?",
+              "question_category": "PROCEDURE",
+              "question_priority": "HIGH",
+              "created_date": "2025-08-22"
+            },
+            {
+              "question_id": "Q-004",
+              "brief_id": "BRIEF-001",
+              "question_text": "Should the corporate guarantee be invoked simultaneously with enforcement against the Borrower? What are the advantages and risks of this approach?",
+              "question_category": "GUARANTEE",
+              "question_priority": "MEDIUM",
+              "created_date": "2025-08-22"
+            },
+            {
+              "question_id": "Q-005",
+              "brief_id": "BRIEF-001",
+              "question_text": "What is the risk of the Borrower initiating pre-emptive proceedings under IBC or NCLT? How should we mitigate this risk?",
+              "question_category": "RISK",
+              "question_priority": "MEDIUM",
+              "created_date": "2025-08-22"
+            },
+            {
+              "question_id": "Q-006",
+              "brief_id": "BRIEF-001",
+              "question_text": "Please assess whether the unresolved historical mortgage and incomplete satisfaction evidence relating to the commercial property affects priority, enforceability or sequencing of recovery action against that asset.",
+              "question_category": "SECURITY",
+              "question_priority": "HIGH",
+              "created_date": "2025-08-25"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "output_id": "OUT-001",
+          "engagement_id": "ENG-001",
+          "brief_id": "BRIEF-001",
+          "output_type": "LEGAL_OPINION",
+          "output_date": "2025-09-12",
+          "output_status": "RECEIVED",
+          "created_date": "2025-08-22",
+          "opinion_summary": "Counsel considers Aster Fintech to have viable recovery options against Meridian Components based on the facility documentation, payment default, and existing security package. Counsel recommends progressing secured enforcement while preserving other recovery routes, including recovery against the corporate guarantor. Counsel considers the existing commercial-property documentation sufficient to begin enforcement preparation, while noting that the historical Zenith mortgage issue may still warrant additional verification and that no final title opinion is provided.",
+          "opinion_sections": [
+            {
+              "opinion_section_id": "OPSEC-001",
+              "section_type": "OVERALL_ADVICE",
+              "section_title": "Overall Counsel Advice",
+              "section_summary": "Aster has viable recovery options. Secured enforcement should progress as the principal strategy while preserving guarantee, debt-recovery, insolvency-related, and commercially credible settlement routes. Counsel does not provide a final title opinion.",
+              "source_document_ids": ["DOC-001", "DOC-002", "DOC-003", "DOC-004"]
+            },
+            {
+              "opinion_section_id": "OPSEC-002",
+              "section_type": "RECOVERY_PATHWAY",
+              "section_title": "Recovery Pathway",
+              "section_summary": "Progress secured recovery/enforcement as the principal current strategy. Other recovery mechanisms remain available depending on the borrower's position and developments. Settlement may be considered if a commercially credible proposal preserves Aster's recovery rights.",
+              "source_document_ids": ["DOC-004", "DOC-005", "DOC-006"]
+            },
+            {
+              "opinion_section_id": "OPSEC-003",
+              "section_type": "SECURITY_ENFORCEABILITY",
+              "section_title": "Security Enforceability",
+              "section_summary": "The commercial property, Corporate Guarantee, and charge over receivables are capable of supporting a recovery strategy based on the documents reviewed. The property security is sufficiently documented to progress enforcement preparation, subject to applicable legal and procedural requirements.",
+              "source_document_ids": ["DOC-002", "DOC-003"]
+            },
+            {
+              "opinion_section_id": "OPSEC-004",
+              "section_type": "ZENITH_PRIOR_MORTGAGE",
+              "section_title": "Zenith Prior Mortgage / Release Issue",
+              "section_summary": "Counsel reviewed DOC-011, DOC-012, and DOC-013 and considers the available Release and Satisfaction Letter, together with current records, sufficient to progress enforcement preparation. Additional formal historical satisfaction evidence is not treated as a prerequisite, although further verification may remain appropriate during enforcement.",
+              "source_document_ids": ["DOC-011", "DOC-012", "DOC-013"],
+              "source_section_ids": ["SEC-DOC-037", "SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+            },
+            {
+              "opinion_section_id": "OPSEC-005",
+              "section_type": "CORPORATE_GUARANTEE",
+              "section_title": "Corporate Guarantee",
+              "section_summary": "The Corporate Guarantee should be preserved as an additional recovery route and may be invoked in parallel with secured recovery where commercially appropriate. The opinion does not substantively assess the guarantor's current financial position, available assets, or practical recoverability.",
+              "source_document_ids": ["DOC-003"]
+            },
+            {
+              "opinion_section_id": "OPSEC-006",
+              "section_type": "RECEIVABLES_CHARGE",
+              "section_title": "Charge over Receivables",
+              "section_summary": "The receivables charge forms part of the security package, but the opinion provides limited analysis of the current receivables pool, realizable value, competing claims, and practical enforcement steps.",
+              "source_document_ids": ["DOC-002"]
+            },
+            {
+              "opinion_section_id": "OPSEC-007",
+              "section_type": "TIMING_COST_RISK",
+              "section_title": "Timing, Cost, and Recovery Risks",
+              "section_summary": "Timing depends on borrower challenge, procedural requirements, security challenges, asset realization, and parallel proceedings. No reliable fixed completion date or final cost estimate is provided. Risks include enforcement challenge, procedural delay, asset-realization uncertainty, further security investigation, guarantor uncertainty, and parallel proceedings."
+            }
+          ],
+          "review_points": [
+            {
+              "review_point_id": "REVIEW-001",
+              "review_title": "Prior Position Conflict — Zenith Mortgage Release",
+              "review_type": "PRIOR_POSITION_CONFLICT",
+              "severity": "HIGH",
+              "counsel_position": "Counsel considers the Zenith Release and Satisfaction Letter, together with current records, sufficient to progress enforcement preparation without first obtaining additional formal evidence of historical satisfaction.",
+              "matterbridge_review": "The company's existing evidence continues to identify the Zenith release as requiring verification. DOC-012 is not currently treated internally as conclusive evidence that the historical mortgage was formally satisfied. Relevant company evidence and historical precedent indicate that material ambiguity concerning a prior security interest should be resolved or explicitly accepted by Legal before relying on the affected asset as a primary enforcement route. MatterBridge should not conclude that external counsel is wrong; it should surface the difference between counsel's position, current company evidence, and relevant historical precedent.",
+              "recommended_action": "ASK_COUNSEL",
+              "suggested_question": "What specific evidence supports treating the 2019 Release and Satisfaction Letter as sufficient despite the company's current verification gap, and what enforcement risk remains if formal satisfaction evidence cannot be obtained?",
+              "counsel_source_ids": ["OUT-001", "OPSEC-004"],
+              "company_source_ids": ["DOC-012", "DOC-013", "HM-004"],
+              "company_source_section_ids": ["SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+            },
+            {
+              "review_point_id": "REVIEW-002",
+              "review_title": "Missing Issue — Guarantor Recoverability",
+              "review_type": "MISSING_ISSUE",
+              "severity": "MEDIUM",
+              "counsel_position": "The Corporate Guarantee should be preserved as a parallel recovery route.",
+              "matterbridge_review": "The opinion does not substantively assess the guarantor's current financial position, identifiable assets, or practical recoverability. The legal availability of a guarantee does not by itself establish its commercial recovery value.",
+              "recommended_action": "ASK_COUNSEL",
+              "suggested_question": "Please assess the guarantor's current financial position and practical recovery prospects before Aster commits material resources to guarantee enforcement.",
+              "counsel_source_ids": ["OUT-001", "OPSEC-005"],
+              "company_source_ids": ["DOC-003", "ISSUE-004"]
+            },
+            {
+              "review_point_id": "REVIEW-003",
+              "review_title": "Missing Analysis — Receivables Charge",
+              "review_type": "MISSING_ISSUE",
+              "severity": "MEDIUM",
+              "counsel_position": "The charge over receivables forms part of the available security package.",
+              "matterbridge_review": "The opinion does not materially analyze the current receivables pool, realizable value, competing claims, or practical enforcement considerations.",
+              "recommended_action": "REQUEST_FURTHER_ANALYSIS",
+              "suggested_question": "Please assess the current status and practical enforceability of the receivables charge, including the available receivables pool and any known competing claims.",
+              "counsel_source_ids": ["OUT-001", "OPSEC-006"],
+              "company_source_ids": ["DOC-002", "ISSUE-003"]
+            },
+            {
+              "review_point_id": "REVIEW-004",
+              "review_title": "Source Verification — Zenith Release Conclusion",
+              "review_type": "VERIFY_EVIDENCE",
+              "severity": "HIGH",
+              "counsel_assertion": "The existing release documentation and current records provide sufficient basis to progress enforcement.",
+              "matterbridge_review": "This conclusion depends materially on the interpretation of the historical Zenith release evidence. The underlying source should remain directly visible to the internal lawyer reviewing counsel's conclusion.",
+              "recommended_action": "VERIFY_SOURCE",
+              "counsel_source_ids": ["OUT-001", "OPSEC-004"],
+              "company_source_ids": ["DOC-011", "DOC-012", "DOC-013"],
+              "company_source_section_ids": ["SEC-DOC-037", "SEC-DOC-039", "SEC-DOC-040", "SEC-DOC-041", "SEC-DOC-042"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "matter_asset": {
+        "matter_asset_id": "MA-001",
+        "matter_id": "MAT-001",
+        "asset_id": "AST-001",
+        "security_interest_id": "SEC-001",
+        "created_date": "2025-08-15"
+      },
+      "asset": {
+        "asset_id": "AST-001",
+        "asset_type": "COMMERCIAL_PROPERTY",
+        "asset_name": "Commercial Property - Mumbai",
+        "asset_description": "Commercial property located at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059. Built-up area: 12,500 sq ft. Current use: Manufacturing and warehouse facility.",
+        "asset_status": "VERIFICATION_PENDING",
+        "created_date": "2025-08-15",
+        "created_by": "USR-001"
+      },
+      "security_interest": {
+        "security_interest_id": "SEC-001",
+        "security_type": "MORTGAGE",
+        "security_description": "First mortgage by way of registered mortgage deed over commercial property at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059",
+        "registration_number": "CERSAI-2024-0315-789456",
+        "registration_date": "2024-04-05",
+        "registration_authority": "CERSAI",
+        "security_value_inr": 180000000,
+        "created_date": "2024-03-18"
+      },
+      "documents": [
+        {
+          "asset_document": {
+            "asset_document_id": "AD-001",
+            "asset_id": "AST-001",
+            "document_id": "DOC-009",
+            "relationship_type": "TITLE_DOCUMENT",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-009",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Sale Deed - Commercial Property",
+            "document_type": "TITLE_DEED",
+            "document_date": "1998-09-14",
+            "document_source": "TITLE_RECORDS",
+            "document_status": "FINAL",
+            "created_date": "2025-08-20",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-033",
+                "document_id": "DOC-009",
+                "section_title": "Property Transfer",
+                "section_content": "Under Sale Deed dated 1998-09-14, Shakti Industrial Estates Private Limited transferred the commercial property identified as Plot No. 45, Andheri-Kurla Road, Mumbai to Western Engineering Works Private Limited for stated consideration.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-034",
+                "document_id": "DOC-009",
+                "section_title": "Property Description",
+                "section_content": "The property comprises approximately 12,500 square feet of built-up industrial and commercial premises together with associated land and appurtenant rights.",
+                "section_order": 2
+              }
+            ]
+          }
+        },
+        {
+          "asset_document": {
+            "asset_document_id": "AD-002",
+            "asset_id": "AST-001",
+            "document_id": "DOC-010",
+            "relationship_type": "TITLE_DOCUMENT",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-010",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Conveyance Deed - Commercial Property",
+            "document_type": "CONVEYANCE_DEED",
+            "document_date": "2007-03-22",
+            "document_source": "TITLE_RECORDS",
+            "document_status": "FINAL",
+            "created_date": "2025-08-20",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-035",
+                "document_id": "DOC-010",
+                "section_title": "2007 Conveyance",
+                "section_content": "Western Engineering Works Private Limited conveyed the property to Meridian Components Private Limited pursuant to a restructuring transaction documented by Conveyance Deed dated 2007-03-22.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-036",
+                "document_id": "DOC-010",
+                "section_title": "Ownership Representation",
+                "section_content": "The conveyance records Meridian Components Private Limited as transferee and states that the property is transferred together with all rights, easements and interests held by the transferor.",
+                "section_order": 2
+              }
+            ]
+          }
+        },
+        {
+          "asset_document": {
+            "asset_document_id": "AD-003",
+            "asset_id": "AST-001",
+            "document_id": "DOC-011",
+            "relationship_type": "PRIOR_SECURITY",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-011",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Prior Mortgage Deed - Zenith Commercial Bank",
+            "document_type": "MORTGAGE_DEED",
+            "document_date": "2014-06-18",
+            "document_source": "TITLE_RECORDS",
+            "document_status": "FINAL",
+            "created_date": "2025-08-20",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-037",
+                "document_id": "DOC-011",
+                "section_title": "Prior Mortgage Creation",
+                "section_content": "Meridian Components Private Limited created a mortgage over the commercial property in favour of Zenith Commercial Bank Limited on 2014-06-18 to secure working capital facilities up to INR 9 crore.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-038",
+                "document_id": "DOC-011",
+                "section_title": "Release Requirement",
+                "section_content": "The mortgage deed provides that the security shall continue until all secured obligations to Zenith Commercial Bank Limited are discharged and appropriate release documentation is issued.",
+                "section_order": 2
+              }
+            ]
+          }
+        },
+        {
+          "asset_document": {
+            "asset_document_id": "AD-004",
+            "asset_id": "AST-001",
+            "document_id": "DOC-012",
+            "relationship_type": "RELEASE_DOCUMENT",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-012",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Release and Satisfaction Letter",
+            "document_type": "RELEASE_DOCUMENT",
+            "document_date": "2019-11-08",
+            "document_source": "BORROWER_RECORDS",
+            "document_status": "VERIFICATION_REQUIRED",
+            "created_date": "2025-08-20",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-039",
+                "document_id": "DOC-012",
+                "section_title": "Release Statement",
+                "section_content": "The letter states that credit facilities extended by Zenith Commercial Bank Limited to Meridian Components Private Limited were repaid and that the bank has no objection to release of security over the property.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-040",
+                "document_id": "DOC-012",
+                "section_title": "Verification Limitation",
+                "section_content": "The available release letter does not contain a corresponding registration endorsement or certified satisfaction record confirming removal of the 2014 mortgage from all relevant security and property records.",
+                "section_order": 2
+              }
+            ]
+          }
+        },
+        {
+          "asset_document": {
+            "asset_document_id": "AD-005",
+            "asset_id": "AST-001",
+            "document_id": "DOC-013",
+            "relationship_type": "SECURITY_SEARCH",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-013",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Current Security and Encumbrance Search",
+            "document_type": "SECURITY_SEARCH",
+            "document_date": "2025-08-19",
+            "document_source": "LEGAL_SEARCH",
+            "document_status": "FINAL",
+            "created_date": "2025-08-20",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-041",
+                "document_id": "DOC-013",
+                "section_title": "Current Search Result",
+                "section_content": "The current search identifies Aster Fintech Limited's mortgage registered in 2024. Historical records also reference the 2014 Zenith Commercial Bank mortgage. The materials reviewed do not contain conclusive evidence confirming formal satisfaction of that earlier mortgage.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-042",
+                "document_id": "DOC-013",
+                "section_title": "Verification Requirement",
+                "section_content": "External property counsel should confirm whether additional registry records, charge-satisfaction filings or lender confirmations are required to establish discharge of the earlier security interest.",
+                "section_order": 2
+              }
+            ]
+          }
+        },
+        {
+          "asset_document": {
+            "asset_document_id": "AD-006",
+            "asset_id": "AST-001",
+            "document_id": "DOC-014",
+            "relationship_type": "VALUATION",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-014",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-002",
+            "document_title": "Property Valuation Report",
+            "document_type": "VALUATION_REPORT",
+            "document_date": "2024-02-12",
+            "document_source": "VALUER",
+            "document_status": "FINAL",
+            "created_date": "2025-08-20",
+            "created_by": "USR-003",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-043",
+                "document_id": "DOC-014",
+                "section_title": "Valuation Conclusion",
+                "section_content": "The February 2024 valuation assessed the property at approximately INR 18 crore based on prevailing comparable transactions and existing property use.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-044",
+                "document_id": "DOC-014",
+                "section_title": "Valuation Limitation",
+                "section_content": "The report predates the current recovery assessment and should not be treated as evidence of current realizable value. An updated valuation is recommended before enforcement strategy is finalized.",
+                "section_order": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "matter_asset": {
+        "matter_asset_id": "MA-002",
+        "matter_id": "MAT-001",
+        "asset_id": "AST-002",
+        "security_interest_id": "SEC-002",
+        "created_date": "2025-08-15"
+      },
+      "asset": {
+        "asset_id": "AST-002",
+        "asset_type": "CORPORATE_GUARANTEE",
+        "asset_name": "Corporate Guarantee - Rajesh Kumar Sharma",
+        "asset_description": "Unconditional and irrevocable corporate guarantee executed by Rajesh Kumar Sharma in favor of Aster Fintech Limited.",
+        "asset_status": "ACTIVE",
+        "created_date": "2025-08-15",
+        "created_by": "USR-001"
+      },
+      "security_interest": {
+        "security_interest_id": "SEC-002",
+        "security_type": "GUARANTEE",
+        "security_description": "Unconditional and irrevocable guarantee by Rajesh Kumar Sharma for INR 15 crore plus interest and costs",
+        "registration_number": null,
+        "registration_date": null,
+        "registration_authority": null,
+        "security_value_inr": 150000000,
+        "created_date": "2024-03-15"
+      },
+      "documents": [
+        {
+          "asset_document": {
+            "asset_document_id": "AD-007",
+            "asset_id": "AST-002",
+            "document_id": "DOC-003",
+            "relationship_type": "GUARANTEE_DOCUMENT",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-003",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-001",
+            "document_title": "Corporate Guarantee",
+            "document_type": "GUARANTEE_DEED",
+            "document_date": "2024-03-15",
+            "document_source": "LENDER_ORIGINATION",
+            "document_status": "FINAL",
+            "created_date": "2025-08-15",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-012",
+                "document_id": "DOC-003",
+                "section_title": "Guarantee Obligations",
+                "section_content": "The Guarantor hereby unconditionally and irrevocably guarantees to the Lender the due and punctual payment and discharge of all obligations and liabilities of the Borrower under the Facility Agreement. This guarantee is a continuing guarantee and shall extend to the ultimate balance of sums payable by the Borrower, regardless of any intermediate payment or discharge.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-013",
+                "document_id": "DOC-003",
+                "section_title": "Guarantee Amount and Scope",
+                "section_content": "This guarantee covers principal amount up to INR 15,00,00,000 (Indian Rupees Fifteen Crore Only) together with interest, penal interest, costs, charges, and expenses. The Guarantor's liability shall be that of a principal debtor and shall not be affected by any change in the constitution of the Borrower or the Lender, or by any forbearance or variation made by the Lender.",
+                "section_order": 2
+              },
+              {
+                "section_id": "SEC-DOC-014",
+                "document_id": "DOC-003",
+                "section_title": "Invocation of Guarantee",
+                "section_content": "The Lender may invoke this guarantee at any time after the occurrence of an event of default under the Facility Agreement. The Guarantor shall pay the Lender within 7 (seven) days of receipt of written demand. The Guarantor waives all rights to require the Lender to first proceed against the Borrower or any other person or to enforce any other security before claiming against the Guarantor.",
+                "section_order": 3
+              },
+              {
+                "section_id": "SEC-DOC-015",
+                "document_id": "DOC-003",
+                "section_title": "Continuing Liability",
+                "section_content": "This guarantee shall remain in full force and effect until all obligations of the Borrower are fully discharged. The Guarantor shall not revoke this guarantee without prior written consent of the Lender. The death, insolvency, or incapacity of the Guarantor shall not terminate this guarantee, and the Guarantor's legal heirs and estate shall remain liable.",
+                "section_order": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "matter_asset": {
+        "matter_asset_id": "MA-003",
+        "matter_id": "MAT-001",
+        "asset_id": "AST-003",
+        "security_interest_id": "SEC-003",
+        "created_date": "2025-08-15"
+      },
+      "asset": {
+        "asset_id": "AST-003",
+        "asset_type": "CHARGE_RECEIVABLES",
+        "asset_name": "Charge over Receivables",
+        "asset_description": "First pari passu charge over all present and future book debts and receivables of Meridian Components Private Limited.",
+        "asset_status": "VERIFICATION_PENDING",
+        "created_date": "2025-08-15",
+        "created_by": "USR-001"
+      },
+      "security_interest": {
+        "security_interest_id": "SEC-003",
+        "security_type": "CHARGE",
+        "security_description": "First pari passu charge over all present and future book debts and receivables",
+        "registration_number": "CERSAI-2024-0315-789457",
+        "registration_date": "2024-04-05",
+        "registration_authority": "CERSAI",
+        "security_value_inr": 50000000,
+        "created_date": "2024-03-18"
+      },
+      "documents": [
+        {
+          "asset_document": {
+            "asset_document_id": "AD-008",
+            "asset_id": "AST-003",
+            "document_id": "DOC-002",
+            "relationship_type": "SECURITY_DOCUMENT",
+            "created_date": "2025-08-20"
+          },
+          "document": {
+            "document_id": "DOC-002",
+            "matter_id": "MAT-001",
+            "workstream_id": "WS-001",
+            "document_title": "Security Agreement",
+            "document_type": "SECURITY_DOCUMENT",
+            "document_date": "2024-03-15",
+            "document_source": "LENDER_ORIGINATION",
+            "document_status": "FINAL",
+            "created_date": "2025-08-15",
+            "created_by": "USR-001",
+            "sections": [
+              {
+                "section_id": "SEC-DOC-007",
+                "document_id": "DOC-002",
+                "section_title": "Security Package Description",
+                "section_content": "The Borrower and third parties have created the following security package in favor of the Lender: (a) First mortgage by way of registered mortgage deed over commercial property at Plot No. 45, Andheri-Kurla Road, Andheri East, Mumbai 400059, bearing municipal no. A-45/2019, built-up area 12,500 sq ft; (b) Unconditional and irrevocable corporate guarantee by Rajesh Kumar Sharma; (c) First pari passu charge over all present and future book debts and receivables of the Borrower.",
+                "section_order": 1
+              },
+              {
+                "section_id": "SEC-DOC-008",
+                "document_id": "DOC-002",
+                "section_title": "Security Creation and Perfection",
+                "section_content": "All security interests shall be created and perfected in accordance with applicable laws. The mortgage shall be registered with the Sub-Registrar of Assurances within 4 (four) months of execution. All charges shall be registered with CERSAI within 30 (thirty) days of creation. The Borrower shall execute all documents and do all acts necessary for creation, perfection, and registration of security interests.",
+                "section_order": 2
+              },
+              {
+                "section_id": "SEC-DOC-009",
+                "document_id": "DOC-002",
+                "section_title": "CERSAI Registration",
+                "section_content": "The Borrower acknowledges that all security interests created in favor of the Lender shall be registered with the Central Registry of Securitisation Asset Reconstruction and Security Interest of India (CERSAI) in accordance with Section 20 of the SARFAESI Act, 2002. The Borrower authorizes the Lender to file necessary forms and particulars with CERSAI. All registration fees and costs shall be borne by the Borrower.",
+                "section_order": 3
+              },
+              {
+                "section_id": "SEC-DOC-010",
+                "document_id": "DOC-002",
+                "section_title": "Representations Regarding Security",
+                "section_content": "The Borrower represents and warrants that: (a) it has clear, marketable, and encumbrance-free title to the mortgaged property except for prior charges disclosed in writing; (b) the property is free from all litigation, attachment, or encumbrance; (c) all documents relating to the property are genuine and valid; (d) no prior mortgage, charge, or lien exists on the property except as disclosed. Any breach of representations shall constitute an event of default.",
+                "section_order": 4
+              },
+              {
+                "section_id": "SEC-DOC-011",
+                "document_id": "DOC-002",
+                "section_title": "Enforcement of Security",
+                "section_content": "Upon enforcement, the Lender shall be entitled to take all measures permitted by law including: (a) taking possession of secured assets; (b) sale or lease of secured assets by public auction or private treaty; (c) appointment of a manager or receiver; (d) recovery from guarantors; (e) recovery from receivables debtors. The Borrower shall not create any further charge or encumbrance on secured assets without prior written consent of the Lender.",
+                "section_order": 5
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "company_policies": [
+    {
+      "policy_id": "POL-001",
+      "policy_name": "Credit Risk Management Policy",
+      "policy_category": "CREDIT",
+      "policy_description": "Framework for credit assessment, risk rating, monitoring, and escalation of credit facilities",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-002",
+      "policy_name": "Legal Matter Escalation Policy",
+      "policy_category": "LEGAL",
+      "policy_description": "Criteria and process for escalation of matters from business/credit to internal legal and external counsel",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-003",
+      "policy_name": "Security Documentation Standards",
+      "policy_category": "CREDIT",
+      "policy_description": "Minimum requirements for security documentation, registration, and perfection for secured lending",
+      "effective_date": "2023-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-004",
+      "policy_name": "Recovery and Enforcement Policy",
+      "policy_category": "RECOVERY",
+      "policy_description": "Guidelines for recovery actions, enforcement of security, and engagement of external recovery counsel",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-005",
+      "policy_name": "Medical and Family Leave Policy",
+      "policy_category": "HR",
+      "policy_description": "Framework for employee requests for medical, maternity-related and other protected or company-approved leave; Legal review required where statutory treatment is uncertain",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-006",
+      "policy_name": "Attendance and Absence Management Policy",
+      "policy_category": "HR",
+      "policy_description": "Requirements for attendance, absence notification, manager escalation and documented attendance interventions",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-007",
+      "policy_name": "Employee Document Accuracy Policy",
+      "policy_category": "HR",
+      "policy_description": "Employees are expected to provide accurate and authentic information and documentation; suspected irregularities must be verified before misconduct conclusions are reached",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-008",
+      "policy_name": "Employee Investigation and Disciplinary Policy",
+      "policy_category": "HR",
+      "policy_description": "Framework for factual investigation, employee response, evidence assessment, proportionality and Legal review before material disciplinary action",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    },
+    {
+      "policy_id": "POL-009",
+      "policy_name": "Performance Improvement Policy",
+      "policy_category": "HR",
+      "policy_description": "Standards for structured performance improvement plans, objective measurement and documentation of outcomes",
+      "effective_date": "2024-01-01",
+      "policy_status": "ACTIVE"
+    }
+  ],
+  "historical_precedents": [
+    {
+      "historical_matter_id": "HM-001",
+      "matter_reference": "MATTER-2023-045",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "FULL_RECOVERY",
+      "recovery_amount_inr": 85000000,
+      "recovery_percentage": 100,
+      "timeline_months": 8,
+      "lessons_learned": "SARFAESI enforcement effective for commercial property with clear title. Timeline: 8 months from notice to sale completion.",
+      "created_date": "2024-01-01"
+    },
+    {
+      "historical_matter_id": "HM-002",
+      "matter_reference": "MATTER-2023-067",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "PARTIAL_RECOVERY",
+      "recovery_amount_inr": 42000000,
+      "recovery_percentage": 65,
+      "timeline_months": 14,
+      "lessons_learned": "Multiple securities helped but property title dispute delayed enforcement. Recommend enhanced title verification pre-disbursement.",
+      "created_date": "2024-01-01"
+    },
+    {
+      "historical_matter_id": "HM-003",
+      "matter_reference": "MATTER-2024-012",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "SETTLEMENT",
+      "recovery_amount_inr": 95000000,
+      "recovery_percentage": 85,
+      "timeline_months": 5,
+      "lessons_learned": "Early engagement and restructuring proposal led to settlement. Faster recovery than enforcement but required concession.",
+      "created_date": "2024-06-01"
+    },
+    {
+      "historical_matter_id": "HM-004",
+      "matter_reference": "MATTER-2024-031",
+      "matter_type": "secured_loan_recovery",
+      "outcome": "PARTIAL_RECOVERY",
+      "recovery_amount_inr": 61000000,
+      "recovery_percentage": 72,
+      "timeline_months": 11,
+      "lessons_learned": "Recovery was delayed because a prior mortgage satisfaction entry was incomplete. External title verification resolved priority before enforcement proceeded.",
+      "created_date": "2025-01-01"
+    },
+    {
+      "historical_matter_id": "HM-005",
+      "matter_reference": "MATTER-2024-HR-018",
+      "matter_type": "hr_employment",
+      "outcome": "INTERNAL_RESOLUTION",
+      "recovery_amount_inr": 0,
+      "recovery_percentage": 0,
+      "timeline_months": 2,
+      "lessons_learned": "Medical-document discrepancies were investigated separately from attendance history. No disciplinary conclusion was reached until source verification and employee clarification were complete.",
+      "created_date": "2025-01-01"
+    },
+    {
+      "historical_matter_id": "HM-006",
+      "matter_reference": "MATTER-2025-HR-007",
+      "matter_type": "hr_employment",
+      "outcome": "FINAL_WARNING",
+      "recovery_amount_inr": 0,
+      "recovery_percentage": 0,
+      "timeline_months": 1,
+      "lessons_learned": "Employee had prior attendance issues but had formally completed a PIP. Subsequent misconduct allegation was assessed independently and resulted in targeted disciplinary action based only on verified facts.",
+      "created_date": "2025-06-01"
+    }
+  ]
+}

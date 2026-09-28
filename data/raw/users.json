@@ -1,0 +1,56 @@
+[
+  {
+    "user_id": "USR-001",
+    "user_name": "Aditya Malhotra",
+    "user_email": "aditya.malhotra@asterfintech.in",
+    "user_role": "LEGAL_COUNSEL",
+    "department": "Legal",
+    "user_status": "ACTIVE",
+    "created_date": "2024-01-01"
+  },
+  {
+    "user_id": "USR-002",
+    "user_name": "Neha Gupta",
+    "user_email": "neha.gupta@asterfintech.in",
+    "user_role": "HR_MANAGER",
+    "department": "Human Resources",
+    "user_status": "ACTIVE",
+    "created_date": "2024-01-01"
+  },
+  {
+    "user_id": "USR-003",
+    "user_name": "Rahul Verma",
+    "user_email": "rahul.verma@asterfintech.in",
+    "user_role": "CREDIT_MANAGER",
+    "department": "Credit",
+    "user_status": "ACTIVE",
+    "created_date": "2024-01-01"
+  },
+  {
+    "user_id": "USR-004",
+    "user_name": "Kavita Reddy",
+    "user_email": "kavita.reddy@asterfintech.in",
+    "user_role": "LEGAL_HEAD",
+    "department": "Legal",
+    "user_status": "ACTIVE",
+    "created_date": "2024-01-01"
+  },
+  {
+    "user_id": "AI-001",
+    "user_name": "MatterBridge AI",
+    "user_email": "ai@matterbridge.system",
+    "user_role": "AI_ASSISTANT",
+    "department": "System",
+    "user_status": "ACTIVE",
+    "created_date": "2024-01-01"
+  },
+  {
+    "user_id": "USR-005",
+    "user_name": "Rhea Sethi",
+    "user_email": "rhea.sethi@sethiemployment.example",
+    "user_role": "EXTERNAL_COUNSEL",
+    "department": "External Counsel",
+    "user_status": "ACTIVE",
+    "created_date": "2025-09-03"
+  }
+]

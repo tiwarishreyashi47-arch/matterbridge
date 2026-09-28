@@ -1,0 +1,68 @@
+[
+  {
+    "historical_matter_id": "HM-001",
+    "matter_reference": "MATTER-2023-045",
+    "matter_type": "secured_loan_recovery",
+    "outcome": "FULL_RECOVERY",
+    "recovery_amount_inr": 85000000,
+    "recovery_percentage": 100,
+    "timeline_months": 8,
+    "lessons_learned": "SARFAESI enforcement effective for commercial property with clear title. Timeline: 8 months from notice to sale completion.",
+    "created_date": "2024-01-01"
+  },
+  {
+    "historical_matter_id": "HM-002",
+    "matter_reference": "MATTER-2023-067",
+    "matter_type": "secured_loan_recovery",
+    "outcome": "PARTIAL_RECOVERY",
+    "recovery_amount_inr": 42000000,
+    "recovery_percentage": 65,
+    "timeline_months": 14,
+    "lessons_learned": "Multiple securities helped but property title dispute delayed enforcement. Recommend enhanced title verification pre-disbursement.",
+    "created_date": "2024-01-01"
+  },
+  {
+    "historical_matter_id": "HM-003",
+    "matter_reference": "MATTER-2024-012",
+    "matter_type": "secured_loan_recovery",
+    "outcome": "SETTLEMENT",
+    "recovery_amount_inr": 95000000,
+    "recovery_percentage": 85,
+    "timeline_months": 5,
+    "lessons_learned": "Early engagement and restructuring proposal led to settlement. Faster recovery than enforcement but required concession.",
+    "created_date": "2024-06-01"
+  },
+  {
+    "historical_matter_id": "HM-004",
+    "matter_reference": "MATTER-2024-031",
+    "matter_type": "secured_loan_recovery",
+    "outcome": "PARTIAL_RECOVERY",
+    "recovery_amount_inr": 61000000,
+    "recovery_percentage": 72,
+    "timeline_months": 11,
+    "lessons_learned": "Recovery was delayed because a prior mortgage satisfaction entry was incomplete. External title verification resolved priority before enforcement proceeded.",
+    "created_date": "2025-01-01"
+  },
+  {
+    "historical_matter_id": "HM-005",
+    "matter_reference": "MATTER-2024-HR-018",
+    "matter_type": "hr_employment",
+    "outcome": "INTERNAL_RESOLUTION",
+    "recovery_amount_inr": 0,
+    "recovery_percentage": 0,
+    "timeline_months": 2,
+    "lessons_learned": "Medical-document discrepancies were investigated separately from attendance history. No disciplinary conclusion was reached until source verification and employee clarification were complete.",
+    "created_date": "2025-01-01"
+  },
+  {
+    "historical_matter_id": "HM-006",
+    "matter_reference": "MATTER-2025-HR-007",
+    "matter_type": "hr_employment",
+    "outcome": "FINAL_WARNING",
+    "recovery_amount_inr": 0,
+    "recovery_percentage": 0,
+    "timeline_months": 1,
+    "lessons_learned": "Employee had prior attendance issues but had formally completed a PIP. Subsequent misconduct allegation was assessed independently and resulted in targeted disciplinary action based only on verified facts.",
+    "created_date": "2025-06-01"
+  }
+]
