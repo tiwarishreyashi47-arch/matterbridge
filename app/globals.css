@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f7fa;
-  --foreground: #132238;
-  --navy: #132238;
-  --blue: #2563eb;
-  --muted: #64748b;
-  --line: #e2e8f0;
-  --surface: #ffffff;
+  --background: #f4f3ef;
+  --foreground: #20252d;
+  --navy: #20252d;
+  --blue: #263c68;
+  --muted: #6b7280;
+  --line: #dfdfda;
+  --surface: #fffefa;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: Arial, Helvetica, sans-serif;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
@@ -24,7 +24,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
 }
 
 button,
@@ -43,13 +44,65 @@ summary::-webkit-details-marker {
 .surface-card {
   border: 1px solid var(--line);
   background: var(--surface);
-  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
+  box-shadow: 0 1px 2px rgb(32 37 45 / 0.025);
+}
+
+.app-shell {
+  background: var(--background);
+}
+
+.page-frame {
+  margin-inline: auto;
+  width: min(100%, 88rem);
+  padding: 2.5rem clamp(1.25rem, 3vw, 3.5rem) 5rem;
 }
 
 .eyebrow {
-  color: #64748b;
-  font-size: 0.6875rem;
+  color: #7a7e84;
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+/* Product-wide palette overrides keep legacy route markup visually coherent. */
+.bg-slate-50 { background-color: #f4f3ef !important; }
+.bg-slate-100 { background-color: #e8e7e2 !important; }
+.bg-white { background-color: #fffefa !important; }
+.text-blue-700, .text-blue-600 { color: #263c68 !important; }
+.text-blue-900 { color: #1e3156 !important; }
+.bg-blue-600 { background-color: #263c68 !important; }
+.bg-blue-50 { background-color: #eef0f5 !important; }
+.bg-blue-100 { background-color: #dfe4ed !important; }
+.border-blue-100, .border-blue-200 { border-color: #cfd7e4 !important; }
+.hover\:bg-blue-700:hover { background-color: #1e3156 !important; }
+.hover\:border-blue-300:hover { border-color: #aeb8c9 !important; }
+.focus\:border-blue-500:focus { border-color: #73819b !important; }
+.focus\:ring-blue-100:focus { --tw-ring-color: #dfe4ed !important; }
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+button, a, summary, select, input, textarea {
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+button:active:not(:disabled), a:active {
+  transform: translateY(1px);
+}
+
+.eyebrow {
+  color: #7a7e84;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 }

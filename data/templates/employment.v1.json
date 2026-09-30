@@ -1,0 +1,21 @@
+{
+  "template_id": "employment",
+  "practice_area": "Employment and HR",
+  "name": "Employment / HR Review",
+  "version": "v1",
+  "status": "published",
+  "stages": ["Intake", "Investigation", "Counsel Review", "Decision", "Closed"],
+  "workstreams": [{ "key": "employment_review", "name": "Employee Leave & Misconduct Review", "description": "Leave, performance, document verification, and investigation." }],
+  "entity_roles": ["employee", "manager", "employer", "employment_counsel"],
+  "document_types": [
+    { "key": "employment_record", "label": "Employment Record", "fields": [{ "key": "employee_name", "label": "Employee name", "type": "text", "required": true }, { "key": "start_date", "label": "Start date", "type": "date" }] },
+    { "key": "medical_document", "label": "Medical / Leave Document", "fields": [{ "key": "document_identifier", "label": "Document identifier", "type": "text" }, { "key": "leave_date", "label": "Leave date", "type": "date" }] },
+    { "key": "pip_record", "label": "PIP Record", "fields": [{ "key": "pip_status", "label": "PIP status", "type": "text" }, { "key": "completion_date", "label": "Completion date", "type": "date" }] }
+  ],
+  "expected_documents": ["employment_record", "medical_document", "pip_record"],
+  "rules": [
+    { "rule_code": "employment.document_identifier_mismatch", "parameters": {} },
+    { "rule_code": "employment.pip_threshold", "parameters": {} },
+    { "rule_code": "employment.separate_performance_investigation", "parameters": {} }
+  ]
+}

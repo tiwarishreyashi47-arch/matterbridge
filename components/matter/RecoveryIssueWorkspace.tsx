@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import type { IssueSupport } from "@/lib/data/issue-mapping";
 
 type RecoveryIssueWorkspaceProps = {
   issueSupport: IssueSupport[];
   workstreamName: string;
+  matterId: string;
 };
 
 function label(value?: string | null) {
@@ -45,6 +47,7 @@ function findingState(finding: IssueSupport["findings"][number]) {
 export default function RecoveryIssueWorkspace({
   issueSupport,
   workstreamName,
+  matterId,
 }: RecoveryIssueWorkspaceProps) {
   const [openPanel, setOpenPanel] = useState<string | null>(null);
   const [comments, setComments] = useState<Record<string, string>>({});
@@ -62,11 +65,11 @@ export default function RecoveryIssueWorkspace({
             {workstreamName}
           </p>
           <h2 className="mt-1 text-2xl font-semibold tracking-tight text-slate-950">
-            Active Issues
+            Open items
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Work each issue from the source evidence and AI findings before
-            deciding the next legal action.
+            Resolve the items that need attention in this stage. Each item can
+            connect source evidence, MatterBridge assessment, and the next action.
           </p>
         </div>
 
@@ -87,9 +90,7 @@ export default function RecoveryIssueWorkspace({
             >
               <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                 <div className="max-w-4xl">
-                  <p className="font-mono text-xs font-medium text-slate-500">
-                    {issue.issue_id}
-                  </p>
+                  <p className="eyebrow text-[#263c68]">Issue requiring attention</p>
                   <h3 className="mt-2 text-lg font-semibold text-slate-950">
                     {issue.issue_title}
                   </h3>
@@ -128,7 +129,7 @@ export default function RecoveryIssueWorkspace({
                   onClick={() => togglePanel(issue.issue_id, "findings")}
                   className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-400 hover:bg-blue-100"
                 >
-                  AI Findings {findingsPanel ? "↑" : "↓"}
+                  Assessment {findingsPanel ? "↑" : "↓"}
                 </button>
                 <span className="self-center text-xs text-slate-500">
                   {documents.length} documents · {findings.length} findings
@@ -142,7 +143,7 @@ export default function RecoveryIssueWorkspace({
                       Supporting evidence
                     </p>
                     <span className="text-xs font-medium text-slate-500">
-                      {evidence.length} matched source chunks
+                      {evidence.length} supporting passages
                     </span>
                   </div>
 
@@ -152,9 +153,7 @@ export default function RecoveryIssueWorkspace({
                         key={document.document_id}
                         className="rounded-lg border border-slate-200 bg-white p-3"
                       >
-                        <p className="font-mono text-xs text-slate-500">
-                          {document.document_id}
-                        </p>
+                        <p className="eyebrow text-[#263c68]">Matter document</p>
                         <p className="mt-1 text-sm font-semibold text-slate-900">
                           {document.document_title}
                         </p>
@@ -173,9 +172,7 @@ export default function RecoveryIssueWorkspace({
                           key={source.chunk_id}
                           className="rounded-lg border border-slate-200 bg-white p-3"
                         >
-                          <p className="font-mono text-xs font-medium text-blue-700">
-                            {source.chunk_id} · {source.document_id}
-                          </p>
+                          <p className="text-xs font-semibold uppercase tracking-wide text-[#263c68]">Source passage</p>
                           <p className="mt-1 text-sm font-medium text-slate-900">
                             {source.citation_label ?? source.section_title}
                           </p>
@@ -187,7 +184,7 @@ export default function RecoveryIssueWorkspace({
                     </div>
                   ) : (
                     <p className="mt-3 text-sm text-slate-600">
-                      No directly matched source chunk was found in the current
+                      No directly matched source passage was found in the current
                       evidence packet.
                     </p>
                   )}
@@ -208,9 +205,7 @@ export default function RecoveryIssueWorkspace({
                         >
                           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                             <div>
-                              <p className="font-mono text-xs font-medium text-slate-500">
-                                {finding.finding_id}
-                              </p>
+                              <p className="eyebrow text-[#263c68]">MatterBridge finding</p>
                               <p className="mt-1 text-sm font-semibold text-slate-900">
                                 {finding.finding_title}
                               </p>
@@ -229,7 +224,7 @@ export default function RecoveryIssueWorkspace({
                                   key={citation.citation_id}
                                   className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
                                 >
-                                  {citation.source_id}
+                                  {citation.source_section ?? "Supporting source"}
                                 </span>
                               ))}
                             </div>
@@ -269,6 +264,9 @@ export default function RecoveryIssueWorkspace({
                 <p className="mt-1 text-right text-xs text-slate-400">
                   Local prototype note · not saved
                 </p>
+                <Link href={`/matters/${matterId}/counsel`} className="mt-3 inline-flex text-sm font-semibold text-blue-700 hover:text-blue-900">
+                  Refer to Counsel &amp; Internal Strategy →
+                </Link>
               </div>
             </article>
           );

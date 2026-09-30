@@ -3,7 +3,8 @@ import RecoveryIssueWorkspace from "@/components/matter/RecoveryIssueWorkspace";
 import { getMatter, getWorkstream } from "@/lib/data/matter-service";
 import { buildEvidencePacket } from "@/lib/data/evidence-service";
 import { mapIssuesToSupport } from "@/lib/data/issue-mapping";
-import type { AIFinding, LegalIssue, MatterAssetBundle } from "@/lib/types/matter";
+import type { MatterAssetBundle } from "@/lib/types/matter";
+import MatterWorkspaceNav from "@/components/matter/MatterWorkspaceNav";
 
 type WorkstreamPageProps = {
   params: Promise<{
@@ -29,141 +30,6 @@ function formatCurrency(value?: number | null) {
   }).format(value);
 }
 
-function classifyFinding(finding: AIFinding) {
-  if (
-    finding.finding_type === "INFORMATION_GAP" ||
-    finding.requires_verification === "YES"
-  ) {
-    return {
-      label: "Information Missing",
-      className: "border-amber-200 bg-amber-50 text-amber-800",
-    };
-  }
-
-  if (
-    finding.finding_type === "LEGAL_ISSUE" ||
-    finding.finding_type === "RECOMMENDATION" ||
-    finding.requires_legal_judgment === "YES"
-  ) {
-    return {
-      label: "Legal Judgment Required",
-      className: "border-sky-200 bg-sky-50 text-sky-800",
-    };
-  }
-
-  return {
-    label: "Supported",
-    className: "border-emerald-200 bg-emerald-50 text-emerald-800",
-  };
-}
-
-function issueClassName(issue: LegalIssue) {
-  if (issue.requires_legal_judgment === "YES") {
-    return "border-sky-200 bg-sky-50 text-sky-800";
-  }
-
-  if (issue.issue_priority === "HIGH") {
-    return "border-rose-200 bg-rose-50 text-rose-800";
-  }
-
-  return "border-slate-200 bg-slate-100 text-slate-700";
-}
-
-function FindingCard({ finding }: { finding: AIFinding }) {
-  const state = classifyFinding(finding);
-
-  return (
-    <article className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <p className="font-mono text-xs font-medium text-slate-500">
-            {finding.finding_id}
-          </p>
-          <h3 className="mt-2 text-base font-semibold text-slate-950">
-            {finding.finding_title}
-          </h3>
-        </div>
-
-        <span
-          className={
-            "w-fit rounded-full border px-3 py-1 text-xs font-semibold " +
-            state.className
-          }
-        >
-          {state.label}
-        </span>
-      </div>
-
-      <p className="mt-3 text-sm leading-6 text-slate-600">
-        {finding.finding_summary}
-      </p>
-
-      <div className="mt-4 flex flex-wrap gap-2 text-xs font-medium">
-        <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
-          {label(finding.finding_type)}
-        </span>
-        <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
-          Verification: {finding.requires_verification === "YES" ? "Yes" : "No"}
-        </span>
-      </div>
-
-      {(finding.citations?.length ?? 0) > 0 ? (
-        <div className="mt-5 border-t border-slate-100 pt-4">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Evidence
-          </p>
-          <div className="mt-3 grid gap-2">
-            {finding.citations?.map((citation) => (
-              <div
-                key={citation.citation_id}
-                className="rounded-lg bg-slate-50 p-3 text-sm text-slate-700"
-              >
-                <p className="font-medium text-slate-900">
-                  {citation.source_id}
-                  {citation.source_section ? " / " + citation.source_section : ""}
-                </p>
-                <p className="mt-1 leading-6">{citation.citation_text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      ) : null}
-    </article>
-  );
-}
-
-function IssueCard({ issue }: { issue: LegalIssue }) {
-  return (
-    <article className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <p className="font-mono text-xs font-medium text-slate-500">
-            {issue.issue_id}
-          </p>
-          <h3 className="mt-2 text-base font-semibold text-slate-950">
-            {issue.issue_title}
-          </h3>
-        </div>
-
-        <span
-          className={
-            "rounded-full border px-3 py-1 text-xs font-semibold " +
-            issueClassName(issue)
-          }
-        >
-          {issue.requires_legal_judgment === "YES"
-            ? "Legal judgment"
-            : issue.issue_priority}
-        </span>
-      </div>
-
-      <p className="mt-3 text-sm leading-6 text-slate-600">
-        {issue.issue_description}
-      </p>
-    </article>
-  );
-}
-
 function SecurityCard({ assetBundle }: { assetBundle: MatterAssetBundle }) {
   const { asset, security_interest: securityInterest } = assetBundle;
 
@@ -171,9 +37,7 @@ function SecurityCard({ assetBundle }: { assetBundle: MatterAssetBundle }) {
     <article className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-mono text-xs font-medium text-slate-500">
-            {asset.asset_id}
-          </p>
+          <p className="eyebrow text-[#263c68]">Stage asset</p>
           <h3 className="mt-2 text-base font-semibold text-slate-950">
             {asset.asset_name}
           </h3>
@@ -224,8 +88,8 @@ export default async function WorkstreamPage({
   params,
 }: WorkstreamPageProps) {
   const { matterId, workstreamId } = await params;
-  const matterData = getMatter(matterId);
-  const workstream = getWorkstream(matterId, workstreamId);
+  const matterData = await getMatter(matterId);
+  const workstream = await getWorkstream(matterId, workstreamId);
 
   if (!matterData || !workstream) {
     return (
@@ -238,17 +102,11 @@ export default async function WorkstreamPage({
   const isSecurityVerification =
     matterData.matter.matter_id === "MAT-001" &&
     workstream.workstream_name === "Security Verification";
-  const isRecoveryAssessment =
-    matterData.matter.matter_id === "MAT-001" &&
-    workstream.workstream_name === "Recovery Assessment";
-  const isEmployeeLeaveReview =
-    matterData.matter.matter_id === "MAT-002" &&
-    workstream.workstream_name === "Employee Leave & Misconduct Review";
   const securityAssets = isSecurityVerification ? matterData.assets ?? [] : [];
-  const usesIssueRelationshipWorkspace =
-    isRecoveryAssessment || isSecurityVerification || isEmployeeLeaveReview;
-  const issueSupport = usesIssueRelationshipWorkspace
-    ? mapIssuesToSupport(
+  const resolvedStatuses = new Set(["RESOLVED", "CLOSED", "COMPLETED"]);
+  const openItemCount = (workstream.issues ?? []).filter((issue) => !resolvedStatuses.has(issue.issue_status ?? "")).length;
+  const resolvedItemCount = (workstream.issues ?? []).length - openItemCount;
+  const issueSupport = mapIssuesToSupport(
         workstream.issues ?? [],
         workstream.findings ?? [],
         workstream.documents ?? [],
@@ -256,8 +114,7 @@ export default async function WorkstreamPage({
           workstream,
           maxSources: 40,
         }).sources
-      )
-    : [];
+      );
 
   return (
     <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-950 sm:px-10 lg:px-12 lg:py-10">
@@ -273,7 +130,7 @@ export default async function WorkstreamPage({
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-4xl">
               <p className="eyebrow text-blue-700">
-                {matterData.matter.matter_id} / {workstream.workstream_id}
+                {matterData.matter.matter_title} / Stage
               </p>
 
               <h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-950">
@@ -287,16 +144,16 @@ export default async function WorkstreamPage({
 
             <div className="grid min-w-64 grid-cols-3 gap-2 text-sm">
               <div className="rounded-lg border border-slate-200 bg-slate-50/80 p-3">
-                <p className="eyebrow">Findings</p>
+                <p className="eyebrow">Open items</p>
                 <p className="mt-1 text-2xl font-semibold text-slate-950">
-                  {workstream.findings?.length ?? 0}
+                  {openItemCount}
                 </p>
               </div>
 
               <div className="rounded-lg border border-slate-200 bg-slate-50/80 p-3">
-                <p className="eyebrow">Active Issues</p>
+                <p className="eyebrow">Resolved</p>
                 <p className="mt-1 text-2xl font-semibold text-slate-950">
-                  {workstream.issues?.length ?? 0}
+                  {resolvedItemCount}
                 </p>
               </div>
 
@@ -310,38 +167,13 @@ export default async function WorkstreamPage({
           </div>
         </header>
 
-        {usesIssueRelationshipWorkspace ? (
-          <RecoveryIssueWorkspace
-            issueSupport={issueSupport}
-            workstreamName={workstream.workstream_name}
-          />
-        ) : (
-          <section className="mt-8 grid gap-6 xl:grid-cols-[1fr_0.85fr]">
-            <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                Findings
-              </h2>
+        <MatterWorkspaceNav matterId={matterId} active="stages" />
 
-              <div className="mt-4 grid gap-4">
-                {(workstream.findings ?? []).map((finding) => (
-                  <FindingCard key={finding.finding_id} finding={finding} />
-                ))}
-              </div>
-            </div>
-
-            <aside>
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                Active Issues
-              </h2>
-
-              <div className="mt-4 grid gap-4">
-                {(workstream.issues ?? []).map((issue) => (
-                  <IssueCard key={issue.issue_id} issue={issue} />
-                ))}
-              </div>
-            </aside>
-          </section>
-        )}
+        <RecoveryIssueWorkspace
+          issueSupport={issueSupport}
+          workstreamName={workstream.workstream_name}
+          matterId={matterId}
+        />
 
         {securityAssets.length > 0 ? (
           <section className="mt-8">
@@ -369,22 +201,19 @@ export default async function WorkstreamPage({
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h2 className="text-lg font-semibold text-slate-950">
-                Documents in this workstream
+                Documents in this stage
               </h2>
               <p className="mt-1 text-sm text-slate-600">
-                View the complete documentary record in the central evidence library.
+                View the complete matter document library or upload workstream-specific evidence.
               </p>
             </div>
             <Link
               href={
-                "/evidence?matterId=" +
-                matterId +
-                "&workstreamId=" +
-                workstreamId
+                "/matters/" + matterId + "/documents"
               }
               className="text-sm font-semibold text-blue-700 hover:text-blue-900"
             >
-              Open Documentary Evidence ({workstream.documents?.length ?? 0}) →
+              Open Matter Documents ({workstream.documents?.length ?? 0}) →
             </Link>
           </div>
         </section>

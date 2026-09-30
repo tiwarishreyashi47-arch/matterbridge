@@ -12,6 +12,9 @@ export interface Matter {
   outstanding_exposure_inr?: number;
   created_date?: string;
   created_by?: string;
+  template_id?: string | null;
+  template_version?: string | null;
+  workflow_stage?: string | null;
 }
 
 export interface MatterType {
@@ -19,6 +22,12 @@ export interface MatterType {
   matter_type_name: string;
   description?: string;
   created_date?: string;
+}
+
+export interface MatterLink {
+  from_matter_id: string;
+  to_matter_id: string;
+  link_type: string;
 }
 
 export interface Party {
@@ -169,6 +178,7 @@ export interface CounselQuestion {
   question_text: string;
   question_category?: string;
   question_priority?: string;
+  issue_id?: string | null;
   created_date?: string;
 }
 
@@ -282,6 +292,17 @@ export interface TimelineEvent {
   created_date?: string;
 }
 
+export interface AuditEvent {
+  audit_event_id: string;
+  matter_id: string;
+  actor_user_id?: string | null;
+  event_type: string;
+  entity_type?: string | null;
+  entity_id?: string | null;
+  payload?: Record<string, unknown>;
+  created_at?: string;
+}
+
 export interface HistoricalMatter {
   historical_matter_id: string;
   matter_reference?: string;
@@ -356,6 +377,7 @@ export interface MatterBundle {
     counterparty?: Party;
   };
   workstreams: Workstream[];
+  documents?: Document[];
   timeline?: TimelineEvent[];
   issues?: LegalIssue[];
   findings?: AIFinding[];
@@ -366,6 +388,29 @@ export interface MatterBundle {
   historical_precedents?: HistoricalMatter[];
   institutional_memory?: InstitutionalMemory;
   access?: unknown[];
+  assertions?: Assertion[];
+  links?: MatterLink[];
+  history?: AuditEvent[];
+  knowledgeRelations?: {
+    issueBasis: { issue_id: string; assertion_id?: string | null }[];
+    decisionIssues: { decision_id: string; issue_id: string }[];
+  };
+}
+
+export interface Assertion {
+  assertion_id: string;
+  matter_id: string;
+  entity_id?: string | null;
+  attribute: string;
+  value: unknown;
+  trust_state: "SUPPORTED" | "INFERRED" | "INFORMATION_MISSING" | "REQUIRES_LEGAL_JUDGMENT" | string;
+  status: "proposed" | "accepted" | "rejected" | "superseded" | string;
+  source: "extraction" | "user" | "seed" | "rule" | string;
+  run_id?: string | null;
+  created_at?: string;
+  updated_at?: string;
+  citations?: { page_number?: number; quote: string; trust_state: string; document_id?: string; span_id?: string }[];
+  source_document_ids?: string[];
 }
 
 export interface InstitutionalMemory {

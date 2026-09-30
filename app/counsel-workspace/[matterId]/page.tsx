@@ -19,7 +19,7 @@ function DocumentRow({ document }: { document: Document }) {
     <article className="rounded-lg border border-slate-200 bg-white p-4">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-slate-500">{document.document_id}</p>
+          <p className="eyebrow text-[#263c68]">Shared document</p>
           <h3 className="mt-1 text-sm font-semibold text-slate-950">
             {document.document_title}
           </h3>
@@ -39,7 +39,7 @@ export default async function CounselWorkspacePage({
   params,
 }: CounselWorkspacePageProps) {
   const { matterId } = await params;
-  const matterData = getMatter(matterId);
+  const matterData = await getMatter(matterId);
 
   if (!matterData) {
     return (
@@ -144,9 +144,6 @@ export default async function CounselWorkspacePage({
                   {questions.map((question) => (
                     <article key={question.question_id} className="rounded-lg bg-slate-50 p-4">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-mono text-xs text-slate-500">
-                          {question.question_id}
-                        </span>
                         <span className="rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-600">
                           {label(question.question_priority)}
                         </span>
@@ -182,9 +179,7 @@ export default async function CounselWorkspacePage({
                 <div className="mt-4 space-y-2">
                   {evidence.map((source) => (
                     <div key={source.chunk_id} className="rounded-lg bg-slate-50 p-3">
-                      <p className="font-mono text-xs font-medium text-blue-700">
-                        {source.chunk_id}
-                      </p>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-[#263c68]">Source passage</p>
                       <p className="mt-1 text-sm font-medium text-slate-800">
                         {source.section_title ?? source.document_title}
                       </p>

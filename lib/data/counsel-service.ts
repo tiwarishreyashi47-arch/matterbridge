@@ -46,10 +46,10 @@ function topicsFor(matterData: MatterBundle, engagement: CounselEngagement) {
     .map(([topic]) => topic);
 }
 
-export function getCounselPortfolio(): CounselPortfolioGroup[] {
+export async function getCounselPortfolio(): Promise<CounselPortfolioGroup[]> {
   const groups = new Map<string, CounselPortfolioGroup>();
 
-  for (const matterData of getAllMatters()) {
+  for (const matterData of await getAllMatters()) {
     for (const engagement of matterData.counsel_engagements ?? []) {
       const counsel = engagement.counsel;
 

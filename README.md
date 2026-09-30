@@ -98,7 +98,7 @@ commit `.env.local` or expose the API key to client-side code.
 
 ```text
 GEMINI_API_KEY=your-server-side-key
-GEMINI_MODEL=gemini-3.1-flash-lite
+GEMINI_MODEL=gemini-3.5-flash-lite
 ```
 
 The Gemini variables enable the guarded live opinion-review action. The stored

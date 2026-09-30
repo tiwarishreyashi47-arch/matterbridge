@@ -17,7 +17,7 @@ export default function MatterStatusTabs({
   const matters = selected === "open" ? openMatters : closedMatters;
 
   return (
-    <section className="mt-8">
+    <section className="mt-10">
       <div className="flex flex-col gap-4 border-b border-slate-200 pb-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="eyebrow">Matters</p>
@@ -26,7 +26,7 @@ export default function MatterStatusTabs({
           </h2>
         </div>
 
-        <div className="flex w-fit rounded-lg border border-slate-200 bg-slate-100 p-1" role="tablist">
+        <div className="flex w-fit rounded-md border border-[#dcdcd6] bg-[#e8e7e2] p-1" role="tablist">
           {[
             { key: "open" as const, label: "Open Matters", count: openMatters.length },
             { key: "closed" as const, label: "Closed Matters", count: closedMatters.length },
@@ -43,8 +43,8 @@ export default function MatterStatusTabs({
                 className={
                   "rounded-md px-3 py-2 text-sm font-semibold transition " +
                   (active
-                    ? "bg-white text-slate-950 shadow-sm"
-                    : "text-slate-500 hover:text-slate-800")
+                    ? "bg-[#fffefa] text-[#20252d] shadow-sm"
+                    : "text-[#777c82] hover:text-[#20252d]")
                 }
               >
                 {tab.label} <span className="ml-1 text-xs text-slate-400">{tab.count}</span>

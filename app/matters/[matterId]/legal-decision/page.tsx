@@ -25,7 +25,7 @@ function DecisionList({ decision }: { decision: Decision }) {
 
 export default async function LegalDecisionPage({ params }: LegalDecisionPageProps) {
   const { matterId } = await params;
-  const matterData = getMatter(matterId);
+  const matterData = await getMatter(matterId);
 
   if (!matterData) {
     return <main className="min-h-screen bg-slate-50 p-10 text-slate-950">Matter not found.</main>;

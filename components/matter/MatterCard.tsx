@@ -35,15 +35,15 @@ export default function MatterCard({ matterData }: MatterCardProps) {
   return (
     <Link
       href={"/matters/" + matter.matter_id}
-      className="group block rounded-xl border border-slate-200/80 bg-white p-5 shadow-[0_1px_3px_rgb(15_23_42_/_0.04)] transition hover:border-blue-300 hover:shadow-md"
+      className="group block rounded-lg border border-[#dfdfda] bg-[#fffefa] p-5 transition hover:border-[#aeb8c9] hover:shadow-[0_8px_24px_rgb(32_37_45_/_0.06)]"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-mono text-xs font-medium uppercase tracking-wide text-slate-500">
+          <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
             {matter.matter_id} · {matter.created_date ?? "Date not recorded"}
           </p>
 
-          <h3 className="mt-2 text-lg font-semibold tracking-tight text-slate-950 group-hover:text-blue-700">
+          <h3 className="mt-2 text-lg font-semibold tracking-tight text-slate-950 group-hover:text-[#263c68]">
             {matter.matter_title}
           </h3>
         </div>
@@ -83,15 +83,15 @@ export default function MatterCard({ matterData }: MatterCardProps) {
       </div>
 
       <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-        <div className="rounded-lg border border-slate-200 bg-slate-50/80 p-3">
+        <div className="rounded-md border border-[#e5e4df] bg-[#f7f6f2] p-3">
           <p className="text-xs font-medium text-slate-500">Exposure</p>
           <p className="mt-1 truncate text-lg font-semibold text-slate-950">
             {formatCurrency(matter.outstanding_exposure_inr)}
           </p>
         </div>
 
-        <div className="rounded-lg border border-slate-200 bg-slate-50/80 p-3">
-          <p className="text-xs font-medium text-slate-500">Workstreams</p>
+        <div className="rounded-md border border-[#e5e4df] bg-[#f7f6f2] p-3">
+          <p className="text-xs font-medium text-slate-500">Stages</p>
           <p className="mt-1 text-lg font-semibold text-slate-950">
             {matterData.workstreams.length}
           </p>
@@ -103,7 +103,7 @@ export default function MatterCard({ matterData }: MatterCardProps) {
           {matter.matter_status.replaceAll("_", " ")}
         </span>
 
-        <span className="font-semibold text-blue-700">Open matter →</span>
+        <span className="font-semibold text-[#263c68]">Open matter →</span>
       </div>
     </Link>
   );

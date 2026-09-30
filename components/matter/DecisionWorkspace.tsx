@@ -15,7 +15,7 @@ export default function DecisionWorkspace({ decision }: { decision: Decision }) 
     <section className="surface-card rounded-xl p-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-slate-500">{decision.decision_id}</p>
+          <p className="eyebrow text-[#263c68]">Internal strategy</p>
           <h2 className="mt-1 text-xl font-semibold text-slate-950">Decision rationale</h2>
         </div>
         <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800">

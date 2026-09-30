@@ -1,0 +1,13 @@
+{
+  "template_id": "generic",
+  "practice_area": "General Legal",
+  "name": "Generic Matter",
+  "version": "v1",
+  "status": "published",
+  "stages": ["Intake", "Review", "Decision", "Closed"],
+  "workstreams": [{ "key": "general_review", "name": "General Review", "description": "General facts, obligations, dates, and key events." }],
+  "entity_roles": ["client", "counterparty", "advisor"],
+  "document_types": [{ "key": "other", "label": "Other", "fields": [{ "key": "document_title", "label": "Document title", "type": "text" }, { "key": "key_date", "label": "Key date", "type": "date" }] }],
+  "expected_documents": [],
+  "rules": []
+}

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-09-29T13:30:28.126Z",
+  "cases": [
+    {
+      "name": "matter-seed",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "workstreams-present",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "findings-present",
+      "expected": 15,
+      "actual": 15
+    },
+    {
+      "name": "issues-present",
+      "expected": 15,
+      "actual": 15
+    },
+    {
+      "name": "mat-002-authenticity-remains-review",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "mat-002-pip-is-passed",
+      "expected": 1,
+      "actual": 1
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

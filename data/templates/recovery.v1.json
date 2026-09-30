@@ -1,0 +1,26 @@
+{
+  "template_id": "recovery",
+  "practice_area": "Banking and Recovery",
+  "name": "Secured Loan Recovery",
+  "version": "v1",
+  "status": "published",
+  "stages": ["Assessment", "Counsel Engaged", "Enforcement Preparation", "Resolution", "Closed"],
+  "workstreams": [
+    { "key": "recovery", "name": "Recovery Assessment", "description": "Default, recovery routes, notices, and strategy." },
+    { "key": "security", "name": "Security Verification", "description": "Title, registration, priority, and enforceability." }
+  ],
+  "entity_roles": ["borrower", "guarantor", "lender", "prior_mortgagee", "secured_asset"],
+  "document_types": [
+    { "key": "financing_agreement", "label": "Facility Agreement", "fields": [{ "key": "facility_amount", "label": "Facility amount", "type": "currency", "required": true }, { "key": "maturity_date", "label": "Maturity date", "type": "date" }] },
+    { "key": "security_document", "label": "Security Document", "fields": [{ "key": "security_type", "label": "Security type", "type": "text", "required": true }, { "key": "registration_number", "label": "Registration number", "type": "text" }] },
+    { "key": "notice", "label": "Default or Demand Notice", "fields": [{ "key": "notice_date", "label": "Notice date", "type": "date" }, { "key": "amount_claimed", "label": "Amount claimed", "type": "currency" }] },
+    { "key": "counsel_letter", "label": "External Counsel Letter", "fields": [] }
+  ],
+  "expected_documents": ["financing_agreement", "security_document", "notice"],
+  "rules": [
+    { "rule_code": "recovery.default_amount_mismatch", "parameters": {} },
+    { "rule_code": "recovery.notice_timing", "parameters": {} },
+    { "rule_code": "recovery.prior_charge_not_satisfied", "parameters": {} },
+    { "rule_code": "recovery.stale_valuation", "parameters": { "max_age_months": 12 } }
+  ]
+}

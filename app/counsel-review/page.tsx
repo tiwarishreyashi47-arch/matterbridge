@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { getCounselPortfolio } from "@/lib/data/counsel-service";
+import { redirect } from "next/navigation";
+import { getAllMatters } from "@/lib/data/matter-service";
+
+export const dynamic = "force-dynamic";
 
 function label(value?: string | null) {
   return value?.replaceAll("_", " ") ?? "Not recorded";
@@ -17,14 +21,16 @@ function statusClassName(value?: string) {
   return "bg-slate-100 text-slate-700";
 }
 
-export default function CounselReviewPage() {
-  const portfolio = getCounselPortfolio();
+export default async function CounselReviewPage() {
+  const firstMatter = (await getAllMatters())[0];
+  if (firstMatter) redirect(`/matters/${firstMatter.matter.matter_id}/counsel`);
+  const portfolio = await getCounselPortfolio();
 
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-950 sm:px-10 lg:px-12 lg:py-10">
-      <div className="mx-auto max-w-7xl">
-        <header className="surface-card rounded-xl p-7">
-          <p className="eyebrow text-blue-700">
+    <main className="min-h-screen text-slate-950">
+      <div className="page-frame">
+        <header className="surface-card rounded-lg p-7">
+          <p className="eyebrow text-[#263c68]">
             Overall Counsel Engagement Review
           </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-950">
@@ -53,13 +59,11 @@ export default function CounselReviewPage() {
             {portfolio.map((group) => (
               <article
                 key={group.counsel.counsel_id}
-                className="surface-card rounded-xl p-6"
+                className="surface-card rounded-lg p-6"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <p className="font-mono text-xs text-slate-500">
-                      {group.counsel.counsel_id}
-                    </p>
+                    <p className="eyebrow text-[#263c68]">External counsel</p>
                     <h3 className="mt-2 text-xl font-semibold tracking-tight text-slate-950">
                       {group.counsel.firm_name ?? group.counsel.counsel_name}
                     </h3>

@@ -1,30 +1,19 @@
-import matter001 from "@/data/matters/MAT-001.json";
-import matter002 from "@/data/matters/MAT-002.json";
-import type { MatterBundle } from "@/lib/types/matter";
+import { createMatterDataService } from "@/lib/data/database-service";
+import { isVisibleInLocalTestMode } from "@/lib/data/local-test-mode";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 
-const matters: Record<string, MatterBundle> = {
-  "MAT-001": matter001 as MatterBundle,
-  "MAT-002": matter002 as MatterBundle,
-};
+const service = createMatterDataService(createSupabaseServerClient());
 
-export function getMatter(matterId: string) {
-  return matters[matterId] ?? null;
+export async function getMatter(matterId: string) {
+  const matter = await service.getMatter(matterId);
+  return matter && isVisibleInLocalTestMode(matter) ? matter : null;
 }
 
-export function getAllMatters() {
-  return Object.values(matters);
+export async function getAllMatters() {
+  const matters = await service.getAllMatters();
+  return matters.filter(isVisibleInLocalTestMode);
 }
 
-export function getWorkstream(matterId: string, workstreamId: string) {
-  const matterData = getMatter(matterId);
-
-  if (!matterData) {
-    return null;
-  }
-
-  return (
-    matterData.workstreams.find(
-      (workstream) => workstream.workstream_id === workstreamId
-    ) ?? null
-  );
+export async function getWorkstream(matterId: string, workstreamId: string) {
+  return service.getWorkstream(matterId, workstreamId);
 }

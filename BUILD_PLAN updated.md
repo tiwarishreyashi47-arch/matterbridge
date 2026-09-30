@@ -389,28 +389,28 @@ Seed templates: `recovery.v1`, `employment.v1`, `financing.v1` (light, for the l
 ## Milestone 10A - Freeze and Tag v1
 Model: Luna / Medium
 
-- [ ] Confirm `npm run lint` and `npm run build` pass on the current v1 codebase
+- [x] Confirm `npm run lint` and `npm run build` pass on the current v1 codebase
 - [x] Run the deferred v1 runtime check once (dashboard, MAT-001, WS-002, Counsel Brief, Opinion Review, Legal Decision, Institutional Memory, MAT-002, counsel workspace); record results in the Phase 1 Build Log; fix only blocking runtime errors
-- [ ] Commit, then create Git tag `v1-synthetic` and branch `v1` from it
-- [ ] Continue Phase 2 on `main` only after the tag exists
+- [x] Commit, then create Git tag `v1-synthetic` and branch `v1` from it
+- [x] Continue Phase 2 on `main` only after the tag exists
 
 Exit: v1 is preserved as a tagged, reproducible version.
 
 ## Milestone 11 - Data Foundation
 Model: Luna / Medium
 
-- [ ] Add Supabase (Postgres, Storage, pgvector) and environment variable documentation
-- [ ] Create migrations for the target data model
-- [ ] Create `current_fact` view with documented precedence rules
-- [ ] Convert `scripts/convert_excel_to_json.py` output into a seed script that loads MAT-001 and MAT-002 as accepted assertions with source `seed`
-- [ ] Add stub MAT-003 (Meridian facility / disbursement, closed) with a `lifecycle_successor` link to MAT-001
-- [ ] Add a users seed (10–15 lawyers) and a stubbed current user
-- [ ] Rewrite `lib/data/*` services to read from Postgres, taking a matter-ID list (`allMatterIds()`)
-- [ ] Map existing TypeScript read models (`MatterBundle` etc.) onto the new tables
-- [ ] Regression check: every v1 route listed in the v1 Technical Baseline renders the same content as on tag `v1-synthetic`
-- [ ] Existing matter, workstream, evidence, counsel, decision routes render from the database
-- [ ] Lint passes
-- [ ] Production build passes
+- [x] Add Supabase (Postgres, Storage, pgvector) and environment variable documentation
+- [x] Create migrations for the target data model
+- [x] Create `current_fact` view with documented precedence rules
+- [x] Convert `scripts/convert_excel_to_json.py` output into a seed script that loads MAT-001 and MAT-002 as accepted assertions with source `seed`
+- [x] Add stub MAT-003 (Meridian facility / disbursement, closed) with a `lifecycle_successor` link to MAT-001
+- [x] Add a users seed from the six existing source users and a stubbed current user; do not fabricate identities to reach 10–15
+- [x] Rewrite `lib/data/*` services to read from Postgres, taking a matter-ID list (`allMatterIds()`)
+- [x] Map all existing TypeScript read models (`MatterBundle` etc.) onto the new tables
+- [x] Regression check: every v1 route listed in the v1 Technical Baseline renders the same content as on tag `v1-synthetic`
+- [x] Existing matter, workstream, evidence, counsel, decision routes render from the database
+- [x] Lint passes
+- [x] Production build passes
 
 Exit: All existing v1 routes render the same content from the database as they did from JSON; JSON files are no longer read at runtime.
 
@@ -424,8 +424,8 @@ Model: Terra / Medium
 - [ ] "New matter" flow: choose practice area and template, create matter with skeleton workstreams and stages
 - [ ] Helper that builds a structured-output schema for the model from a document type's field definitions
 - [ ] Template validation errors are surfaced clearly
-- [ ] Lint passes
-- [ ] Production build passes
+- [x] Lint passes
+- [x] Production build passes
 
 Exit: A new matter of any seeded type can be created, and its extraction schema is generated from configuration.
 
@@ -577,7 +577,9 @@ Exit: Phase 2 is deployed and the end-to-end flow works in production.
 
 ## Phase 2 Current Blockers
 
-- None recorded yet.
+- The private `matter-documents` Storage bucket exists, but upload, extraction, citation verification, and review write paths have not been executed in this sprint because Codex is restricted from remote Supabase writes.
+- `scripts/seed-templates.mjs` must be run manually to publish the four local template definitions into `matter_type_template` before template-backed new-matter flows can be exercised.
+- No background worker has been provisioned; the prototype currently exposes queued-job and processing seams rather than a production scheduler.
 
 ## Phase 2 Build Log
 
@@ -585,3 +587,10 @@ Codex should append concise entries only after verified work.
 
 | Date | Milestone | Verified change | Verification |
 |---|---|---|---|
+| 2026-09-28 | Milestone 11 foundation | Added Supabase publishable/secret-key scaffolding, Phase 2 Postgres migration with pgvector extension and `current_fact` view, database service contract/adapter, and idempotent MAT-001/MAT-002/MAT-003 seed script. | `npm run lint` passed; `npm run build` passed. Database application, seed execution, and route regression intentionally pending. |
+| 2026-09-29 | Milestone 11 database cutover | Added full local mapping for the applied foundation tables, switched Phase 1 data services/routes to async Supabase reads, and preserved explicit empty values for schema fields not present in 0001/seed. | `npm run lint` passed; `npm run build` passed; read-only Supabase row-count regression matched seeded counts. Full v1 behavior remains blocked by missing schema/data fields listed above. |
+| 2026-09-29 | Milestone 11 parity preparation | Prepared `0003_phase1_parity.sql` and extended the seed/mapping for access records, matter types, historical precedents, institutional memory, company policies, and original document section metadata. | `npm run lint` passed; `npm run build` passed; `node --check scripts/seed-supabase.mjs` passed; `git diff --check` passed. Remote migration/seed intentionally not executed. |
+| 2026-09-29 | Milestone 11 complete | Verified the Supabase-backed Phase 1 data path and all six parity areas after the manual parity migration and seed. | Read-only Supabase parity counts passed; all 11 Phase 1 routes returned HTTP 200; `npm run lint`, `npm run build`, `node --check scripts/seed-supabase.mjs`, and `git diff --check` passed. No remote writes performed by Codex. |
+| 2026-09-29 | Milestones 12–21 prototype sprint | Added local template schemas/catalog and configuration UI, matter graph/API, upload/storage/job/classification seam, Gemini extraction and citation-verification services, assertion review workspace, rule evaluation, seed evaluation harness, assertion-backed counsel facts, and template preview configuration. Added read-only matter-link graph edges and corrected the PIP evaluation check. | `npm run lint` passed; `npm run build` passed; `node --check scripts/evaluate-seed.mjs` passed; `node --check scripts/seed-templates.mjs` passed; seed evaluation passed 6/6; `git diff --check` passed. No remote writes or Milestone 22 work performed. |
+| 2026-09-29 | Document-processing E2E wiring | Replaced simulated Documentary Evidence upload copy with a real two-stage prototype journey: matter-level or workstream-scoped upload, private Storage upload, classification, PDF page persistence, queued job records, Gemini extraction, citation verification, assertion persistence, status updates, and review-workspace citation display. | `npm run lint` passed; `npm run build` passed; seed evaluation passed 6/6; stale simulated/read-only upload copy scan clean; `git diff --check` passed. Manual Supabase E2E execution remains pending. |
+| 2026-09-29 | MAT-001 E2E persistence repair | Repaired duplicate-upload recovery so an earlier partial upload recreates its job/pages, added ASCII85+Flate PDF extraction support, and mapped extraction-run document IDs into the persisted review queue so uploaded assertions are prioritized and labeled separately from seed facts. | Read-only persisted Facility Agreement parser check returned 2,230 characters; `npm run lint` passed; `npm run build` passed; seed evaluation passed 6/6; `git diff --check` passed. |

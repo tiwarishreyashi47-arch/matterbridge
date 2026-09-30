@@ -15,7 +15,7 @@ function HistoricalCard({ precedent }: { precedent: HistoricalMatter }) {
     <article className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-slate-500">{precedent.historical_matter_id}</p>
+          <p className="eyebrow text-[#263c68]">Historical precedent</p>
           <h3 className="mt-1 text-base font-semibold text-slate-950">{precedent.matter_reference}</h3>
         </div>
         <span className="w-fit rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">{label(precedent.outcome)}</span>
@@ -35,7 +35,7 @@ function KnowledgeCard({ item }: { item: InstitutionalKnowledgeItem }) {
     <article className="rounded-xl border border-blue-100 bg-blue-50/50 p-5">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-blue-700">{item.knowledge_item_id}</p>
+          <p className="eyebrow text-blue-700">Reusable knowledge</p>
           <h3 className="mt-1 text-base font-semibold text-slate-950">{item.knowledge_item_title}</h3>
         </div>
         <span className="w-fit rounded-full bg-white px-3 py-1 text-xs font-semibold text-blue-700">Reusable knowledge</span>
@@ -47,8 +47,8 @@ function KnowledgeCard({ item }: { item: InstitutionalKnowledgeItem }) {
       </div>
       <p className="mt-4 border-t border-blue-100 pt-4 text-sm leading-6 text-slate-700"><span className="font-semibold">MAT-001 application:</span> {item.matter_application}</p>
       <div className="mt-4 flex flex-wrap gap-2">
-        {(item.relevant_historical_matter_ids ?? []).map((id) => <span key={id} className="rounded-full bg-white px-3 py-1 font-mono text-xs text-slate-600">{id}</span>)}
-        {(item.source_ids ?? []).map((id) => <span key={id} className="rounded-full bg-blue-100 px-3 py-1 font-mono text-xs text-blue-800">{id}</span>)}
+        {(item.relevant_historical_matter_ids ?? []).map((_, index) => <span key={`precedent-${index}`} className="rounded-full bg-white px-3 py-1 text-xs text-slate-600">Related precedent {index + 1}</span>)}
+        {(item.source_ids ?? []).map((_, index) => <span key={`source-${index}`} className="rounded-full bg-blue-100 px-3 py-1 text-xs text-blue-800">Supporting source {index + 1}</span>)}
       </div>
     </article>
   );
@@ -56,7 +56,7 @@ function KnowledgeCard({ item }: { item: InstitutionalKnowledgeItem }) {
 
 export default async function InstitutionalMemoryPage({ params }: InstitutionalMemoryPageProps) {
   const { matterId } = await params;
-  const matterData = getMatter(matterId);
+  const matterData = await getMatter(matterId);
 
   if (!matterData) {
     return <main className="min-h-screen bg-slate-50 p-10 text-slate-950">Matter not found.</main>;

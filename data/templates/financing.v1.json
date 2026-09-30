@@ -1,0 +1,13 @@
+{
+  "template_id": "financing",
+  "practice_area": "Financing",
+  "name": "Financing Matter",
+  "version": "v1",
+  "status": "published",
+  "stages": ["Origination", "Monitoring", "Issue", "Resolution", "Closed"],
+  "workstreams": [{ "key": "financing_review", "name": "Financing Review", "description": "Financing documents, obligations, and exceptions." }],
+  "entity_roles": ["borrower", "lender", "guarantor"],
+  "document_types": [{ "key": "financing_agreement", "label": "Financing Agreement", "fields": [{ "key": "facility_amount", "label": "Facility amount", "type": "currency" }, { "key": "lender", "label": "Lender", "type": "text" }, { "key": "borrower", "label": "Borrower", "type": "text" }, { "key": "purpose", "label": "Purpose", "type": "text" }, { "key": "availability_date", "label": "Final availability date", "type": "date" }, { "key": "maturity_date", "label": "Maturity date", "type": "date" }, { "key": "indian_content_requirement", "label": "Indian content requirement", "type": "number" }, { "key": "interest_rate", "label": "Interest rate", "type": "number" }, { "key": "commitment_fee", "label": "Commitment fee", "type": "number" }, { "key": "default_interest_margin", "label": "Default interest margin", "type": "number" }, { "key": "grace_period", "label": "Grace period", "type": "text" }, { "key": "repayment_schedule", "label": "Repayment schedule", "type": "text" }, { "key": "minimum_drawing", "label": "Minimum drawing", "type": "currency" }, { "key": "payment_default_grace_period", "label": "Payment default grace period", "type": "number" }, { "key": "breach_cure_period", "label": "Breach cure period", "type": "number" }] }],
+  "expected_documents": ["financing_agreement"],
+  "rules": []
+}

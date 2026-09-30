@@ -1,7 +1,9 @@
 import DocumentLibrary, {
   type DocumentLibraryItem,
 } from "@/components/matter/DocumentLibrary";
+import DocumentIntakePanel from "@/components/matter/DocumentIntakePanel";
 import { getAllMatters } from "@/lib/data/matter-service";
+import { redirect } from "next/navigation";
 
 type EvidencePageProps = {
   searchParams: Promise<{
@@ -12,8 +14,19 @@ type EvidencePageProps = {
 
 export default async function EvidencePage({ searchParams }: EvidencePageProps) {
   const { matterId, workstreamId } = await searchParams;
-  const items: DocumentLibraryItem[] = getAllMatters().flatMap((matterData) =>
-    matterData.workstreams.flatMap((workstream) =>
+  const matterForRedirect = matterId ?? (await getAllMatters())[0]?.matter.matter_id;
+  if (matterForRedirect) {
+    redirect(`/matters/${matterForRedirect}/documents`);
+  }
+  const items: DocumentLibraryItem[] = (await getAllMatters()).flatMap((matterData) => [
+    ...(matterData.documents ?? []).filter((document) => !document.workstream_id).map((document) => ({
+      matterId: matterData.matter.matter_id,
+      matterTitle: matterData.matter.matter_title,
+      workstreamId: "matter-level",
+      workstreamName: "Matter-level core document",
+      document,
+    })),
+    ...matterData.workstreams.flatMap((workstream) =>
       (workstream.documents ?? []).map((document) => ({
         matterId: matterData.matter.matter_id,
         matterTitle: matterData.matter.matter_title,
@@ -21,14 +34,14 @@ export default async function EvidencePage({ searchParams }: EvidencePageProps) 
         workstreamName: workstream.workstream_name,
         document,
       }))
-    )
-  );
+    ),
+  ]);
 
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-950 sm:px-10 lg:px-12 lg:py-10">
-      <div className="mx-auto max-w-7xl">
-        <header className="surface-card rounded-xl p-7">
-          <p className="eyebrow text-blue-700">
+    <main className="min-h-screen text-slate-950">
+      <div className="page-frame">
+        <header className="surface-card rounded-lg p-7">
+          <p className="eyebrow text-[#263c68]">
             Documentary Evidence
           </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-950">
@@ -39,6 +52,8 @@ export default async function EvidencePage({ searchParams }: EvidencePageProps) 
             evidence remains scoped to the relevant issue inside its workstream.
           </p>
         </header>
+
+        <DocumentIntakePanel matterId={matterId} />
 
         <DocumentLibrary
           items={items}

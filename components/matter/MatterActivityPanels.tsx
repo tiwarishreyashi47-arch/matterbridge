@@ -133,9 +133,7 @@ export default function MatterActivityPanels({
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <p className="font-mono text-xs text-slate-500">
-                      {engagement.engagement_id}
-                    </p>
+                    <p className="eyebrow text-[#263c68]">External counsel engagement</p>
                     <h3 className="mt-1 text-base font-semibold text-slate-950">
                       {engagement.counsel?.firm_name ??
                         engagement.counsel?.counsel_name ??
@@ -170,9 +168,7 @@ export default function MatterActivityPanels({
                       {questions.map((question) => (
                         <div key={question.question_id} className="rounded-lg bg-white p-3">
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="font-mono text-xs text-slate-500">
-                              {question.question_id}
-                            </span>
+                            <span className="eyebrow text-[#263c68]">Counsel question</span>
                             <span className="rounded-full bg-slate-100 px-2 py-1 text-xs text-slate-600">
                               {label(question.question_priority)}
                             </span>
@@ -197,9 +193,7 @@ export default function MatterActivityPanels({
                         outputs.map((output) => (
                           <div key={output.output_id} className="rounded-lg bg-white p-3">
                             <div className="flex flex-wrap items-center gap-2">
-                              <span className="font-mono text-xs text-slate-500">
-                                {output.output_id}
-                              </span>
+                              <span className="eyebrow text-[#263c68]">Counsel deliverable</span>
                               <span
                                 className={`rounded-full px-2 py-1 text-xs font-semibold ${statusClassName(
                                   output.output_status

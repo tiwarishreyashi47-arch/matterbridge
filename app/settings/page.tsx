@@ -1,35 +1,5 @@
-export default function SettingsPage() {
-  return (
-    <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-950 sm:px-10 lg:px-12 lg:py-10">
-      <div className="mx-auto max-w-4xl">
-        <header className="surface-card rounded-xl p-7">
-          <p className="eyebrow text-blue-700">
-            Settings
-          </p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-950">
-            Prototype settings
-          </h1>
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            Settings are not persisted in this prototype. Production access
-            controls, notifications, and integrations would be configured here.
-          </p>
-        </header>
+import TemplateConfigurationPanel from "@/components/settings/TemplateConfigurationPanel";
 
-        <section className="mt-6 grid gap-4 sm:grid-cols-2">
-          <div className="surface-card rounded-xl p-5">
-            <p className="text-sm font-semibold text-slate-900">Access model</p>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Simulated matter access only. Production RBAC is not implemented.
-            </p>
-          </div>
-          <div className="surface-card rounded-xl p-5">
-            <p className="text-sm font-semibold text-slate-900">Document uploads</p>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Upload actions are simulated and do not store files.
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
-  );
+export default function SettingsPage() {
+  return <main className="min-h-screen text-slate-950"><div className="page-frame max-w-6xl"><header className="surface-card rounded-lg p-7"><p className="eyebrow text-[#263c68]">Settings</p><h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-950">Configuration</h1><p className="mt-3 text-sm leading-6 text-slate-600">Manage the matter-type templates that shape intake and document review.</p></header><TemplateConfigurationPanel /><section className="mt-6 grid gap-4 sm:grid-cols-2"><div className="surface-card rounded-lg p-5"><p className="text-sm font-semibold text-slate-900">Access model</p><p className="mt-2 text-sm leading-6 text-slate-600">Matter access is represented in the data foundation. Authentication and role management remain outside this prototype.</p></div><div className="surface-card rounded-lg p-5"><p className="text-sm font-semibold text-slate-900">Document processing</p><p className="mt-2 text-sm leading-6 text-slate-600">Uploads, classification, extraction, and review use the configured private document workspace.</p></div></section></div></main>;
 }

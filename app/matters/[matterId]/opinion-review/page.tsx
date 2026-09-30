@@ -40,12 +40,12 @@ function SourceList({
         {sourceLabel}
       </p>
       <div className="mt-2 flex flex-wrap gap-2">
-        {ids.map((id) => (
+        {ids.map((_, index) => (
           <span
-            key={id}
-            className="rounded-full bg-slate-100 px-3 py-1 font-mono text-xs font-medium text-slate-700"
+            key={`${sourceLabel}-${index}`}
+            className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
           >
-            {id}
+            Referenced source {index + 1}
           </span>
         ))}
       </div>
@@ -58,7 +58,7 @@ function OpinionSection({ section }: { section: CounselOpinionSection }) {
     <article className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-slate-500">{section.opinion_section_id}</p>
+          <p className="eyebrow text-[#263c68]">Counsel advice</p>
           <h3 className="mt-1 text-base font-semibold text-slate-950">
             {section.section_title}
           </h3>
@@ -81,7 +81,7 @@ function ReviewPoint({ point }: { point: CounselOpinionReviewPoint }) {
     <article className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="font-mono text-xs text-slate-500">{point.review_point_id}</p>
+          <p className="eyebrow text-[#263c68]">Review point</p>
           <h3 className="mt-1 text-base font-semibold text-slate-950">
             {point.review_title}
           </h3>
@@ -144,7 +144,7 @@ function ReviewPoint({ point }: { point: CounselOpinionReviewPoint }) {
 
 export default async function OpinionReviewPage({ params }: OpinionReviewPageProps) {
   const { matterId } = await params;
-  const matterData = getMatter(matterId);
+  const matterData = await getMatter(matterId);
 
   if (!matterData) {
     return <main className="min-h-screen bg-slate-50 p-10 text-slate-950">Matter not found.</main>;
