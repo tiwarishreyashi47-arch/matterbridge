@@ -6,9 +6,13 @@ import path from "node:path";
 type Row = Record<string, unknown>;
 type Database = Record<string, Row[]>;
 
-const root = path.join(process.cwd(), "tmp", "local-data");
+// Vercel's function filesystem is read-only outside /tmp. The local adapter
+// is still useful for the proposal demo, so keep its ephemeral state in the
+// writable runtime directory when deployed there.
+const runtimeRoot = process.env.VERCEL ? path.join("/tmp", "matterbridge") : path.join(process.cwd(), "tmp");
+const root = path.join(runtimeRoot, "local-data");
 const databasePath = path.join(root, "database.json");
-const storageRoot = path.join(process.cwd(), "tmp", "local-storage");
+const storageRoot = path.join(runtimeRoot, "local-storage");
 
 function ensureStore() {
   fs.mkdirSync(root, { recursive: true });
