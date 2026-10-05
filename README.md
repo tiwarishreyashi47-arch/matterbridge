@@ -1,11 +1,11 @@
 # MatterBridge
 
 MatterBridge is a lawyer-focused legal matter intelligence prototype. It helps
-Legal teams move from matter facts and documentary evidence to scoped AI
-findings, external counsel review, and an explicitly owned internal decision.
-The prototype uses synthetic matter data for Meridian Components and Project
-Atlas to demonstrate the workflow without pretending that unresolved legal
-questions or outcomes are settled.
+legal teams move from matter facts and documentary evidence to queryable
+company knowledge, workflow automation, external counsel communication, and an
+explicitly owned internal decision. The proposal demo uses two small synthetic
+matters so the reusable pattern is easy to follow without pretending that
+unresolved legal questions or outcomes are settled.
 
 ## Product flow
 
@@ -22,16 +22,19 @@ questions or outcomes are settled.
   knowledge without manufacturing a final outcome for MAT-001.
 - **Overall Counsel Engagement Review** provides a portfolio-level counsel
   view, while matter-level Counsel & Decisions remains inside each matter.
+- **Matter Network** shows the Company Brain context graph and the shared
+  automation loop: capture, extract, cite, queue, refer, and decide.
+- **Legal Counsel** answers bounded questions across matter records and links
+  each answer back to the supporting matter workspace.
 
 ## Architecture
 
 This is a Next.js App Router application using TypeScript and Tailwind CSS.
-The repository is intentionally file-backed for the prototype:
+The repository supports a deterministic local V1 mode for demos and a Supabase
+adapter for the Phase 2 persistence path:
 
-- `data/matters/*.json` contains matter-scoped matters, workstreams, documents,
-  findings, issues, counsel records, decisions, and institutional memory.
-- `data/knowledge_chunks.json` contains retrieval chunks with source and chunk
-  identifiers.
+- `lib/local/local-store.ts` provides local JSON persistence and seeds MAT-101
+  (employment/HR) and MAT-102 (financing) on first run.
 - `lib/data` provides typed data access, issue/finding/evidence correlation,
   deterministic retrieval, and counsel/access helpers.
 - `app/` contains the dashboard, matter, workstream, evidence, counsel, and
@@ -46,7 +49,7 @@ against the retrieved scope before results are shown.
 
 ## Real versus simulated capabilities
 
-Implemented in the prototype:
+Implemented in the local V1 demo:
 
 - data-backed matter, workstream, document, issue, finding, counsel, decision,
   and precedent views;
@@ -57,16 +60,17 @@ Implemented in the prototype:
 - server-side Gemini integration with structured output and source validation;
 - local lawyer assessment/comment state in issue workspaces;
 - loading, missing-record, configuration, and model-failure handling.
+- local upload/storage, document processing jobs, assertions, review state,
+  workspace assignment, the Company Brain graph, and external counsel
+  question/advice records.
 
 Intentionally simulated or deferred:
 
-- document upload does not persist files;
-- comments and live review results are not persisted to a backend;
-- production authentication, authorization, RBAC, and storage are not
-  implemented;
+- the local adapter is proposal/demo-grade and is not a replacement for
+  production Postgres, object storage, authentication, or RBAC;
 - final MAT-001 recovery outcome remains open and unknown;
-- live Gemini/manual browser verification is deferred for the current build
-  pass;
+- Gemini remains optional; local grounded retrieval works without a provider
+  call;
 - Vercel deployment and production route verification are not yet complete.
 
 ## Trust and evidence approach
@@ -88,8 +92,19 @@ npm run lint
 npm run build
 ```
 
-For local development, use `npm run dev` and open the local URL printed by
-Next.js.
+For a clean proposal demo, use the local adapter:
+
+```bash
+MATTERBRIDGE_STORAGE_MODE=local npm run dev
+```
+
+Open `/matter-network` for the Company Brain and workflow loop, or
+`/legal-counsel` to query both demo matters. To reset only the ignored local
+demo state and reseed MAT-101/MAT-102 on the next request:
+
+```bash
+npm run demo:reset
+```
 
 ### Environment variables
 

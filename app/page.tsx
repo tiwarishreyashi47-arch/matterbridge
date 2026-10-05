@@ -1,7 +1,6 @@
+import Link from "next/link";
 import MatterStatusTabs from "@/components/matter/MatterStatusTabs";
-import MatterGraph from "@/components/matter/MatterGraph";
 import { getAllMatters } from "@/lib/data/matter-service";
-import { buildMatterGraph } from "@/lib/data/graph-service";
 import NewMatterPanel from "@/components/matter/NewMatterPanel";
 
 export const dynamic = "force-dynamic";
@@ -46,7 +45,11 @@ export default async function Home() {
           </div>
         </header>
 
-        <MatterGraph graph={buildMatterGraph(matters)} />
+        <section className="mt-8 grid gap-4 sm:grid-cols-2"><Link href="/matter-network" className="surface-card rounded-xl border border-[#d9dee8] bg-[#f8fafc] p-6 transition hover:border-[#263c68]"><p className="eyebrow text-[#263c68]">Department view</p><h2 className="mt-2 text-xl font-semibold text-slate-950">Matter Network</h2><p className="mt-2 text-sm leading-6 text-slate-600">Open the context graph for a bird&apos;s-eye view of matters, issues, counsel, actions, and documents.</p><span className="mt-4 inline-flex text-sm font-semibold text-[#263c68]">Open context graph →</span></Link><Link href="/legal-counsel" className="surface-card rounded-xl border border-[#d9dee8] bg-[#f8fafc] p-6 transition hover:border-[#263c68]"><p className="eyebrow text-[#263c68]">Conversational workspace</p><h2 className="mt-2 text-xl font-semibold text-slate-950">Legal Counsel</h2><p className="mt-2 text-sm leading-6 text-slate-600">Ask questions across matters and follow links back to the underlying records.</p><span className="mt-4 inline-flex text-sm font-semibold text-[#263c68]">Open Legal Counsel →</span></Link></section>
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#d9dee8] bg-white p-5">
+          <div><p className="eyebrow text-[#263c68]">Team layer</p><h2 className="mt-1 text-lg font-semibold">Your legal workspace</h2><p className="mt-1 text-sm text-slate-600">View assigned matters and manage team access.</p></div>
+          <Link href="/workspace" className="rounded-md bg-[#263c68] px-4 py-2.5 text-sm font-semibold text-white">Open workspace →</Link>
+        </div>
         <NewMatterPanel />
         <MatterStatusTabs openMatters={openMatters} closedMatters={closedMatters} />
       </div>

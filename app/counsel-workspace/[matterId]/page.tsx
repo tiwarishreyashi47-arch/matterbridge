@@ -79,13 +79,13 @@ export default async function CounselWorkspacePage({
                 {matterData.matter.matter_title}
               </h1>
               <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-                This is a simulated limited-access view. It contains the matter
-                context, scoped questions, and documents prepared for external
-                counsel; internal decisions and portfolio information are not shown.
+                This scoped workspace contains the matter context, questions, and
+                documents prepared for external counsel; internal decisions and
+                portfolio information are not shown.
               </p>
             </div>
             <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-              <p className="font-semibold">Simulated access</p>
+              <p className="font-semibold">Scoped access</p>
               <p className="mt-1">
                 {access
                   ? label(access.access_level) + " · " + (access.user?.user_name ?? "External counsel")

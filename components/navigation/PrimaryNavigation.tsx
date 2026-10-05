@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Legal Matter Intelligence", shortLabel: "Matters", icon: "▦" },
   { href: "/legal-counsel", label: "Legal Counsel", shortLabel: "Counsel", icon: "◫" },
+  { href: "/workspace", label: "Your Legal Workspace", shortLabel: "Workspace", icon: "✓" },
   { href: "/settings", label: "Settings", shortLabel: "Settings", icon: "⚙" },
 ];
 

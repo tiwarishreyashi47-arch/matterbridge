@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { GeminiProvider } from "@/lib/ai/provider";
+import { classifyDocument } from "@/lib/documents/classification";
 import { getTemplate } from "@/lib/templates/catalog";
 import { canonicalFieldKey } from "@/lib/knowledge/field-registry";
 
@@ -15,7 +16,11 @@ export async function extractDocument(client: SupabaseClient, documentId: string
   const template = getTemplate(templateId) ?? getTemplate("generic");
   if (!template) throw new Error("No extraction template is available.");
   const text = (pages ?? []).map((page) => `Page ${page.page_number}: ${page.text_content}`).join("\n\n");
-  const fields = await new GeminiProvider().extract({ documentText: text, documentType: document.document_type, template });
+  // Reclassify on every run so documents uploaded before a template update
+  // do not remain permanently stuck as `other`.
+  const classifiedType = classifyDocument(document.document_title, matter?.matter_type_id, matter?.template_id as string | undefined).documentType;
+  const documentType = classifiedType !== "other" ? classifiedType : document.document_type;
+  const fields = await new GeminiProvider().extract({ documentText: text, documentType, template });
   const { data: existing, error: existingError } = await client.from("assertion").select("assertion_id,attribute,status,source").eq("matter_id", document.matter_id);
   if (existingError) throw new Error(existingError.message);
   const protectedAttributes = new Set((existing ?? []).filter((row) => row.status === "accepted").map((row) => canonicalFieldKey(String(row.attribute))));

@@ -64,6 +64,7 @@ export async function POST(request: Request) {
       updated_at: new Date().toISOString(),
     }, { onConflict: "job_id" });
     if (jobError) return NextResponse.json({ error: jobError.message }, { status: 502 });
+    await client.from("audit_event").insert({ audit_event_id: `AUDIT-UPLOAD-${existing.document_id}-${Date.now()}`, matter_id: matterId, event_type: "DOCUMENT_UPLOADED", entity_type: "document", entity_id: existing.document_id, payload: { duplicate: true, title: file.name } });
     return NextResponse.json({ documentId: existing.document_id, status: existing.document_status, duplicate: true, pageCount: pages.length });
   }
 
@@ -106,6 +107,8 @@ export async function POST(request: Request) {
     attempt_count: 0,
   }, { onConflict: "job_id" });
   if (jobError) return NextResponse.json({ error: jobError.message }, { status: 502 });
+
+  await client.from("audit_event").insert({ audit_event_id: `AUDIT-UPLOAD-${documentId}`, matter_id: matterId, event_type: "DOCUMENT_UPLOADED", entity_type: "document", entity_id: documentId, payload: { title: file.name, documentType: classification.documentType, pageCount: pages.length } });
 
   return NextResponse.json({ documentId, status: classification.status, documentType: classification.documentType, pageCount: pages.length });
 }

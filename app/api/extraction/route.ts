@@ -33,6 +33,7 @@ export async function POST(request: Request) {
     if (documentUpdateError) throw new Error(documentUpdateError.message);
     const { error: jobUpdateError } = await client.from("job").update({ status: "completed", updated_at: new Date().toISOString() }).eq("document_id", result.document.document_id).eq("job_type", "DOCUMENT_PROCESSING");
     if (jobUpdateError) throw new Error(jobUpdateError.message);
+    await client.from("audit_event").insert({ audit_event_id: `AUDIT-EXTRACTION-${result.runId}`, matter_id: result.document.matter_id, event_type: "EXTRACTION_COMPLETED", entity_type: "extraction_run", entity_id: result.runId, payload: { documentId: result.document.document_id, assertionCount: result.assertions.length, citationCount } });
     return NextResponse.json({ runId: result.runId, assertionCount: result.assertions.length, citationCount });
   } catch (error) {
     if (body.documentId) {

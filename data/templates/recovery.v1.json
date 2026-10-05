@@ -14,7 +14,13 @@
     { "key": "financing_agreement", "label": "Facility Agreement", "fields": [{ "key": "facility_amount", "label": "Facility amount", "type": "currency", "required": true }, { "key": "maturity_date", "label": "Maturity date", "type": "date" }] },
     { "key": "security_document", "label": "Security Document", "fields": [{ "key": "security_type", "label": "Security type", "type": "text", "required": true }, { "key": "registration_number", "label": "Registration number", "type": "text" }] },
     { "key": "notice", "label": "Default or Demand Notice", "fields": [{ "key": "notice_date", "label": "Notice date", "type": "date" }, { "key": "amount_claimed", "label": "Amount claimed", "type": "currency" }] },
-    { "key": "counsel_letter", "label": "External Counsel Letter", "fields": [] }
+    { "key": "counsel_letter", "label": "External Counsel Letter", "fields": [
+      { "key": "counsel_name", "label": "From", "type": "text" },
+      { "key": "counsel_date", "label": "Date", "type": "date" },
+      { "key": "counsel_question", "label": "Question referred", "type": "text" },
+      { "key": "counsel_advice", "label": "Counsel advice", "type": "text" },
+      { "key": "counsel_follow_up", "label": "Recommended follow-up", "type": "text" }
+    ] }
   ],
   "expected_documents": ["financing_agreement", "security_document", "notice"],
   "rules": [

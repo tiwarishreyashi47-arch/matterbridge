@@ -7,7 +7,8 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --experimental-strip-types --test lib/knowledge/*.test.ts"
+    "test": "node --experimental-strip-types --test lib/knowledge/*.test.ts",
+    "demo:reset": "node scripts/reset-local-v1.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

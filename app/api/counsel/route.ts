@@ -37,6 +37,12 @@ export async function POST(request: Request) {
   if (briefError) return NextResponse.json({ error: briefError.message }, { status: 502 });
   const { error: questionError } = await client.from("question").insert({ question_id: questionId, brief_id: briefId, issue_id: issueId, question_text: body.questionText, question_category: body.questionCategory ?? "LEGAL_ADVICE", question_priority: body.priority ?? "MEDIUM", created_date: new Date().toISOString().slice(0, 10) });
   if (questionError) return NextResponse.json({ error: questionError.message }, { status: 502 });
+  if (body.adviceSummary?.trim()) {
+    const outputId = id("OUTPUT", `${engagementId}:${body.adviceSummary}`);
+    const summary = body.followUp?.trim() ? `${body.adviceSummary.trim()} Recommended follow-up: ${body.followUp.trim()}` : body.adviceSummary.trim();
+    const { error: adviceError } = await client.from("counsel_output").insert({ output_id: outputId, engagement_id: engagementId, brief_id: briefId, output_type: "WRITTEN_ADVICE", output_status: "RECEIVED", opinion_summary: summary, output_date: new Date().toISOString().slice(0, 10), opinion_sections: [], review_points: [] });
+    if (adviceError) return NextResponse.json({ error: adviceError.message }, { status: 502 });
+  }
   await client.from("audit_event").insert({ audit_event_id: `AUDIT-${questionId}`, matter_id: body.matterId, event_type: "COUNSEL_REFERRAL_RECORDED", entity_type: "question", entity_id: questionId, payload: { engagementId, issueId } });
   return NextResponse.json({ counselId, engagementId, briefId, questionId }, { status: 201 });
 }

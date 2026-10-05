@@ -9,5 +9,6 @@ export function isLocalTestMode() {
 }
 
 export function isVisibleInLocalTestMode(matter: MatterBundle) {
+  if (process.env.MATTERBRIDGE_STORAGE_MODE === "local") return true;
   return !isLocalTestMode() || !originalSeedMatterIds.has(matter.matter.matter_id);
 }

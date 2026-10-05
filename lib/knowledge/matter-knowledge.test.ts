@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { canonicalFieldKey } from "./field-registry.ts";
 import { buildMatterKnowledge } from "./matter-knowledge.ts";
+import { retrieveDocumentSections, retrieveMatterKnowledge } from "../data/retrieval-service.ts";
+import { synthesizeLocalCounselResponse } from "../rag/local-synthesis.ts";
 import type { MatterBundle } from "../types/matter";
 
 const baseMatter = (assertions: MatterBundle["assertions"]): MatterBundle => ({
@@ -66,4 +68,45 @@ test("derives a useful matter status and counsel deliverable state", () => {
   assert.equal(knowledge.counselQuestions[0]?.openItems.ids[0], "ISSUE-1");
   assert.equal(knowledge.history[0]?.id, "TM-1");
   assert.equal(knowledge.sources.find((source) => source.kind === "history")?.id, "TM-1");
+});
+
+test("retrieves canonical evidence by category without flattening authority", () => {
+  const knowledge = buildMatterKnowledge({
+    ...baseMatter([
+      { assertion_id: "A-1", matter_id: "MAT-TEST", attribute: "security value", value: "INR 10m", trust_state: "SUPPORTED", status: "accepted", source: "extraction", source_document_ids: ["DOC-1"] },
+    ]),
+    issues: [{ issue_id: "ISSUE-1", matter_id: "MAT-TEST", issue_title: "Security priority unresolved", issue_status: "ACTIVE" }],
+  });
+  const hits = retrieveMatterKnowledge(knowledge, "security priority");
+  assert.equal(hits[0]?.kind, "open_item");
+  assert.equal(hits[0]?.id, "ISSUE-1");
+});
+
+test("retrieves documentary passages with document and page provenance", () => {
+  const bundle = {
+    ...baseMatter([]),
+    documents: [{
+      document_id: "DOC-1",
+      matter_id: "MAT-TEST",
+      document_title: "Facility Agreement",
+      document_type: "financing_agreement",
+      sections: [{ section_id: "DOC-1-SECTION-1", document_id: "DOC-1", section_title: "Security", section_content: "The receivables charge is subject to priority confirmation.", section_order: 1 }],
+    }],
+  };
+  const hits = retrieveDocumentSections(bundle, "priority confirmation");
+  assert.equal(hits[0]?.documentId, "DOC-1");
+  assert.equal(hits[0]?.pageNumber, 1);
+  assert.equal(hits[0]?.provenance[0]?.kind, "uploaded_document");
+});
+
+test("synthesizes a grounded local answer with follow-ups and navigation", () => {
+  const response = synthesizeLocalCounselResponse("What is blocking enforcement?", [{
+    matterId: "MAT-TEST",
+    title: "Test matter",
+    hits: [{ kind: "open_item", id: "ISSUE-1", text: "open_item: Charge priority unresolved", score: 5, provenance: [] }, { kind: "counsel_advice", id: "ADVICE-1", text: "counsel_advice: Obtain an updated search.", score: 5, provenance: [] }],
+    documentHits: [],
+  }]);
+  assert.match(response.answer, /Charge priority unresolved/);
+  assert.ok(response.followUpQuestions.length > 0);
+  assert.ok(response.navigation.some((link) => link.href.includes("/open-items#ISSUE-1")));
 });

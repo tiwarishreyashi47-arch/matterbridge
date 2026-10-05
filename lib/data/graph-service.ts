@@ -32,6 +32,10 @@ export function buildMatterGraph(matters: MatterBundle[]): MatterGraph {
 
   for (const matterData of uniqueMatters) {
     const matter = matterData.matter;
+    const documents = Array.from(new Map([
+      ...(matterData.documents ?? []),
+      ...matterData.workstreams.flatMap((workstream) => workstream.documents ?? []),
+    ].map((document) => [document.document_id, document])).values());
     nodes.push({
       id: matter.matter_id,
       label: matter.matter_title,
@@ -43,7 +47,7 @@ export function buildMatterGraph(matters: MatterBundle[]): MatterGraph {
       counselQuestionCount: matterData.counsel_engagements?.flatMap((engagement) => engagement.briefs ?? []).flatMap((brief) => brief.questions ?? []).length ?? 0,
       decisionCount: matterData.decisions?.length ?? 0,
       actionCount: matterData.decisions?.flatMap((decision) => decision.follow_up_actions ?? []).length ?? 0,
-      documentCount: [...(matterData.documents ?? []), ...matterData.workstreams.flatMap((workstream) => workstream.documents ?? [])].length,
+      documentCount: documents.length,
     });
 
     const practiceArea = matter.matter_type_id ?? "general";

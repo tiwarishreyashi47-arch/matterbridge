@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local-only PDF ingestion state and generated rendering caches
+/tmp/local-data/
+/tmp/local-storage/
+/tmp/local-storage.before-*/
+/tmp/fontconfig/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

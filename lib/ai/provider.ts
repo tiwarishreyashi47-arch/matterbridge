@@ -3,6 +3,13 @@ import { templateExtractionSchema } from "@/lib/templates/output-schema";
 import { canonicalFieldKey } from "@/lib/knowledge/field-registry";
 
 export const DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite";
+const UNIVERSAL_COUNSEL_FIELDS = [
+  { key: "counsel_name", label: "From" },
+  { key: "counsel_date", label: "Date" },
+  { key: "counsel_question", label: "Question referred" },
+  { key: "counsel_advice", label: "Counsel advice" },
+  { key: "counsel_follow_up", label: "Recommended follow-up" },
+];
 const MAX_ATTEMPTS = 3;
 const RETRYABLE_STATUS = new Set([429, 500, 502, 503, 504]);
 
@@ -23,6 +30,22 @@ function attributeKey(value: string) {
     .toLowerCase();
 }
 
+function normalizeCounselAttribute(value: string) {
+  const key = attributeKey(value);
+  return ({
+    from: "counsel_name",
+    sender: "counsel_name",
+    counsel: "counsel_name",
+    question_referred: "counsel_question",
+    recommended_follow_up: "counsel_follow_up",
+  } as Record<string, string>)[key] ?? key;
+}
+
+function parseNumericField(value: string) {
+  const match = value.match(/(?:INR|USD|EUR|GBP|AUD|CAD)?\s*([0-9][0-9,]*(?:\.\d+)?)/i);
+  return match ? Number(match[1].replace(/,/g, "")) : Number.NaN;
+}
+
 function fallbackLabeledFields(documentText: string): ExtractedField[] {
   const labels: Array<[string, string, "text" | "number"]> = [
     ["Facility amount", "facility_amount", "number"],
@@ -34,13 +57,18 @@ function fallbackLabeledFields(documentText: string): ExtractedField[] {
     ["Notice date", "notice_date", "text"],
     ["Security type", "security_type", "text"],
     ["Registration number", "registration_number", "text"],
+    ["From", "counsel_name", "text"],
+    ["Date", "counsel_date", "text"],
+    ["Question referred", "counsel_question", "text"],
+    ["Counsel advice", "counsel_advice", "text"],
+    ["Recommended follow-up", "counsel_follow_up", "text"],
   ];
   const labeledFields = labels.flatMap(([label, attribute, type]) => {
     const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const match = documentText.match(new RegExp(`${escaped}\\s*:\\s*([^\\n.]+)`, "i"));
     if (!match) return [];
     const rawValue = match[1].trim();
-    const value = type === "number" ? Number(rawValue.replace(/[^0-9.-]/g, "")) : rawValue;
+    const value = type === "number" ? parseNumericField(rawValue) : rawValue;
     return [{ attribute, value: Number.isNaN(value as number) ? rawValue : value, page_number: 1, quote: `${label}: ${rawValue}` }];
   });
   const openItemMatch = documentText.match(/Open item for review\s+([\s\S]+?)(?:\.\s+The document|$)/i);
@@ -64,7 +92,7 @@ export class GeminiProvider implements AIProvider {
     const apiKey = process.env.GEMINI_API_KEY;
     const model = process.env.GEMINI_MODEL ?? DEFAULT_GEMINI_MODEL;
     if (!apiKey) throw new Error("GEMINI_API_KEY is not configured.");
-    const documentDefinition = template.document_types.find((item) => item.key === documentType) ?? template.document_types.find((item) => item.key === "other");
+    const documentDefinition = template.document_types.find((item) => item.key === documentType) ?? (documentType === "counsel_letter" ? { key: "counsel_letter", label: "External Counsel Letter", fields: UNIVERSAL_COUNSEL_FIELDS } : undefined) ?? template.document_types.find((item) => item.key === "other");
     const fieldInstructions = template.template_id === "generic"
       ? ""
       : documentDefinition?.fields.map((field) => `${field.key} (${field.label})`).join(", ") ?? "";
@@ -115,11 +143,11 @@ export class GeminiProvider implements AIProvider {
     const definitions = documentDefinition?.fields ?? [];
     const aliases = new Map(definitions.flatMap((field) => [[attributeKey(field.key), field.key], [attributeKey(field.label), field.key]]));
     const normalizedFields = (parsed.fields ?? [])
-      .map((field) => ({ ...field, attribute: aliases.get(attributeKey(field.attribute)) ?? attributeKey(field.attribute) }))
+    .map((field) => ({ ...field, attribute: normalizeCounselAttribute(aliases.get(attributeKey(field.attribute)) ?? attributeKey(field.attribute)) }))
       .filter((field) => Boolean(field.attribute) && (template.template_id === "generic" || definitions.length === 0 || aliases.has(attributeKey(field.attribute))));
     const fallbackFields = fallbackLabeledFields(documentText);
     const seenAttributes = new Set(normalizedFields.map((field) => canonicalFieldKey(field.attribute)));
-    return [...normalizedFields, ...fallbackFields.filter((field) => !seenAttributes.has(canonicalFieldKey(field.attribute)))];
+    return [...normalizedFields, ...fallbackFields.filter((field) => !seenAttributes.has(canonicalFieldKey(normalizeCounselAttribute(field.attribute))))];
   }
 }
 

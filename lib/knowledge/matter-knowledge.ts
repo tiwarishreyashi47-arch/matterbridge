@@ -411,6 +411,10 @@ export function buildMatterKnowledge(bundle: MatterBundle): MatterKnowledge {
     provenance: [{ kind: "organizational_decision", sourceId: decision.decision_id } satisfies KnowledgeProvenance],
   }));
   const actions = decisions.flatMap((decision) => decision.actions);
+  const actionsByIssue = new Map<string, string[]>();
+  for (const decision of decisions) {
+    for (const issueId of decision.openItems.ids) actionsByIssue.set(issueId, [...(actionsByIssue.get(issueId) ?? []), ...decision.actions.map((action) => action.id)]);
+  }
   const persistedOpenItems = (bundle.issues ?? []).map((issue: LegalIssue) => ({
     id: issue.issue_id,
     title: issue.issue_title,
@@ -420,7 +424,7 @@ export function buildMatterKnowledge(bundle: MatterBundle): MatterKnowledge {
     resolutionStatus: resolutionStatus(issue.issue_status),
     linkedDocumentIds: relation(issueBasis.filter((item) => item.issue_id === issue.issue_id && item.assertion_id).flatMap((item) => assertions.find((assertion) => assertion.assertion_id === item.assertion_id)?.source_document_ids ?? [])),
     facts: relation(issueBasis.filter((item) => item.issue_id === issue.issue_id && item.assertion_id).map((item) => item.assertion_id as string)),
-    actions: relation([]),
+    actions: relation(actionsByIssue.get(issue.issue_id) ?? []),
     counselQuestions: relation(allQuestions.filter((question) => question.issue_id === issue.issue_id).map((question) => question.question_id)),
     counselAdvice: relation(allQuestions.filter((question) => question.issue_id === issue.issue_id).map((question) => adviceByQuestion.get(question.question_id)).filter((id): id is string => Boolean(id))),
     decisions: relation(decisionIssues.filter((item) => item.issue_id === issue.issue_id).map((item) => item.decision_id)),
@@ -462,7 +466,8 @@ export function buildMatterKnowledge(bundle: MatterBundle): MatterKnowledge {
       provenance: [{ kind: "uploaded_document", sourceId: document.document_id, documentId: document.document_id, pageNumber: Number(section.section_order) } satisfies KnowledgeProvenance],
     }];
   }));
-  const openItems = [...persistedOpenItems, ...proposedOpenItems, ...documentOpenItems];
+  const knownOpenItemTitles = new Set([...persistedOpenItems, ...proposedOpenItems].map((item) => item.title.trim().toLowerCase()));
+  const openItems = [...persistedOpenItems, ...proposedOpenItems, ...documentOpenItems.filter((item) => !knownOpenItemTitles.has(item.title.trim().toLowerCase()))];
   const counselQuestions = (bundle.counsel_engagements ?? []).flatMap((engagement) => (engagement.briefs ?? []).flatMap((brief) => (brief.questions ?? []).map((question) => ({
     id: question.question_id,
     text: question.question_text,

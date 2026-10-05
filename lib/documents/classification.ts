@@ -4,9 +4,12 @@ export function classifyDocument(fileName: string, matterTypeId?: string, select
   const templateId = selectedTemplateId ?? (matterTypeId === "MT-002" ? "employment" : matterTypeId === "MT-001" ? "recovery" : "generic");
   const template = getTemplate(templateId) ?? getTemplate("generic");
   const name = fileName.toLowerCase();
+  // Counsel correspondence is a universal matter object, not a matter-type field.
+  if (/counsel|opinion|legal[-_ ]?advice|advice/.test(name)) {
+    return { templateId, documentType: "counsel_letter", status: "classified" } as const;
+  }
   const explicitKey = template?.document_types.find((documentType) => {
     const key = documentType.key;
-    if (key === "counsel_letter") return /counsel|opinion|legal[-_ ]?advice|advice/.test(name);
     if (key === "financing_agreement") return /facility|agreement|loan|disbursement|summary/.test(name);
     if (key === "security_document") return /security|charge|registry|registration|collateral/.test(name);
     if (key === "notice") return /notice|demand|default/.test(name);

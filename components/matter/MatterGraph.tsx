@@ -35,6 +35,12 @@ export default function MatterGraph({ graph }: { graph: MatterGraphData }) {
         </div>
       </div>
 
+      <div className="grid gap-3 border-b border-[#d9dee8] bg-[#fbfcfe] px-5 py-5 sm:grid-cols-3 sm:px-8">
+        <div><p className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">Practice areas</p><p className="mt-1 text-lg font-semibold text-slate-950">{graph.nodes.filter((node) => node.kind === "practice_area").length}</p></div>
+        <div><p className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">Context entities</p><p className="mt-1 text-lg font-semibold text-slate-950">{graph.nodes.filter((node) => node.kind === "entity").length}</p></div>
+        <div><p className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">Matter relationships</p><p className="mt-1 text-lg font-semibold text-slate-950">{graph.edges.filter((edge) => edge.id.startsWith("matter-link:")).length}</p></div>
+      </div>
+
       {matters.length ? <div className="space-y-5 p-5 sm:p-8">
         <div className="hidden items-center gap-2 px-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400 md:flex"><span className="w-[27%]">Matter</span><span className="flex-1">Context branches</span></div>
         {matters.map((matter) => <div key={matter.id} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
